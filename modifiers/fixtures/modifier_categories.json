@@ -1,0 +1,37 @@
+[
+  {
+    "model": "modifiers.ModifierCategory",
+    "pk": 1,
+    "fields": {
+      "name": "Furtividade & Movimento"
+    }
+  },
+  {
+    "model": "modifiers.ModifierCategory",
+    "pk": 2,
+    "fields": {
+      "name": "Persuasão & Interação Social"
+    }
+  },
+  {
+    "model": "modifiers.ModifierCategory",
+    "pk": 3,
+    "fields": {
+      "name": "Observação & Investigação"
+    }
+  },
+  {
+    "model": "modifiers.ModifierCategory",
+    "pk": 4,
+    "fields": {
+      "name": "Sobrevivência & Resistências"
+    }
+  },
+  {
+    "model": "modifiers.ModifierCategory",
+    "pk": 5,
+    "fields": {
+      "name": "Facções & Mundo Pós-Apocalíptico"
+    }
+  }
+]

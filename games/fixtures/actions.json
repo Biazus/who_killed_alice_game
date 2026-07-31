@@ -1,0 +1,1661 @@
+[
+  {
+    "model": "games.Action",
+    "pk": 1,
+    "fields": {
+      "code": "sneak_through_warehouse",
+      "name": "Atravessar Depósito Furtivamente",
+      "description": "Você tenta cruzar um depósito cheio de sucata e estruturas instáveis sem chamar atenção.",
+      "difficulty": 20,
+      "type": "stealth",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 1,
+    "fields": {
+      "action": 1,
+      "attribute": 1,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 2,
+    "fields": {
+      "action": 1,
+      "attribute": 10,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 3,
+    "fields": {
+      "action": 1,
+      "attribute": 13,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 2,
+    "fields": {
+      "code": "open_silent_door",
+      "name": "Abrir Porta em Silêncio",
+      "description": "Você tenta abrir uma porta ou mexer na fechadura sem produzir ruído perceptível.",
+      "difficulty": 18,
+      "type": "stealth",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 4,
+    "fields": {
+      "action": 2,
+      "attribute": 2,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 5,
+    "fields": {
+      "action": 2,
+      "attribute": 7,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 3,
+    "fields": {
+      "code": "silent_object_manipulation",
+      "name": "Manipular Objetos em Silêncio",
+      "description": "Você mexe em engrenagens, alavancas ou ferramentas tentando minimizar o som.",
+      "difficulty": 17,
+      "type": "stealth",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 6,
+    "fields": {
+      "action": 3,
+      "attribute": 3,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 7,
+    "fields": {
+      "action": 3,
+      "attribute": 8,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 4,
+    "fields": {
+      "code": "silent_cutting",
+      "name": "Cortar ou Serrrar em Silêncio",
+      "description": "Você tenta serrar, cortar ou rasgar materiais sem produzir ruído chamativo.",
+      "difficulty": 22,
+      "type": "stealth",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 8,
+    "fields": {
+      "action": 4,
+      "attribute": 4,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 9,
+    "fields": {
+      "action": 4,
+      "attribute": 10,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 5,
+    "fields": {
+      "code": "hide_in_urban_ruins",
+      "name": "Se Esconder em Ruínas Urbanas",
+      "description": "Você procura um ponto de esconderijo em estruturas urbanas quebradas.",
+      "difficulty": 15,
+      "type": "stealth",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 10,
+    "fields": {
+      "action": 5,
+      "attribute": 5,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 11,
+    "fields": {
+      "action": 5,
+      "attribute": 12,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 6,
+    "fields": {
+      "code": "hide_in_overgrown_area",
+      "name": "Se Esconder em Área Tomada pela Natureza",
+      "description": "Você se camufla em vegetação densa, raízes e ruínas cobertas de plantas.",
+      "difficulty": 16,
+      "type": "stealth",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 12,
+    "fields": {
+      "action": 6,
+      "attribute": 6,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 13,
+    "fields": {
+      "action": 6,
+      "attribute": 10,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 7,
+    "fields": {
+      "code": "pass_as_unremarkable",
+      "name": "Passar como Figura Irrelevante",
+      "description": "Você tenta ser ignorado pelas pessoas presentes, parecendo alguém sem importância.",
+      "difficulty": 14,
+      "type": "stealth_social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 14,
+    "fields": {
+      "action": 7,
+      "attribute": 7,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 15,
+    "fields": {
+      "action": 7,
+      "attribute": 18,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 8,
+    "fields": {
+      "code": "gesture_under_observation",
+      "name": "Agir com Gestos Discretos sob Observação",
+      "description": "Você executa pequenas ações com as mãos ou corpo sem chamar atenção direta.",
+      "difficulty": 17,
+      "type": "stealth_social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 16,
+    "fields": {
+      "action": 8,
+      "attribute": 8,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 17,
+    "fields": {
+      "action": 8,
+      "attribute": 14,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 9,
+    "fields": {
+      "code": "cross_open_ground_fast",
+      "name": "Cruzar Campo Aberto Rapidamente",
+      "description": "Você corre por um espaço aberto tentando reduzir exposição e risco.",
+      "difficulty": 19,
+      "type": "movement",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 18,
+    "fields": {
+      "action": 9,
+      "attribute": 9,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 19,
+    "fields": {
+      "action": 9,
+      "attribute": 37,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 10,
+    "fields": {
+      "code": "navigate_rubble",
+      "name": "Navegar por Escombros e Terreno Quebrado",
+      "description": "Você se move por escombros, buracos e superfícies quebradas sem se machucar ou atrasar.",
+      "difficulty": 18,
+      "type": "movement",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 20,
+    "fields": {
+      "action": 10,
+      "attribute": 10,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 21,
+    "fields": {
+      "action": 10,
+      "attribute": 11,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 11,
+    "fields": {
+      "code": "cross_unstable_bridge",
+      "name": "Cruzar Ponte ou Estrutura Instável",
+      "description": "Você atravessa uma passagem improvisada ou desgastada tentando não cair.",
+      "difficulty": 20,
+      "type": "movement",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 22,
+    "fields": {
+      "action": 11,
+      "attribute": 11,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 23,
+    "fields": {
+      "action": 11,
+      "attribute": 35,
+      "weight": 0.4,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 12,
+    "fields": {
+      "code": "find_alternative_route",
+      "name": "Encontrar Rota Alternativa",
+      "description": "Você tenta identificar caminhos pouco óbvios para evitar rotas perigosas.",
+      "difficulty": 16,
+      "type": "navigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 24,
+    "fields": {
+      "action": 12,
+      "attribute": 12,
+      "weight": 1.0,
+      "difficulty_delta": 0
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 25,
+    "fields": {
+      "action": 12,
+      "attribute": 51,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 13,
+    "fields": {
+      "code": "sense_hostile_presence",
+      "name": "Pressentir Presença Hostil",
+      "description": "Você tenta perceber se há criaturas ou pessoas perigosas próximas.",
+      "difficulty": 15,
+      "type": "perception",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 26,
+    "fields": {
+      "action": 13,
+      "attribute": 13,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 27,
+    "fields": {
+      "action": 13,
+      "attribute": 30,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 14,
+    "fields": {
+      "code": "stay_calm_under_pressure",
+      "name": "Manter a Calma sob Pressão",
+      "description": "Você tenta conter sinais de nervosismo visível em uma situação tensa.",
+      "difficulty": 17,
+      "type": "mental_resistance",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 28,
+    "fields": {
+      "action": 14,
+      "attribute": 14,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 29,
+    "fields": {
+      "action": 14,
+      "attribute": 43,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 15,
+    "fields": {
+      "code": "direct_persuasion_attempt",
+      "name": "Tentativa de Persuasão Direta",
+      "description": "Você tenta convencer alguém diretamente, usando argumentos e carisma.",
+      "difficulty": 20,
+      "type": "social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 30,
+    "fields": {
+      "action": 15,
+      "attribute": 15,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 31,
+    "fields": {
+      "action": 15,
+      "attribute": 18,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 16,
+    "fields": {
+      "code": "lie_convincingly",
+      "name": "Mentir de Forma Convincente",
+      "description": "Você monta uma mentira ou história falsa e tenta sustentar o engano.",
+      "difficulty": 22,
+      "type": "social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 32,
+    "fields": {
+      "action": 16,
+      "attribute": 16,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 33,
+    "fields": {
+      "action": 16,
+      "attribute": 14,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 17,
+    "fields": {
+      "code": "silent_intimidation_attempt",
+      "name": "Intimidação Silenciosa",
+      "description": "Você usa postura e presença para intimidar sem falar demais.",
+      "difficulty": 19,
+      "type": "social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 34,
+    "fields": {
+      "action": 17,
+      "attribute": 17,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 35,
+    "fields": {
+      "action": 17,
+      "attribute": 18,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 18,
+    "fields": {
+      "code": "appear_trustworthy",
+      "name": "Parecer Confiável",
+      "description": "Você tenta inspirar confiança na primeira impressão, minimizando suspeitas.",
+      "difficulty": 16,
+      "type": "social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 36,
+    "fields": {
+      "action": 18,
+      "attribute": 18,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 37,
+    "fields": {
+      "action": 18,
+      "attribute": 19,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 19,
+    "fields": {
+      "code": "read_emotional_state",
+      "name": "Ler Estado Emocional",
+      "description": "Você tenta perceber o estado emocional de alguém pelos sinais sutis.",
+      "difficulty": 15,
+      "type": "perception_social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 38,
+    "fields": {
+      "action": 19,
+      "attribute": 19,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 39,
+    "fields": {
+      "action": 19,
+      "attribute": 24,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 20,
+    "fields": {
+      "code": "navigate_vampire_etiquette",
+      "name": "Navegar Etiqueta Vampírica",
+      "description": "Você tenta se portar adequadamente diante vampiros, evitando ofensas graves.",
+      "difficulty": 21,
+      "type": "social_faction",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 40,
+    "fields": {
+      "action": 20,
+      "attribute": 20,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 41,
+    "fields": {
+      "action": 20,
+      "attribute": 46,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 21,
+    "fields": {
+      "code": "navigate_druid_codes",
+      "name": "Respeitar Códigos Druídicos",
+      "description": "Você tenta agir de acordo com leis internas e sinais druídicos.",
+      "difficulty": 20,
+      "type": "social_faction",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 42,
+    "fields": {
+      "action": 21,
+      "attribute": 21,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 43,
+    "fields": {
+      "action": 21,
+      "attribute": 49,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 22,
+    "fields": {
+      "code": "handle_fae_ambiguity",
+      "name": "Lidar com Ambiguidades das Fadas",
+      "description": "Você participa de conversas e acordos com fadas sem cair em armadilhas óbvias.",
+      "difficulty": 23,
+      "type": "social_faction",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 44,
+    "fields": {
+      "action": 22,
+      "attribute": 22,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 45,
+    "fields": {
+      "action": 22,
+      "attribute": 48,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 23,
+    "fields": {
+      "code": "pacify_verbal_conflict",
+      "name": "Apaziguar Conflito Verbal",
+      "description": "Você tenta moderar uma discussão acalorada, reduzindo o conflito.",
+      "difficulty": 18,
+      "type": "social",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 46,
+    "fields": {
+      "action": 23,
+      "attribute": 23,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 47,
+    "fields": {
+      "action": 23,
+      "attribute": 19,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 24,
+    "fields": {
+      "code": "scan_scene_for_visual_clues",
+      "name": "Examinar Cena em Busca de Pistas Visuais",
+      "description": "Você varre o ambiente em busca de detalhes visuais relevantes.",
+      "difficulty": 17,
+      "type": "investigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 48,
+    "fields": {
+      "action": 24,
+      "attribute": 24,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 49,
+    "fields": {
+      "action": 24,
+      "attribute": 28,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 25,
+    "fields": {
+      "code": "listen_for_subtle_sounds",
+      "name": "Escutar Sons Sutis",
+      "description": "Você presta atenção em ruídos discretos e padrões sonoros incomuns.",
+      "difficulty": 17,
+      "type": "investigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 50,
+    "fields": {
+      "action": 25,
+      "attribute": 25,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 51,
+    "fields": {
+      "action": 25,
+      "attribute": 29,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 26,
+    "fields": {
+      "code": "identify_smell_clues",
+      "name": "Identificar Pistas por Cheiro",
+      "description": "Você tenta perceber alterações e pistas por meio de odores específicos.",
+      "difficulty": 16,
+      "type": "investigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 52,
+    "fields": {
+      "action": 26,
+      "attribute": 26,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 53,
+    "fields": {
+      "action": 26,
+      "attribute": 30,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 27,
+    "fields": {
+      "code": "connect_clues",
+      "name": "Conectar Pistas e Informações",
+      "description": "Você relaciona pistas dispersas para formar hipóteses coerentes.",
+      "difficulty": 19,
+      "type": "investigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 54,
+    "fields": {
+      "action": 27,
+      "attribute": 27,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 55,
+    "fields": {
+      "action": 27,
+      "attribute": 54,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 28,
+    "fields": {
+      "code": "memorize_scene",
+      "name": "Memorizar Detalhes de Cena",
+      "description": "Você fixa na mente detalhes importantes do ambiente para lembrar depois.",
+      "difficulty": 16,
+      "type": "investigation_memory",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 56,
+    "fields": {
+      "action": 28,
+      "attribute": 28,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 57,
+    "fields": {
+      "action": 28,
+      "attribute": 24,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 29,
+    "fields": {
+      "code": "memorize_conversation",
+      "name": "Memorizar Conversa",
+      "description": "Você tenta guardar falas e tons de voz de um diálogo importante.",
+      "difficulty": 16,
+      "type": "investigation_memory",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 58,
+    "fields": {
+      "action": 29,
+      "attribute": 29,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 59,
+    "fields": {
+      "action": 29,
+      "attribute": 19,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 30,
+    "fields": {
+      "code": "read_environment_signs",
+      "name": "Ler Sinais Físicos no Ambiente",
+      "description": "Você interpreta marcas, arranhões e deslocamentos como possíveis pistas.",
+      "difficulty": 18,
+      "type": "investigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 60,
+    "fields": {
+      "action": 30,
+      "attribute": 30,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 61,
+    "fields": {
+      "action": 30,
+      "attribute": 24,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 31,
+    "fields": {
+      "code": "recognize_arcane_marks",
+      "name": "Reconhecer Marcas Arcanas",
+      "description": "Você identifica símbolos e padrões que indicam rituais ou magia.",
+      "difficulty": 21,
+      "type": "arcane_investigation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 62,
+    "fields": {
+      "action": 31,
+      "attribute": 31,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 63,
+    "fields": {
+      "action": 31,
+      "attribute": 53,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 32,
+    "fields": {
+      "code": "detect_traps",
+      "name": "Detectar Armadilhas",
+      "description": "Você inspeciona o ambiente em busca de armadilhas físicas ou mágicas.",
+      "difficulty": 20,
+      "type": "investigation_trap",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 64,
+    "fields": {
+      "action": 32,
+      "attribute": 32,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 65,
+    "fields": {
+      "action": 32,
+      "attribute": 13,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 33,
+    "fields": {
+      "code": "follow_tracks",
+      "name": "Seguir Trilhas e Pegadas",
+      "description": "Você tenta rastrear movimentos de criaturas ou pessoas pelo solo e ambiente.",
+      "difficulty": 19,
+      "type": "tracking",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 66,
+    "fields": {
+      "action": 33,
+      "attribute": 33,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 67,
+    "fields": {
+      "action": 33,
+      "attribute": 30,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 34,
+    "fields": {
+      "code": "decipher_ancient_text",
+      "name": "Decifrar Texto Antigo",
+      "description": "Você tenta interpretar textos antigos ou codificados encontrados pelo caminho.",
+      "difficulty": 22,
+      "type": "knowledge",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 68,
+    "fields": {
+      "action": 34,
+      "attribute": 34,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 69,
+    "fields": {
+      "action": 34,
+      "attribute": 54,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 35,
+    "fields": {
+      "code": "endure_physical_damage",
+      "name": "Suportar Dano Físico",
+      "description": "Você suporta impactos e ferimentos sem perder completamente a funcionalidade.",
+      "difficulty": 21,
+      "type": "resistance_physical",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 70,
+    "fields": {
+      "action": 35,
+      "attribute": 35,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 71,
+    "fields": {
+      "action": 35,
+      "attribute": 36,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 36,
+    "fields": {
+      "code": "endure_pain",
+      "name": "Suportar Dor",
+      "description": "Você continua agindo apesar de grande dor física.",
+      "difficulty": 20,
+      "type": "resistance_physical",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 72,
+    "fields": {
+      "action": 36,
+      "attribute": 36,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 73,
+    "fields": {
+      "action": 36,
+      "attribute": 43,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 37,
+    "fields": {
+      "code": "resist_fatigue",
+      "name": "Resistir à Fadiga",
+      "description": "Você mantém desempenho sob esforço prolongado.",
+      "difficulty": 19,
+      "type": "resistance_physical",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 74,
+    "fields": {
+      "action": 37,
+      "attribute": 37,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 75,
+    "fields": {
+      "action": 37,
+      "attribute": 45,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 38,
+    "fields": {
+      "code": "endure_hunger_thirst",
+      "name": "Suportar Fome e Sede",
+      "description": "Você segue em frente apesar da falta de alimento e água.",
+      "difficulty": 18,
+      "type": "resistance_physical",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 76,
+    "fields": {
+      "action": 38,
+      "attribute": 38,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 77,
+    "fields": {
+      "action": 38,
+      "attribute": 37,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 39,
+    "fields": {
+      "code": "resist_toxins",
+      "name": "Resistir a Toxinas",
+      "description": "Você tenta se manter funcional após exposição a substâncias tóxicas.",
+      "difficulty": 22,
+      "type": "resistance_toxin",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 78,
+    "fields": {
+      "action": 39,
+      "attribute": 39,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 79,
+    "fields": {
+      "action": 39,
+      "attribute": 44,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 40,
+    "fields": {
+      "code": "resist_contaminated_env",
+      "name": "Suportar Ambiente Contaminado",
+      "description": "Você atua em áreas com poluição ou contaminação sem desmoronar rapidamente.",
+      "difficulty": 21,
+      "type": "resistance_environment",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 80,
+    "fields": {
+      "action": 40,
+      "attribute": 40,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 81,
+    "fields": {
+      "action": 40,
+      "attribute": 41,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 41,
+    "fields": {
+      "code": "resist_climate_apocalypse",
+      "name": "Resistir Fenômenos Climáticos Pós-Apocalípticos",
+      "description": "Você suporta eventos climáticos extremos típicos do fim do mundo.",
+      "difficulty": 23,
+      "type": "resistance_environment",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 82,
+    "fields": {
+      "action": 41,
+      "attribute": 41,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 83,
+    "fields": {
+      "action": 41,
+      "attribute": 54,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 42,
+    "fields": {
+      "code": "resist_mind_magic",
+      "name": "Resistir Influência Mágica na Mente",
+      "description": "Você tenta manter a própria mente sob controle contra magia e manipulação.",
+      "difficulty": 24,
+      "type": "resistance_mental",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 84,
+    "fields": {
+      "action": 42,
+      "attribute": 42,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 85,
+    "fields": {
+      "action": 42,
+      "attribute": 43,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 43,
+    "fields": {
+      "code": "face_horror",
+      "name": "Encarar Horrores",
+      "description": "Você encara cenas terríveis e manifestações de horror tentando manter sanidade.",
+      "difficulty": 25,
+      "type": "resistance_mental",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 86,
+    "fields": {
+      "action": 43,
+      "attribute": 43,
+      "weight": 1.0,
+      "difficulty_delta": 3
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 87,
+    "fields": {
+      "action": 43,
+      "attribute": 55,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 44,
+    "fields": {
+      "code": "improvise_treatment",
+      "name": "Improvisar Tratamento",
+      "description": "Você tenta tratar ferimentos ou problemas físicos com recursos limitados.",
+      "difficulty": 20,
+      "type": "support_medical",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 88,
+    "fields": {
+      "action": 44,
+      "attribute": 44,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 89,
+    "fields": {
+      "action": 44,
+      "attribute": 35,
+      "weight": 0.5,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 45,
+    "fields": {
+      "code": "manage_physical_effort",
+      "name": "Gerir Esforço Físico",
+      "description": "Você regula seu esforço para manter desempenho em ações longas.",
+      "difficulty": 19,
+      "type": "resistance_physical",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 90,
+    "fields": {
+      "action": 45,
+      "attribute": 45,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 91,
+    "fields": {
+      "action": 45,
+      "attribute": 37,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 46,
+    "fields": {
+      "code": "influence_vampire_reputation",
+      "name": "Influenciar Reputação entre Vampiros",
+      "description": "Você realiza ações que podem melhorar ou piorar sua imagem entre vampiros.",
+      "difficulty": 20,
+      "type": "faction_reputation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 92,
+    "fields": {
+      "action": 46,
+      "attribute": 46,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 93,
+    "fields": {
+      "action": 46,
+      "attribute": 20,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 47,
+    "fields": {
+      "code": "influence_werewolf_reputation",
+      "name": "Influenciar Reputação entre Lobisomens",
+      "description": "Você age de forma a impactar sua imagem perante matilhas e clãs.",
+      "difficulty": 20,
+      "type": "faction_reputation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 94,
+    "fields": {
+      "action": 47,
+      "attribute": 47,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 95,
+    "fields": {
+      "action": 47,
+      "attribute": 51,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 48,
+    "fields": {
+      "code": "influence_fae_reputation",
+      "name": "Influenciar Reputação entre Fadas",
+      "description": "Você toma atitudes que afetam como as fadas te veem.",
+      "difficulty": 21,
+      "type": "faction_reputation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 96,
+    "fields": {
+      "action": 48,
+      "attribute": 48,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 97,
+    "fields": {
+      "action": 48,
+      "attribute": 22,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 49,
+    "fields": {
+      "code": "influence_druid_reputation",
+      "name": "Influenciar Reputação entre Druidas",
+      "description": "Você realiza algo que será lembrado pelos círculos druídicos.",
+      "difficulty": 21,
+      "type": "faction_reputation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 98,
+    "fields": {
+      "action": 49,
+      "attribute": 49,
+      "weight": 1.0,
+      "difficulty_delta": 2
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 99,
+    "fields": {
+      "action": 49,
+      "attribute": 21,
+      "weight": 0.7,
+      "difficulty_delta": 0
+    }
+  },
+
+  {
+    "model": "games.Action",
+    "pk": 50,
+    "fields": {
+      "code": "influence_human_reputation",
+      "name": "Influenciar Reputação entre Humanos Sobreviventes",
+      "description": "Você age de forma a construir (ou destruir) sua imagem entre humanos sobreviventes.",
+      "difficulty": 19,
+      "type": "faction_reputation",
+      "active": true
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 100,
+    "fields": {
+      "action": 50,
+      "attribute": 50,
+      "weight": 1.0,
+      "difficulty_delta": 1
+    }
+  },
+  {
+    "model": "games.ActionAttributeRequirement",
+    "pk": 101,
+    "fields": {
+      "action": 50,
+      "attribute": 51,
+      "weight": 0.6,
+      "difficulty_delta": 0
+    }
+  }
+]

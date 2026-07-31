@@ -1,0 +1,497 @@
+[
+  {
+    "model": "modifiers.Attribute",
+    "pk": 1,
+    "fields": {
+      "code": "noise_walk",
+      "name": "Ruído ao Caminhar",
+      "description": "Nível de som produzido ao se deslocar caminhando, afetando furtividade geral."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 2,
+    "fields": {
+      "code": "noise_doors",
+      "name": "Ruído ao Interagir com Portas/Fechaduras",
+      "description": "Ruído gerado ao abrir portas, mexer em fechaduras, trancas e travas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 3,
+    "fields": {
+      "code": "noise_objects",
+      "name": "Ruído ao Manipular Objetos/Mecanismos",
+      "description": "Som gerado ao manipular ferramentas, engrenagens, alavancas e objetos diversos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 4,
+    "fields": {
+      "code": "noise_cutting",
+      "name": "Ruído ao Cortar/Serrar",
+      "description": "Intensidade sonora ao cortar, serrar ou rasgar materiais."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 5,
+    "fields": {
+      "code": "stealth_urban",
+      "name": "Facilidade de Se Esconder (Ambiente Urbano)",
+      "description": "Capacidade de se ocultar em cenários urbanos, usando estruturas, sombras e entulho."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 6,
+    "fields": {
+      "code": "stealth_natural",
+      "name": "Facilidade de Se Esconder (Ambiente Natural)",
+      "description": "Capacidade de se camuflar em ambientes naturais, como florestas e ruínas tomadas pela natureza."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 7,
+    "fields": {
+      "code": "posture_discretion",
+      "name": "Discrição Postural",
+      "description": "Quão neutra, discreta ou suspeita é a postura corporal em situações de observação."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 8,
+    "fields": {
+      "code": "gesture_discretion",
+      "name": "Discrição Gestual",
+      "description": "Capacidade de manter gestos contidos ou discretos, evitando chamar atenção."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 9,
+    "fields": {
+      "code": "speed_open_field",
+      "name": "Velocidade em Campo Aberto",
+      "description": "Rapidez de deslocamento em áreas abertas e sem muitos obstáculos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 10,
+    "fields": {
+      "code": "agility_rough_terrain",
+      "name": "Agilidade em Terreno Irregular",
+      "description": "Facilidade de se mover em superfícies quebradas, escombros, desníveis e terreno difícil."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 11,
+    "fields": {
+      "code": "balance_unstable",
+      "name": "Equilíbrio em Superfícies Instáveis",
+      "description": "Capacidade de manter o equilíbrio em superfícies escorregadias, bambas ou móveis."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 12,
+    "fields": {
+      "code": "alt_routes_efficiency",
+      "name": "Eficiência em Rotas Alternativas",
+      "description": "Habilidade de identificar e usar rotas secundárias, atalhos e caminhos pouco evidentes."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 13,
+    "fields": {
+      "code": "hostile_presence_sense",
+      "name": "Sensibilidade a Presença Hostil",
+      "description": "Intuição e percepção voltada a identificar presenças hostis ou perigos próximas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 14,
+    "fields": {
+      "code": "visible_nervousness_resistance",
+      "name": "Resistência a Nervosismo Visível",
+      "description": "Capacidade de conter sinais corporais de nervosismo em situações de tensão."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 15,
+    "fields": {
+      "code": "direct_persuasion",
+      "name": "Capacidade de Convencimento (Persuasão Direta)",
+      "description": "Força de argumentos e carisma ao tentar convencer alguém de algo de forma direta."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 16,
+    "fields": {
+      "code": "deception_bluff",
+      "name": "Capacidade de Engano (Mentira/Bluff)",
+      "description": "Habilidade de mentir, blefar e ocultar a verdade sem ser facilmente desmascarado."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 17,
+    "fields": {
+      "code": "silent_intimidation",
+      "name": "Capacidade de Intimidação Silenciosa",
+      "description": "Presença e postura que causam intimidação mesmo sem ameaças verbais explícitas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 18,
+    "fields": {
+      "code": "trustworthy_appearance",
+      "name": "Aparência Confiável",
+      "description": "Primeira impressão e linguagem corporal associadas a confiança e segurança."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 19,
+    "fields": {
+      "code": "emotional_reading",
+      "name": "Leitura Emocional de Outros",
+      "description": "Capacidade de perceber estados emocionais de outras pessoas por sinais sutis."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 20,
+    "fields": {
+      "code": "vampire_etiquette",
+      "name": "Etiqueta dos Vampiros",
+      "description": "Conhecimento dos costumes, protocolos e hierarquias sociais dos vampiros."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 21,
+    "fields": {
+      "code": "druid_codes",
+      "name": "Códigos dos Druidas",
+      "description": "Conhecimento de sinais, leis internas e tradições druídicas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 22,
+    "fields": {
+      "code": "fae_ambiguities",
+      "name": "Navegação nas Ambiguidades das Fadas",
+      "description": "Capacidade de lidar com linguagem, contratos e jogos de ambiguidade típicos das fadas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 23,
+    "fields": {
+      "code": "verbal_conflict_pacification",
+      "name": "Apaziguamento de Conflitos Verbais",
+      "description": "Habilidade de desarmar conflitos e discussões por meio de fala moderadora."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 24,
+    "fields": {
+      "code": "visual_detail_attention",
+      "name": "Atenção a Detalhes Visuais",
+      "description": "Foco em pequenas discrepâncias, pistas e detalhes visuais em cenas e objetos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 25,
+    "fields": {
+      "code": "auditory_detail_attention",
+      "name": "Atenção a Detalhes Sonoros",
+      "description": "Capacidade de notar sons discretos, padrões auditivos e variações de ruído."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 26,
+    "fields": {
+      "code": "olfactory_detail_attention",
+      "name": "Atenção a Detalhes Olfativos",
+      "description": "Percepção de cheiros específicos e alterações no ambiente por odores."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 27,
+    "fields": {
+      "code": "information_connection",
+      "name": "Capacidade de Conectar Informações",
+      "description": "Habilidade de relacionar pistas, dados e eventos para formar um quadro coerente."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 28,
+    "fields": {
+      "code": "scene_visual_memory",
+      "name": "Memória Visual de Cena",
+      "description": "Capacidade de lembrar detalhes visuais de ambientes e cenas após breve exposição."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 29,
+    "fields": {
+      "code": "conversation_auditory_memory",
+      "name": "Memória Auditiva de Conversas",
+      "description": "Facilidade em recordar diálogos, frases e tons de voz após interações."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 30,
+    "fields": {
+      "code": "physical_signs_reading",
+      "name": "Leitura de Sinais Físicos no Ambiente",
+      "description": "Percepção de marcas, arranhões, deslocamentos e outros sinais físicos em ambientes."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 31,
+    "fields": {
+      "code": "arcane_marks_recognition",
+      "name": "Reconhecimento de Marcas Arcanas/Rituais",
+      "description": "Capacidade de identificar símbolos, círculos e vestígios de rituais e magia."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 32,
+    "fields": {
+      "code": "trap_detection",
+      "name": "Detecção de Armadilhas (Físicas e Mágicas)",
+      "description": "Habilidade em localizar armadilhas mecânicas ou mágicas antes de acioná-las."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 33,
+    "fields": {
+      "code": "track_trail_tracking",
+      "name": "Rastreamento de Trilhas e Pegadas",
+      "description": "Capacidade de seguir pegadas, rastros e sinais de movimentação de criaturas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 34,
+    "fields": {
+      "code": "ancient_texts_deciphering",
+      "name": "Decifração de Textos Antigos/Códigos",
+      "description": "Habilidade de interpretar textos antigos, cifrados ou simbólicos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 35,
+    "fields": {
+      "code": "physical_damage_resistance",
+      "name": "Resistência a Dano Físico",
+      "description": "Capacidade de absorver ou resistir a danos corporais diretos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 36,
+    "fields": {
+      "code": "pain_resistance",
+      "name": "Resistência à Dor",
+      "description": "Tolerância à dor, mantendo funcionalidade mesmo sob sofrimento físico."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 37,
+    "fields": {
+      "code": "fatigue_tolerance",
+      "name": "Tolerância à Fadiga",
+      "description": "Resistência a cansaço em longos esforços físicos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 38,
+    "fields": {
+      "code": "hunger_thirst_tolerance",
+      "name": "Tolerância à Fome e Sede",
+      "description": "Capacidade de manter desempenho mesmo com carência de alimento e água."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 39,
+    "fields": {
+      "code": "toxins_resistance",
+      "name": "Resistência a Toxinas & Venenos",
+      "description": "Resistência fisiológica a substâncias tóxicas e venenosas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 40,
+    "fields": {
+      "code": "contaminated_env_resistance",
+      "name": "Resistência a Ambientes Contaminados",
+      "description": "Capacidade de suportar ambientes com poluição, radiação ou contaminações."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 41,
+    "fields": {
+      "code": "climate_apoc_resistance",
+      "name": "Resistência Climática & Fenômenos Pós-Apocalípticos",
+      "description": "Resilência a extremos climáticos e fenômenos peculiares do cenário pós-apocalíptico."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 42,
+    "fields": {
+      "code": "mind_magic_resistance",
+      "name": "Resistência a Influência Mágica na Mente",
+      "description": "Defesas mentais contra encantamentos, ilusão e controle mental."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 43,
+    "fields": {
+      "code": "horror_emotional_stability",
+      "name": "Estabilidade Emocional diante de Horrores",
+      "description": "Capacidade de manter sanidade e funcionalidade diante de horrores e traumas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 44,
+    "fields": {
+      "code": "improvised_treatment",
+      "name": "Capacidade de Tratamento Improvisado",
+      "description": "Habilidade de improvisar cuidados médicos e reparos físicos com poucos recursos."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 45,
+    "fields": {
+      "code": "physical_effort_management",
+      "name": "Gestão de Esforço Físico",
+      "description": "Administração de força e resistência ao longo de ações prolongadas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 46,
+    "fields": {
+      "code": "vampire_reputation",
+      "name": "Reputação entre Vampiros",
+      "description": "Imagem e nome do personagem dentro das comunidades vampíricas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 47,
+    "fields": {
+      "code": "werewolf_reputation",
+      "name": "Reputação entre Lobisomens",
+      "description": "Reputação perante matilhas e clãs de lobisomens."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 48,
+    "fields": {
+      "code": "fae_reputation",
+      "name": "Reputação entre Fadas",
+      "description": "Percepção das fadas sobre o personagem, incluindo confiança e perigo."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 49,
+    "fields": {
+      "code": "druid_reputation",
+      "name": "Reputação entre Druidas",
+      "description": "Consideração dos círculos druídicos a respeito do personagem."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 50,
+    "fields": {
+      "code": "human_survivor_reputation",
+      "name": "Reputação entre Humanos Sobreviventes",
+      "description": "Imagem do personagem entre comunidades humanas que sobreviveram ao fim do mundo."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 51,
+    "fields": {
+      "code": "territory_knowledge",
+      "name": "Conhecimento Geral de Territórios",
+      "description": "Mapa mental e informações gerais de regiões, zonas e fronteiras."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 52,
+    "fields": {
+      "code": "secret_routes_familiarity",
+      "name": "Familiaridade com Rotas Secretas e Passagens",
+      "description": "Conhecimento de túneis, passagens ocultas e rotas discretas."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 53,
+    "fields": {
+      "code": "dangerous_magic_area_sense",
+      "name": "Sensibilidade a Áreas com Magia Distorcida/Energia Perigosa",
+      "description": "Percepção de zonas onde energia mágica ou pós-apocalíptica se torna instável."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 54,
+    "fields": {
+      "code": "end_world_phenomena_understanding",
+      "name": "Compreensão dos Fenômenos do Fim do Mundo",
+      "description": "Entendimento das causas, efeitos e padrões dos fenômenos do fim do mundo."
+    }
+  },
+  {
+    "model": "modifiers.Attribute",
+    "pk": 55,
+    "fields": {
+      "code": "alice_case_intuition",
+      "name": "Intuição Ligada ao Caso de Alice",
+      "description": "Ligação intuitiva e percepção especial relacionada ao caso de Alice."
+    }
+  }
+]

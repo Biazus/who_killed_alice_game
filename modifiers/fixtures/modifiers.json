@@ -1,0 +1,1046 @@
+[
+  {
+    "model": "modifiers.Modifier",
+    "pk": 1,
+    "fields": {
+      "name": "Som de Orvalho",
+      "description": "Passos e presença com sonoridade suave e não ameaçadora, lembrando o som discreto de gotas de orvalho.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 2,
+    "fields": {
+      "name": "Papa-Léguas",
+      "description": "Velocidade e leveza nos movimentos, com passos ágeis e pouco ruidosos em deslocamentos rápidos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 3,
+    "fields": {
+      "name": "Cinza de Passo",
+      "description": "Pegadas quase apagadas, como se os passos deixassem apenas um traço de cinza, discreto e difícil de seguir.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 4,
+    "fields": {
+      "name": "Bota Pesada",
+      "description": "Movimentos marcados por impacto sonoro, como botas grossas batendo no chão e denunciando deslocamentos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 5,
+    "fields": {
+      "name": "Ossos Francos",
+      "description": "Estrutura corporal que produz estalos e pequenos ruídos ao mover-se ou manipular objetos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 6,
+    "fields": {
+      "name": "Sopro Largo",
+      "description": "Respiração ampla e perceptível, que pode se tornar audível em contextos silenciosos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 7,
+    "fields": {
+      "name": "Cirurgião",
+      "description": "Precisão meticulosa nas mãos e movimentos, típica de quem opera mecanismos ou corpos com grande cuidado.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 8,
+    "fields": {
+      "name": "Nó Solto",
+      "description": "Relacionamento intuitivo com cordas, laços e pequenos ajustes delicados, com leveza na manipulação.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 9,
+    "fields": {
+      "name": "Pulso de Vidro",
+      "description": "Tensão nervosa visível nos pulsos e mãos, que podem tremer sutilmente em situações de pressão.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 10,
+    "fields": {
+      "name": "Pulso Quebradiço",
+      "description": "Pulso instável e quebradiço, propenso a movimentos bruscos ou pouco controlados.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 11,
+    "fields": {
+      "name": "Laço Curto",
+      "description": "Tendência a fazer movimentos rápidos, curtos, às vezes abruptos, que podem gerar ruído ou tensão.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 12,
+    "fields": {
+      "name": "Fino Fio",
+      "description": "Habilidade com detalhes finos, cortes delicados e serras pequenas, produzindo ruído mínimo.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 13,
+    "fields": {
+      "name": "Espinho de Ferro",
+      "description": "Interação com metal e superfícies duras que tende a produzir arranhões e ruídos ásperos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 14,
+    "fields": {
+      "name": "Vulto de Concreto",
+      "description": "Silhueta que se mistura bem com estruturas urbanas, tornando-se parte do concreto e da sombra.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 15,
+    "fields": {
+      "name": "Quina Suja",
+      "description": "Afinidade com cantos, frestas e sujeira urbana, facilitando esconderijo em pequenos espaços.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 16,
+    "fields": {
+      "name": "Pele de Fresta",
+      "description": "Corpo e presença que se compactam bem em brechas, frestas e pequenas aberturas.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 17,
+    "fields": {
+      "name": "Sombra Torta",
+      "description": "Sombra corporal irregular, que pode confundir a leitura de silhueta em ambientes escuros.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 18,
+    "fields": {
+      "name": "Coluna Reta",
+      "description": "Postura rígida e ereta, pouco maleável, chamando atenção em ambientes onde fluidez é vantajosa.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 19,
+    "fields": {
+      "name": "Rosto Quebrado",
+      "description": "Face marcada por cicatrizes, traumas ou expressões duras, transmitindo histórico de violência.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 20,
+    "fields": {
+      "name": "Folha Parada",
+      "description": "Imobilidade controlada, como uma folha que não se move mesmo sob vento fraco.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 21,
+    "fields": {
+      "name": "Piso Cego",
+      "description": "Dificuldade em perceber pequenas irregularidades no solo, como se o piso fosse invisível aos sentidos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 22,
+    "fields": {
+      "name": "Rosto Neutro",
+      "description": "Expressão facial controlada, neutra, difícil de ler e pouco entregue emocionalmente.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 23,
+    "fields": {
+      "name": "Asa Pesada",
+      "description": "Gestos amplos, carregados, que podem transmitir ameaça ou desconforto em presença silenciosa.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 24,
+    "fields": {
+      "name": "Boca Torturada",
+      "description": "Expressão labial tensa ou marcada, tornando discurso e emoções aparentes de forma distorcida.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 25,
+    "fields": {
+      "name": "Língua de Chuva",
+      "description": "Fala que cai suave, constante, encontrando brechas emocionais para convencer e acalmar.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 26,
+    "fields": {
+      "name": "Fio de Vício",
+      "description": "Sutileza nos gestos que lembram dependências e hábitos pouco confiáveis.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 27,
+    "fields": {
+      "name": "Brasa Presa",
+      "description": "Energia física mantida em brasas constantes, permitindo esforço prolongado e velocidade controlada.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 28,
+    "fields": {
+      "name": "Sopro Curto",
+      "description": "Fôlego curto, respiração que se esgota rápido em esforços intensos.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 29,
+    "fields": {
+      "name": "Rota Cega",
+      "description": "Conhece rotas alternativas pouco visíveis, quase cegas para o senso comum.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 30,
+    "fields": {
+      "name": "Ossos Ocos",
+      "description": "Estrutura corporal frágil, como se os ossos fossem ocos, mais suscetíveis a dano.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 31,
+    "fields": {
+      "name": "Corda Bamba",
+      "description": "Afinidade com equilíbrio sobre superfícies instáveis, como cordas frouxas e plataformas móveis.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 32,
+    "fields": {
+      "name": "Ossos Justos",
+      "description": "Estrutura corporal compacta e firme, menos propensa a deslocamentos bruscos ou lesões leves.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 33,
+    "fields": {
+      "name": "Linha Oculta",
+      "description": "Intuição para rotas escondidas, linhas de passagem pouco evidentes aos olhos comuns.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 34,
+    "fields": {
+      "name": "Traço Errado",
+      "description": "Tendência a escolher ou confiar em rotas e caminhos que se revelam desfavoráveis.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 35,
+    "fields": {
+      "name": "Nuca Fria",
+      "description": "Sensação constante na nuca que alerta sobre ameaças e presenças hostis próximas.",
+      "category": 1
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 36,
+    "fields": {
+      "name": "Fio de Alarme",
+      "description": "Sensibilidade a disparos de perigo, como um fio interno que vibra com riscos iminentes.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 37,
+    "fields": {
+      "name": "Fio Esticado",
+      "description": "Estado constante de tensão, como um fio esticado, atento a detalhes e armadilhas.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 38,
+    "fields": {
+      "name": "Chumbo Leve",
+      "description": "Sensação de peso sutil no ar, que ajuda a perceber anomalias mas também cansa os sentidos.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 39,
+    "fields": {
+      "name": "Coração Seco",
+      "description": "Emoções moderadas, coração pouco dado a explosões sentimentais, resistente ao impacto emocional.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 40,
+    "fields": {
+      "name": "Nervo Solto",
+      "description": "Sistema nervoso solto, propenso a tremores, ansiedade física e perda de foco.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 41,
+    "fields": {
+      "name": "Voz Quebrada",
+      "description": "Voz com falhas, rachaduras ou tremor, transmitindo insegurança ou trauma.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 42,
+    "fields": {
+      "name": "Língua Rígida",
+      "description": "Dificuldade em modular discurso, com fala dura e pouco flexível para negociação.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 43,
+    "fields": {
+      "name": "Sombra de Dívida",
+      "description": "Presença marcada por dívidas passadas, suspeita ou desconfiança nas interações sociais.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 44,
+    "fields": {
+      "name": "Mentira de Veludo",
+      "description": "Capacidade de mentir com suavidade, como se as palavras fossem veludo sobre a verdade.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 45,
+    "fields": {
+      "name": "Olho Mágico",
+      "description": "Olhar atento que percebe sutilezas e sinergias em testes de engano e leitura emocional.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 46,
+    "fields": {
+      "name": "Ferro Baixo",
+      "description": "Aura de ameaça silenciosa, como ferro escondido sob o casaco.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 47,
+    "fields": {
+      "name": "Olho de Ferro",
+      "description": "Olhar duro, metálico, que intimida mesmo sem palavras.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 48,
+    "fields": {
+      "name": "Voz de Barraco",
+      "description": "Voz marcada por experiência de rua, capaz de se impor em ambientes humanos sobreviventes.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 49,
+    "fields": {
+      "name": "Mão Aberta",
+      "description": "Gestos de mãos abertas que sugerem transparência, mas podem também parecer falta de firmeza.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 50,
+    "fields": {
+      "name": "Cheiro de Fuga",
+      "description": "Presença com cheiro sutil de fugas passadas, gerando desconfiança em confrontos.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 51,
+    "fields": {
+      "name": "Eco Sujo",
+      "description": "Reputação manchada, eco de ações passadas que sujam a imagem do personagem.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 52,
+    "fields": {
+      "name": "Luz Azeda",
+      "description": "Aura azeda aos olhos de fadas, gerando antipatia ou desconfiança.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 53,
+    "fields": {
+      "name": "Dente Amargo",
+      "description": "Marca dentária ou traço vampírico que causa má impressão entre vampiros.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 54,
+    "fields": {
+      "name": "Pulso Quente",
+      "description": "Pulsos quentes, indicando sensibilidade aos estados emocionais alheios.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 55,
+    "fields": {
+      "name": "Orelha Mansa",
+      "description": "Orelhas atentas e pacientes, boas para escutar e perceber nuances emocionais.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 56,
+    "fields": {
+      "name": "Orelha Furada",
+      "description": "Orelhas marcadas ou danificadas, prejudicando percepção sonora refinada.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 57,
+    "fields": {
+      "name": "Ruído Branco",
+      "description": "Ruído mental constante que atrapalha foco e leitura precisa de estímulos.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 58,
+    "fields": {
+      "name": "Sangue Antigo",
+      "description": "Linagem vampírica antiga, respeitada pelos pares.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 59,
+    "fields": {
+      "name": "Sussurro Vermelho",
+      "description": "Fama entre vampiros carregada em sussurros, reforçando uma reputação específica.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 60,
+    "fields": {
+      "name": "Sabor de Ferro",
+      "description": "Sabores de sangue e ferro que indicam relação íntima com práticas vampíricas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 61,
+    "fields": {
+      "name": "Raiz Marcada",
+      "description": "Marca antiga em raízes que indica pactos e conhecimento druídico profundo.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 62,
+    "fields": {
+      "name": "Folha Queimada",
+      "description": "Sinal de folhas queimadas que revela reputação entre círculos druídicos.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 63,
+    "fields": {
+      "name": "Galho Raso",
+      "description": "Conhecimento superficial de tradições druídicas, sem raízes profundas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 64,
+    "fields": {
+      "name": "Raiz Cortada",
+      "description": "Relação rompida com raízes druídicas, malvista pelos guardiões da natureza.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 65,
+    "fields": {
+      "name": "Brilho Torto",
+      "description": "Luz enviesada, típica de quem transita bem em ambiguidades de fadas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 66,
+    "fields": {
+      "name": "Pó de Luz",
+      "description": "Traços luminosos de reputação entre fadas, sugerindo boa relação com seus jogos.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 67,
+    "fields": {
+      "name": "Asa Emprestada",
+      "description": "Favores temporários junto às fadas, como se o personagem usasse asas emprestadas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 68,
+    "fields": {
+      "name": "Fogo Baixo",
+      "description": "Temperamento moderado, fogo interno controlado, útil para negociação e apaziguamento.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 69,
+    "fields": {
+      "name": "Voz de Corda",
+      "description": "Voz firme, com cadência que se assemelha à tensão de cordas, ajudando em persuasão calmamente.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 70,
+    "fields": {
+      "name": "Cheiro de Fogão",
+      "description": "Aroma acolhedor de casa e fogão, que evoca conforto e confiança.",
+      "category": 2
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 71,
+    "fields": {
+      "name": "Eco Preso",
+      "description": "Eco interno que prende sons, permitindo memórias auditivas mais claras.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 72,
+    "fields": {
+      "name": "Eco de Porta",
+      "description": "Sensibilidade específica a sons de portas, trincos e fechaduras.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 73,
+    "fields": {
+      "name": "Nariz Partido",
+      "description": "Nariz marcado, porém extremamente atento a cheiros e odores distintos.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 74,
+    "fields": {
+      "name": "Cheiro de Papel",
+      "description": "Sensibilidade a odores de papel, tinta e documentos, útil em investigação textual.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 75,
+    "fields": {
+      "name": "Nariz Morto",
+      "description": "Perda ou grande redução de sensibilidade olfativa, prejudicando leitura de cheiros.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 76,
+    "fields": {
+      "name": "Linha Invisível",
+      "description": "Capacidade de traçar conexões invisíveis entre fatos e pistas.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 77,
+    "fields": {
+      "name": "Tinta Morta",
+      "description": "Percepção aguçada de textos apagados, mortos ou esquecidos.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 78,
+    "fields": {
+      "name": "Fio Solto",
+      "description": "Tendência a deixar partes soltas na linha de raciocínio, prejudicando conexões completas.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 79,
+    "fields": {
+      "name": "Olho de Estilhaço",
+      "description": "Olhar que percebe fragmentos e estilhaços de informação visual com muita clareza.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 80,
+    "fields": {
+      "name": "Tela Cheia",
+      "description": "Capacidade de ver a cena como um quadro completo, com boa memória visual.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 81,
+    "fields": {
+      "name": "Quadro Torto",
+      "description": "Sensibilidade a pequenas assimetrias visuais em ambientes.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 82,
+    "fields": {
+      "name": "Vista Lavada",
+      "description": "Olhar cansado ou lavado, menos capaz de perceber detalhes finos.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 83,
+    "fields": {
+      "name": "Moldura Errada",
+      "description": "Tendência a enquadrar mal a cena, perdendo contextos importantes.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 84,
+    "fields": {
+      "name": "Orelha de Fita",
+      "description": "Memória auditiva que grava conversas como se fossem fitas antigas.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 85,
+    "fields": {
+      "name": "Chão Falado",
+      "description": "Sensibilidade ao que o chão ‘conta’: marcas, rachaduras, sinais de passagem.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 86,
+    "fields": {
+      "name": "Círculo Velho",
+      "description": "Experiência com círculos arcanos antigos, permitindo identificação rápida.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 87,
+    "fields": {
+      "name": "Crepúsculo Rachado",
+      "description": "Afinidade com fenômenos crepusculares distorcidos, ligados ao fim do mundo.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 88,
+    "fields": {
+      "name": "Fenda Fria",
+      "description": "Sensibilidade a rachaduras frias na realidade, marcando zonas perigosas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 89,
+    "fields": {
+      "name": "Rastro Frio",
+      "description": "Capacidade de seguir rastros que já esfriaram, pouco recentes.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 90,
+    "fields": {
+      "name": "Página Rápida",
+      "description": "Brinca com páginas de forma apressada, perdendo detalhes em textos antigos.",
+      "category": 3
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 91,
+    "fields": {
+      "name": "Ferrugem Boa",
+      "description": "Resistência física que lembra metal enferrujado, ainda forte e duro.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 92,
+    "fields": {
+      "name": "Carne Surda",
+      "description": "Corpo que responde pouco à dor, como se fosse ‘surdo’ a parte dos estímulos.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 93,
+    "fields": {
+      "name": "Pele Aberta",
+      "description": "Pele vulnerável, facilmente aberta por cortes e impactos.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 94,
+    "fields": {
+      "name": "Olho Fendido",
+      "description": "Olhos marcados por rachaduras ou cicatrizes, afetando estabilidade emocional e percepção.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 95,
+    "fields": {
+      "name": "Casca Fina",
+      "description": "Barreira física ou emocional fina, oferecendo pouca proteção prolongada.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 96,
+    "fields": {
+      "name": "Estômago de Cinza",
+      "description": "Estômago acostumado a comer coisas ruins, como cinza, tolerando fome e alimentos duros.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 97,
+    "fields": {
+      "name": "Nó de Fome",
+      "description": "Laço interno que aperta com fome, mas permite seguir por mais tempo.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 98,
+    "fields": {
+      "name": "Estômago Frágil",
+      "description": "Digestão sensível, dificultando tolerar fome prolongada ou comida ruim.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 99,
+    "fields": {
+      "name": "Sangue Denso",
+      "description": "Sangue espesso, resistente a toxinas e condições ambientais adversas.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 100,
+    "fields": {
+      "name": "Cinza no Pulmão",
+      "description": "Pulmões acostumados a respirar ar pesado, cheio de cinza e poeira.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 101,
+    "fields": {
+      "name": "Sangue Ralo",
+      "description": "Sangue pouco denso, vulnerável a toxinas e agressões químicas.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 102,
+    "fields": {
+      "name": "Pele de Vidro",
+      "description": "Pele frágil e quebradiça, que sofre com ambientes agressivos e fenômenos extremos.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 103,
+    "fields": {
+      "name": "Pele de Horizonte",
+      "description": "Camada protetora adaptada a horizontes distorcidos, clima extremo e fenômenos pós-apocalípticos.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 104,
+    "fields": {
+      "name": "Casca Cega",
+      "description": "Barreira mental que impede interferência mágica, ainda que torne mais difícil sentir emoções.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 105,
+    "fields": {
+      "name": "Agulha Torta",
+      "description": "Habilidade em improvisar cuidados médico-artesanais com instrumentos imperfeitos.",
+      "category": 4
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 106,
+    "fields": {
+      "name": "Uivo Fundo",
+      "description": "Uivo grave que ecoa profundamente, marcando forte reputação entre lobisomens.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 107,
+    "fields": {
+      "name": "Pelo de Rua",
+      "description": "Pelagem ou marcas que lembram sobrevivência urbana, bem-vistas por alguns lobisomens.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 108,
+    "fields": {
+      "name": "Pelo Erguido",
+      "description": "Pelagem eriçada, sinal constante de alerta, gerando má impressão entre lobisomens.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 109,
+    "fields": {
+      "name": "Rosto Quebrado (Reputação)",
+      "description": "Versão reputacional do Rosto Quebrado, famosa entre humanos sobreviventes.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 110,
+    "fields": {
+      "name": "Voz de Barraco (Reputação)",
+      "description": "Voz associada à sobrevivência em barracos e periferia, bem conhecida entre humanos.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 111,
+    "fields": {
+      "name": "Mapa Rasgado",
+      "description": "Mapas rasgados, anotados, que ainda guardam conhecimento valioso de territórios.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 112,
+    "fields": {
+      "name": "Risco Miúdo",
+      "description": "Traços pequenos em mapas e paredes, que indicam conhecimento detalhado de rotas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 113,
+    "fields": {
+      "name": "Buraco Velho",
+      "description": "Conhecimento de buracos e esconderijos antigos, usados como passagens secretas.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 114,
+    "fields": {
+      "name": "Buraco Marcado",
+      "description": "Buracos previamente marcados como perigosos ou traiçoeiros.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 115,
+    "fields": {
+      "name": "Véu de Alice",
+      "description": "Véu simbólico que liga o personagem de forma especial ao caso de Alice.",
+      "category": 5
+    }
+  },
+  {
+    "model": "modifiers.Modifier",
+    "pk": 116,
+    "fields": {
+      "name": "Sopro de Alice",
+      "description": "Presença respiratória associada ao caso de Alice, trazendo efeitos estranhos à intuição.",
+      "category": 5
+    }
+  }
+]

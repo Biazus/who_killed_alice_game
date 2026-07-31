@@ -1,0 +1,665 @@
+[
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 1,
+    "fields": {
+      "modifier": 1,
+      "attribute": 1,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 2,
+    "fields": {
+      "modifier": 2,
+      "attribute": 1,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 3,
+    "fields": {
+      "modifier": 3,
+      "attribute": 1,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 4,
+    "fields": {
+      "modifier": 4,
+      "attribute": 1,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 5,
+    "fields": {
+      "modifier": 5,
+      "attribute": 1,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 6,
+    "fields": {
+      "modifier": 6,
+      "attribute": 1,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 7,
+    "fields": {
+      "modifier": 7,
+      "attribute": 2,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 8,
+    "fields": {
+      "modifier": 8,
+      "attribute": 2,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 9,
+    "fields": {
+      "modifier": 9,
+      "attribute": 2,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 10,
+    "fields": {
+      "modifier": 10,
+      "attribute": 2,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 11,
+    "fields": {
+      "modifier": 11,
+      "attribute": 2,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 12,
+    "fields": {
+      "modifier": 7,
+      "attribute": 3,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 13,
+    "fields": {
+      "modifier": 8,
+      "attribute": 3,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 14,
+    "fields": {
+      "modifier": 12,
+      "attribute": 3,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 15,
+    "fields": {
+      "modifier": 13,
+      "attribute": 3,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 16,
+    "fields": {
+      "modifier": 5,
+      "attribute": 3,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 17,
+    "fields": {
+      "modifier": 12,
+      "attribute": 4,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 18,
+    "fields": {
+      "modifier": 8,
+      "attribute": 4,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 19,
+    "fields": {
+      "modifier": 4,
+      "attribute": 4,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 20,
+    "fields": {
+      "modifier": 13,
+      "attribute": 4,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 21,
+    "fields": {
+      "modifier": 14,
+      "attribute": 5,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 22,
+    "fields": {
+      "modifier": 15,
+      "attribute": 5,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 23,
+    "fields": {
+      "modifier": 16,
+      "attribute": 5,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 24,
+    "fields": {
+      "modifier": 17,
+      "attribute": 5,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 25,
+    "fields": {
+      "modifier": 18,
+      "attribute": 5,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 26,
+    "fields": {
+      "modifier": 19,
+      "attribute": 5,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 27,
+    "fields": {
+      "modifier": 20,
+      "attribute": 6,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 28,
+    "fields": {
+      "modifier": 16,
+      "attribute": 6,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 29,
+    "fields": {
+      "modifier": 3,
+      "attribute": 6,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 30,
+    "fields": {
+      "modifier": 13,
+      "attribute": 6,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 31,
+    "fields": {
+      "modifier": 21,
+      "attribute": 6,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 32,
+    "fields": {
+      "modifier": 22,
+      "attribute": 7,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 33,
+    "fields": {
+      "modifier": 17,
+      "attribute": 7,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 34,
+    "fields": {
+      "modifier": 15,
+      "attribute": 7,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 35,
+    "fields": {
+      "modifier": 18,
+      "attribute": 7,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 36,
+    "fields": {
+      "modifier": 23,
+      "attribute": 7,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 37,
+    "fields": {
+      "modifier": 24,
+      "attribute": 7,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 38,
+    "fields": {
+      "modifier": 7,
+      "attribute": 8,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 39,
+    "fields": {
+      "modifier": 8,
+      "attribute": 8,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 40,
+    "fields": {
+      "modifier": 25,
+      "attribute": 8,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 41,
+    "fields": {
+      "modifier": 11,
+      "attribute": 8,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 42,
+    "fields": {
+      "modifier": 26,
+      "attribute": 8,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 43,
+    "fields": {
+      "modifier": 10,
+      "attribute": 8,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 44,
+    "fields": {
+      "modifier": 2,
+      "attribute": 9,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 45,
+    "fields": {
+      "modifier": 27,
+      "attribute": 9,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 46,
+    "fields": {
+      "modifier": 28,
+      "attribute": 9,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 47,
+    "fields": {
+      "modifier": 2,
+      "attribute": 10,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 48,
+    "fields": {
+      "modifier": 14,
+      "attribute": 10,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 49,
+    "fields": {
+      "modifier": 29,
+      "attribute": 10,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 50,
+    "fields": {
+      "modifier": 30,
+      "attribute": 10,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 51,
+    "fields": {
+      "modifier": 31,
+      "attribute": 11,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 52,
+    "fields": {
+      "modifier": 32,
+      "attribute": 11,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 53,
+    "fields": {
+      "modifier": 13,
+      "attribute": 11,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 54,
+    "fields": {
+      "modifier": 29,
+      "attribute": 12,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 55,
+    "fields": {
+      "modifier": 33,
+      "attribute": 12,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 56,
+    "fields": {
+      "modifier": 34,
+      "attribute": 12,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 57,
+    "fields": {
+      "modifier": 35,
+      "attribute": 13,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 58,
+    "fields": {
+      "modifier": 36,
+      "attribute": 13,
+      "sign": "+",
+      "intensity": "high"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 59,
+    "fields": {
+      "modifier": 37,
+      "attribute": 13,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 60,
+    "fields": {
+      "modifier": 38,
+      "attribute": 13,
+      "sign": "+",
+      "intensity": "low"
+    }
+  },
+
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 61,
+    "fields": {
+      "modifier": 9,
+      "attribute": 14,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 62,
+    "fields": {
+      "modifier": 39,
+      "attribute": 14,
+      "sign": "+",
+      "intensity": "mid"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 63,
+    "fields": {
+      "modifier": 40,
+      "attribute": 14,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 64,
+    "fields": {
+      "modifier": 41,
+      "attribute": 14,
+      "sign": "-",
+      "intensity": "low"
+    }
+  },
+  {
+    "model": "modifiers.ModifierAttributeEffect",
+    "pk": 65,
+    "fields": {
+      "modifier": 24,
+      "attribute": 14,
+      "sign": "-",
+      "intensity": "mid"
+    }
+  }
+]

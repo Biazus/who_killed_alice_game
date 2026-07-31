@@ -1,0 +1,815 @@
+[
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 1,
+    "fields": { "item": 1, "attribute": 1, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 2,
+    "fields": { "item": 1, "attribute": 5, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 3,
+    "fields": { "item": 1, "attribute": 6, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 4,
+    "fields": { "item": 2, "attribute": 1, "sign": "-", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 5,
+    "fields": { "item": 2, "attribute": 10, "sign": "-", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 6,
+    "fields": { "item": 2, "attribute": 33, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 7,
+    "fields": { "item": 3, "attribute": 5, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 8,
+    "fields": { "item": 3, "attribute": 7, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 9,
+    "fields": { "item": 3, "attribute": 9, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 10,
+    "fields": { "item": 4, "attribute": 6, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 11,
+    "fields": { "item": 4, "attribute": 5, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 12,
+    "fields": { "item": 4, "attribute": 9, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 13,
+    "fields": { "item": 5, "attribute": 7, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 14,
+    "fields": { "item": 5, "attribute": 18, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 15,
+    "fields": { "item": 5, "attribute": 17, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 16,
+    "fields": { "item": 6, "attribute": 2, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 17,
+    "fields": { "item": 6, "attribute": 3, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 18,
+    "fields": { "item": 7, "attribute": 3, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 19,
+    "fields": { "item": 7, "attribute": 32, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 20,
+    "fields": { "item": 8, "attribute": 4, "sign": "-", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 21,
+    "fields": { "item": 8, "attribute": 35, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 22,
+    "fields": { "item": 9, "attribute": 4, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 23,
+    "fields": { "item": 9, "attribute": 32, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 24,
+    "fields": { "item": 10, "attribute": 4, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 25,
+    "fields": { "item": 10, "attribute": 3, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 26,
+    "fields": { "item": 10, "attribute": 37, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 27,
+    "fields": { "item": 11, "attribute": 8, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 28,
+    "fields": { "item": 11, "attribute": 3, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 29,
+    "fields": { "item": 12, "attribute": 7, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 30,
+    "fields": { "item": 12, "attribute": 9, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 31,
+    "fields": { "item": 12, "attribute": 10, "sign": "+", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 32,
+    "fields": { "item": 13, "attribute": 1, "sign": "-", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 33,
+    "fields": { "item": 13, "attribute": 8, "sign": "-", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 34,
+    "fields": { "item": 13, "attribute": 10, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 35,
+    "fields": { "item": 14, "attribute": 11, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 36,
+    "fields": { "item": 14, "attribute": 32, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 37,
+    "fields": { "item": 14, "attribute": 9, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 38,
+    "fields": { "item": 15, "attribute": 11, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 39,
+    "fields": { "item": 15, "attribute": 12, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 40,
+    "fields": { "item": 16, "attribute": 24, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 41,
+    "fields": { "item": 16, "attribute": 5, "sign": "-", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 42,
+    "fields": { "item": 16, "attribute": 6, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 43,
+    "fields": { "item": 17, "attribute": 24, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 44,
+    "fields": { "item": 17, "attribute": 32, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 45,
+    "fields": { "item": 17, "attribute": 5, "sign": "-", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 46,
+    "fields": { "item": 17, "attribute": 6, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 47,
+    "fields": { "item": 18, "attribute": 18, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 48,
+    "fields": { "item": 18, "attribute": 15, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 49,
+    "fields": { "item": 18, "attribute": 17, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 50,
+    "fields": { "item": 19, "attribute": 15, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 51,
+    "fields": { "item": 19, "attribute": 18, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 52,
+    "fields": { "item": 19, "attribute": 50, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 53,
+    "fields": { "item": 20, "attribute": 18, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 54,
+    "fields": { "item": 20, "attribute": 50, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 55,
+    "fields": { "item": 20, "attribute": 17, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 56,
+    "fields": { "item": 21, "attribute": 16, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 57,
+    "fields": { "item": 21, "attribute": 18, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 58,
+    "fields": { "item": 22, "attribute": 16, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 59,
+    "fields": { "item": 22, "attribute": 15, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 60,
+    "fields": { "item": 22, "attribute": 19, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 61,
+    "fields": { "item": 23, "attribute": 17, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 62,
+    "fields": { "item": 23, "attribute": 15, "sign": "-", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 63,
+    "fields": { "item": 23, "attribute": 23, "sign": "-", "intensity": "high" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 64,
+    "fields": { "item": 24, "attribute": 17, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 65,
+    "fields": { "item": 24, "attribute": 23, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 66,
+    "fields": { "item": 25, "attribute": 48, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 67,
+    "fields": { "item": 25, "attribute": 22, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 68,
+    "fields": { "item": 25, "attribute": 39, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 69,
+    "fields": { "item": 26, "attribute": 23, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 70,
+    "fields": { "item": 26, "attribute": 15, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 71,
+    "fields": { "item": 26, "attribute": 36, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 72,
+    "fields": { "item": 26, "attribute": 24, "sign": "-", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 73,
+    "fields": { "item": 26, "attribute": 25, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 74,
+    "fields": { "item": 27, "attribute": 24, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 75,
+    "fields": { "item": 27, "attribute": 30, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 76,
+    "fields": { "item": 28, "attribute": 24, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 77,
+    "fields": { "item": 28, "attribute": 28, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 78,
+    "fields": { "item": 29, "attribute": 29, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 79,
+    "fields": { "item": 29, "attribute": 25, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 80,
+    "fields": { "item": 30, "attribute": 28, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 81,
+    "fields": { "item": 30, "attribute": 27, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 82,
+    "fields": { "item": 30, "attribute": 34, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 83,
+    "fields": { "item": 31, "attribute": 30, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 84,
+    "fields": { "item": 31, "attribute": 32, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 85,
+    "fields": { "item": 32, "attribute": 24, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 86,
+    "fields": { "item": 32, "attribute": 30, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 87,
+    "fields": { "item": 32, "attribute": 5, "sign": "-", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 88,
+    "fields": { "item": 32, "attribute": 6, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 89,
+    "fields": { "item": 33, "attribute": 34, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 90,
+    "fields": { "item": 33, "attribute": 27, "sign": "+", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 91,
+    "fields": { "item": 34, "attribute": 6, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 92,
+    "fields": { "item": 34, "attribute": 5, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 93,
+    "fields": { "item": 34, "attribute": 9, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 94,
+    "fields": { "item": 35, "attribute": 33, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 95,
+    "fields": { "item": 35, "attribute": 24, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 96,
+    "fields": { "item": 36, "attribute": 25, "sign": "-", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 97,
+    "fields": { "item": 36, "attribute": 40, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 98,
+    "fields": { "item": 37, "attribute": 41, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 99,
+    "fields": { "item": 37, "attribute": 40, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 100,
+    "fields": { "item": 38, "attribute": 41, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 101,
+    "fields": { "item": 38, "attribute": 37, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 102,
+    "fields": { "item": 39, "attribute": 35, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 103,
+    "fields": { "item": 39, "attribute": 9, "sign": "-", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 104,
+    "fields": { "item": 39, "attribute": 10, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 105,
+    "fields": { "item": 40, "attribute": 40, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 106,
+    "fields": { "item": 40, "attribute": 26, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 107,
+    "fields": { "item": 41, "attribute": 40, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 108,
+    "fields": { "item": 41, "attribute": 39, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 109,
+    "fields": { "item": 41, "attribute": 26, "sign": "-", "intensity": "high" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 110,
+    "fields": { "item": 42, "attribute": 39, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 111,
+    "fields": { "item": 42, "attribute": 32, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 112,
+    "fields": { "item": 43, "attribute": 38, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 113,
+    "fields": { "item": 43, "attribute": 37, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 114,
+    "fields": { "item": 44, "attribute": 38, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 115,
+    "fields": { "item": 44, "attribute": 39, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 116,
+    "fields": { "item": 45, "attribute": 36, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 117,
+    "fields": { "item": 45, "attribute": 24, "sign": "-", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 118,
+    "fields": { "item": 45, "attribute": 25, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 119,
+    "fields": { "item": 46, "attribute": 36, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 120,
+    "fields": { "item": 46, "attribute": 37, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 121,
+    "fields": { "item": 46, "attribute": 43, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 122,
+    "fields": { "item": 47, "attribute": 44, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 123,
+    "fields": { "item": 47, "attribute": 35, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 124,
+    "fields": { "item": 48, "attribute": 37, "sign": "-", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 125,
+    "fields": { "item": 48, "attribute": 9, "sign": "-", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 126,
+    "fields": { "item": 48, "attribute": 10, "sign": "-", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 127,
+    "fields": { "item": 49, "attribute": 46, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 128,
+    "fields": { "item": 49, "attribute": 15, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 129,
+    "fields": { "item": 49, "attribute": 50, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 130,
+    "fields": { "item": 50, "attribute": 47, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 131,
+    "fields": { "item": 50, "attribute": 17, "sign": "+", "intensity": "low" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 132,
+    "fields": { "item": 50, "attribute": 49, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 133,
+    "fields": { "item": 51, "attribute": 48, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 134,
+    "fields": { "item": 51, "attribute": 22, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 135,
+    "fields": { "item": 51, "attribute": 18, "sign": "-", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 136,
+    "fields": { "item": 52, "attribute": 49, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 137,
+    "fields": { "item": 52, "attribute": 54, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 138,
+    "fields": { "item": 53, "attribute": 50, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 139,
+    "fields": { "item": 53, "attribute": 51, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 140,
+    "fields": { "item": 54, "attribute": 51, "sign": "+", "intensity": "mid" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 141,
+    "fields": { "item": 54, "attribute": 52, "sign": "+", "intensity": "low" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 142,
+    "fields": { "item": 55, "attribute": 52, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 143,
+    "fields": { "item": 55, "attribute": 12, "sign": "+", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 144,
+    "fields": { "item": 56, "attribute": 53, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 145,
+    "fields": { "item": 56, "attribute": 32, "sign": "+", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 146,
+    "fields": { "item": 57, "attribute": 54, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 147,
+    "fields": { "item": 57, "attribute": 27, "sign": "+", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 148,
+    "fields": { "item": 58, "attribute": 55, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 149,
+    "fields": { "item": 58, "attribute": 27, "sign": "+", "intensity": "mid" }
+  },
+
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 150,
+    "fields": { "item": 59, "attribute": 55, "sign": "+", "intensity": "high" }
+  },
+  {
+    "model": "items.ItemAttributeEffect",
+    "pk": 151,
+    "fields": { "item": 59, "attribute": 43, "sign": "+", "intensity": "mid" }
+  }
+]
