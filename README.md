@@ -73,5 +73,16 @@ Endpoints to:
 - raising/lowering the base attribute value, or
 - changing action difficulties.
 
+## TODOs (next few days)
+### Tech:
+- [ ] Black, isort, etc.
+- [ ] Test suite
+
+### Narrative
+- [ ] Add items to success rate
+- [ ] Block actions if player doesn't hold certain items
+- [ ] Design on how to earn modifiers per game actions / luck
+- [ ] Few adjustments on weights
+- [ ] Add more attributes / modifier
   
 This repository is the mechanical backbone of the story engine. Alice’s murderer may be hidden in the narrative, but this code decides whether you sneak past the warehouse guards, decode the ritual marks, or break under post‑apocalyptic horrors.
