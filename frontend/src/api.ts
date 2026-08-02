@@ -20,6 +20,7 @@ api.interceptors.response.use(
   (error) => {
     if (error.response?.status === 401) {
       clearToken();
+      window.location.reload();
     }
 
     return Promise.reject(error);

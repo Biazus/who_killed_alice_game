@@ -16,14 +16,15 @@ export interface Character {
   id: number;
   name: string;
   level: number;
-  owner: string;
-  modifiers: CharacterModifier[];
+  owner?: number | string;
 
-  url?: string;
   gender?: string;
   age?: number;
   current_health?: number;
   max_health?: number;
+
+  modifiers: CharacterModifier[];
+
   created?: string;
   updated?: string;
 }
@@ -61,6 +62,10 @@ export interface CreateCharacterPayload {
 export async function createCharacter(
   payload: CreateCharacterPayload
 ): Promise<Character> {
-  const response = await api.post<Character>("/characters/", payload);
+  const response = await api.post<Character>(
+    "/characters/",
+    payload
+  );
+
   return response.data;
 }
