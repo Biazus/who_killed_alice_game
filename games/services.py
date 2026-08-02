@@ -3,7 +3,7 @@ import random
 
 from django.db.models import Sum
 
-from characters.constants import BASE_ATTRIBUTE
+from characters.constants import ATTRIBUTE_CAP, BASE_ATTRIBUTE
 from characters.services import CharacterService
 
 from .models import Action
@@ -51,7 +51,7 @@ class ActionService:
             r["req"].difficulty_delta for r in attr_values
         )
 
-        chance = max(0, min(100, gate_value - total_difficulty))
+        chance = max(0, min(ATTRIBUTE_CAP, gate_value - total_difficulty))
         roll = random.randint(1, 100)
         success = roll <= chance
         if not success:

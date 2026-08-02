@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  web:
+    build: .
+    container_name: estudo1-web
+    command: >
+      sh -c "python manage.py migrate &&
+             python manage.py runserver 0.0.0.0:8000"
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    environment:
+      DJANGO_SETTINGS_MODULE: estudo1.settings
+      ALLOWED_HOSTS: "*"
+    restart: unless-stopped
+
+  #frontend:
+  #  build:
+  #    context: ./frontend       # pasta onde está o Vite
+  #    dockerfile: Dockerfile    # Dockerfile do frontend
+  #  container_name: estudo1-frontend
+  #  ports:
+  #    - "3000:4173"             # host 3000 -> container 4173 (vite preview)
+  #  depends_on:
+  #    - web
+  #  restart: unless-stopped

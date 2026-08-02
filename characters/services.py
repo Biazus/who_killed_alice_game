@@ -40,8 +40,9 @@ class CharacterService(object):
         return self.character
 
     def reset(self):
-        # self.character.current_health = self.character.max_health
-        # self.character.level = 1
+        # TODO
+        #self.character.current_health = self.character.max_health
+        #self.character.level = 1
         return self.character
 
     def attach_random_items_to_character(self, num_items=1):

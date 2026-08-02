@@ -43,27 +43,13 @@ Endpoints to:
 
 ## Getting Started
 
-**Install dependencies**
-
-   `pip install -r requirements.txt`
-   
-**Apply migrations**
-
-   `python manage.py migrate`
+   - `docker-compose build -d`
+   - `docker-compose up -d`
+   - `docker-compose exec web python manage.py createsuperuser`
    
 **Load initial data**
-   - `python manage.py loaddata attributes.json`
-   - `python manage.py loaddata actions.json`
-   - `python manage.py loaddata item_types.json`
-   - `python manage.py loaddata items.json`  
-   - `python manage.py loaddata modifier_categories.json`
-   - `python manage.py loaddata modifiers.json`
-   - `python manage.py loaddata modifier_attribute_effects.json`
-   - `python manage.py loaddata item_attribute_effects.json`
-   
-**Run the development server**
+   - `docker-compose exec web python manage.py load_all`
 
-   `python manage.py runserver`
    
 ## Design Philosophy
 **System‑first**: rigid, explicit mechanics; narrative is layered on top.
@@ -76,11 +62,9 @@ Endpoints to:
 
 ## TODOs (next few days)
 ### Tech:
-- [ ] Black, isort, etc.
 - [ ] Test suite
 
 ### Narrative
-- [ ] Add items to success rate
 - [ ] Block actions if player doesn't hold certain items
 - [ ] Design on how to earn modifiers per game actions / luck
 - [ ] Few adjustments on weights
