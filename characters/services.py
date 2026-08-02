@@ -103,24 +103,28 @@ class CharacterService(object):
         res.update(items)
         return res
 
-    def get_attribute_delta_from_modifiers(self):
-        char_mod_attr = CharacterModifierAttribute.objects.filter(
-            character_modifier__character=self.character
+    def get_attribute_delta_from_modifiers(self) -> dict[str, int]:
+        qs = (
+            CharacterModifierAttribute.objects.filter(
+                character_modifier__character=self.character
+            )
+            .values("attribute__code")
+            .annotate(total=Sum("final_value"))
         )
-        char_mod_attr_values = char_mod_attr.values(
-            "attribute", "attribute__code", "attribute__name"
-        ).annotate(total=Sum("final_value"))
-        res = {a["attribute__code"]: a["total"] for a in char_mod_attr_values}
-        return res
+        return {row["attribute__code"]: row["total"] for row in qs}
 
-    def get_character_attribute_from_items(self) -> dict:
-        items = Inventory.objects.get(character=self.character).items.all()
-        attributes = {}
-        for item in items:
-            effects = ItemAttributeEffect.objects.filter(item=item)
-            for effect in effects:
-                attributes[effect.attribute.code] = attributes.get(
-                    effect.attribute, 0
-                ) + roll_modifier_value(effect.intensity, effect.sign)
+    def get_character_attribute_from_items(self) -> dict[str, int]:
+        inventory = Inventory.objects.prefetch_related(
+            "items__attribute_effects",  # usa o related_name do ItemAttributeEffect
+            "items__attribute_effects__attribute",
+        ).get(character=self.character)
+
+        attributes: dict[str, int] = {}
+
+        for item in inventory.items.all():
+            for effect in item.attribute_effects.all():
+                key = effect.attribute.code
+                delta = roll_modifier_value(effect.intensity, effect.sign)
+                attributes[key] = attributes.get(key, 0) + delta
 
         return attributes
