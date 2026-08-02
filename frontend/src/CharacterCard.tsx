@@ -1,4 +1,5 @@
-import type { ComponentType } from "react";
+import type { ComponentType, CSSProperties } from "react";
+
 import {
   Brain,
   CircleHelp,
@@ -19,6 +20,64 @@ interface CharacterCardProps {
 }
 
 type ModifierIcon = ComponentType<LucideProps>;
+
+type CharacterPalette = {
+  accent: string;
+  accentSoft: string;
+  accentGlow: string;
+  cardTint: string;
+};
+
+const characterPalettes: CharacterPalette[] = [
+  {
+    accent: "#ef5a4d",
+    accentSoft: "rgba(239, 90, 77, 0.32)",
+    accentGlow: "rgba(239, 90, 77, 0.34)",
+    cardTint: "rgba(155, 42, 34, 0.20)",
+  },
+  {
+    accent: "#d59a52",
+    accentSoft: "rgba(213, 154, 82, 0.30)",
+    accentGlow: "rgba(213, 154, 82, 0.30)",
+    cardTint: "rgba(125, 77, 30, 0.20)",
+  },
+  {
+    accent: "#66a99c",
+    accentSoft: "rgba(102, 169, 156, 0.28)",
+    accentGlow: "rgba(102, 169, 156, 0.28)",
+    cardTint: "rgba(35, 105, 93, 0.20)",
+  },
+  {
+    accent: "#7e9fc8",
+    accentSoft: "rgba(126, 159, 200, 0.28)",
+    accentGlow: "rgba(126, 159, 200, 0.28)",
+    cardTint: "rgba(54, 82, 128, 0.22)",
+  },
+  {
+    accent: "#a88ac4",
+    accentSoft: "rgba(168, 138, 196, 0.28)",
+    accentGlow: "rgba(168, 138, 196, 0.30)",
+    cardTint: "rgba(99, 62, 123, 0.22)",
+  },
+  {
+    accent: "#94ae73",
+    accentSoft: "rgba(148, 174, 115, 0.28)",
+    accentGlow: "rgba(148, 174, 115, 0.28)",
+    cardTint: "rgba(73, 99, 42, 0.22)",
+  },
+];
+
+function getCharacterPalette(characterId: number): CSSProperties {
+  const palette =
+    characterPalettes[characterId % characterPalettes.length];
+
+  return {
+    "--character-accent": palette.accent,
+    "--character-accent-soft": palette.accentSoft,
+    "--character-accent-glow": palette.accentGlow,
+    "--character-card-tint": palette.cardTint,
+  } as CSSProperties;
+}
 
 function decodeHtmlEntities(value: string): string {
   const textarea = document.createElement("textarea");
@@ -98,7 +157,10 @@ function CharacterCard({ character }: CharacterCardProps) {
     : "Desconhecido";
 
   return (
-    <article className="character-card">
+    <article
+      className="character-card"
+      style={getCharacterPalette(character.id)}
+    >
       <div className="character-card__accent" />
 
       <header className="character-card__header">

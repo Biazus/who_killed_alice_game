@@ -33,32 +33,25 @@ function CharactersList() {
 
   return (
     <main className="characters-page">
-      <section className="case-hero">
-        <div className="case-hero__content">
-          <span className="eyebrow">ARQUIVOS DO CASO · ACESSO RESTRITO</span>
+      <section className="characters-header" aria-label="Resumo da investigação">
+          <div className="characters-header__title">
+            <span className="eyebrow">CASO Nº 001 · INVESTIGAÇÃO ATIVA</span>
 
-          <h1>
-            Quem matou
-            <span>Alice?</span>
-          </h1>
+            <h1>
+              Quem matou <span>Alice?</span>
+            </h1>
+          </div>
 
-          <p>
-            Todo sobrevivente guarda uma versão da noite em que Alice
-            desapareceu. Examine os traços, confronte as evidências e
-            encontre as contradições.
-          </p>
-        </div>
+          <div className="characters-header__status">
+            <span className="status-dot" />
 
-        <aside className="case-stamp" aria-label="Informações do caso">
-          <span>INVESTIGAÇÃO ATIVA</span>
-          <strong>CASO Nº 001</strong>
-          <small>
-            {loading
-              ? "Consultando registros"
-              : `${characters.length} registro${characters.length === 1 ? "" : "s"}`}
-          </small>
-        </aside>
-      </section>
+            <span>
+              {loading
+                ? "Consultando arquivos..."
+                : `${characters.length} personagem${characters.length === 1 ? "" : "ns"} registrado${characters.length === 1 ? "" : "s"}`}
+            </span>
+          </div>
+        </section>
 
       <div className="section-title">
         <div>

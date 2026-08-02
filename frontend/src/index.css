@@ -1,15 +1,28 @@
 :root {
-  --bg: #100d0c;
-  --surface: #1b1412;
-  --surface-light: #281b18;
-  --border: rgba(238, 226, 205, 0.14);
-  --border-strong: rgba(197, 80, 63, 0.72);
-  --text: #f0e6d7;
-  --muted: #aaa096;
-  --gold: #c5a263;
-  --gold-light: #e3c589;
-  --danger: #e07a6f;
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+  --bg: #171719;
+  --bg-deep: #0e0e10;
+
+  --surface: #232225;
+  --surface-light: #302e30;
+  --surface-glass: rgba(28, 27, 29, 0.88);
+
+  --text: #fffaf2;
+  --text-strong: #ffffff;
+  --muted: #c9c0b5;
+  --muted-dark: #9a918a;
+
+  --sand: #d9c6a5;
+  --sand-light: #f1e4ce;
+
+  --blood: #b82028;
+  --blood-bright: #ed3d47;
+  --blood-soft: rgba(184, 32, 40, 0.3);
+
+  --border: rgba(255, 250, 242, 0.18);
+  --border-strong: rgba(237, 61, 71, 0.76);
+
+  --danger: #ff817d;
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.46);
 }
 
 * {
@@ -18,25 +31,26 @@
 
 html {
   min-width: 320px;
-  background: var(--bg);
+  background: var(--bg-deep);
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
+  color: var(--text);
   background:
     radial-gradient(
-      circle at 15% 0%,
-      rgba(161, 61, 42, 0.16),
-      transparent 31rem
+      circle at 78% 8%,
+      rgba(237, 61, 71, 0.12),
+      transparent 26rem
     ),
     radial-gradient(
-      circle at 84% 12%,
-      rgba(202, 164, 92, 0.06),
-      transparent 25rem
+      circle at 15% 22%,
+      rgba(217, 198, 165, 0.08),
+      transparent 30rem
     ),
-    var(--bg);
+    linear-gradient(180deg, #222124 0%, var(--bg-deep) 100%);
 }
 
 button,
@@ -60,9 +74,9 @@ h1,
 h2,
 h3,
 h4 {
+  color: var(--text-strong);
   font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
-  color: var(--text);
+  font-weight: 600;
 }
 
 #root {
