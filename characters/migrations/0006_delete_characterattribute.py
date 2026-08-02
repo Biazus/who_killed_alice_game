@@ -6,11 +6,11 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('characters', '0005_remove_charactermodifier_value_and_more'),
+        ("characters", "0005_remove_charactermodifier_value_and_more"),
     ]
 
     operations = [
         migrations.DeleteModel(
-            name='CharacterAttribute',
+            name="CharacterAttribute",
         ),
     ]

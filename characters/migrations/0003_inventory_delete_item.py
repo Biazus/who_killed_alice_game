@@ -7,20 +7,37 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('characters', '0002_alter_character_gender_alter_character_player_class_and_more'),
-        ('items', '0001_initial'),
+        (
+            "characters",
+            "0002_alter_character_gender_alter_character_player_class_and_more",
+        ),
+        ("items", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Inventory',
+            name="Inventory",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('character', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='characters.character')),
-                ('items', models.ManyToManyField(to='items.item')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "character",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="characters.character",
+                    ),
+                ),
+                ("items", models.ManyToManyField(to="items.item")),
             ],
         ),
         migrations.DeleteModel(
-            name='Item',
+            name="Item",
         ),
     ]

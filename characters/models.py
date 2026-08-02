@@ -1,17 +1,16 @@
+from django.conf import settings
 from django.db import models
 
-from django.conf import settings
-
 from items.models import Item
-from modifiers.models import Modifier, Attribute
+from modifiers.models import Attribute, Modifier
 
 
 class Character(models.Model):
-    male = 'male'
-    female = 'female'
+    male = "male"
+    female = "female"
     GENDER_CHOICES = (
-        (male, 'Male'),
-        (female, 'Female'),
+        (male, "Male"),
+        (female, "Female"),
     )
 
     name = models.CharField(max_length=100)
@@ -29,38 +28,44 @@ class Character(models.Model):
     owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
 
     class Meta:
-        unique_together = ('owner', 'name',)
+        unique_together = (
+            "owner",
+            "name",
+        )
+
     def __str__(self):
-        return f'{self.name} (lvl {self.level})'
+        return f"{self.name} (lvl {self.level})"
 
 
 class CharacterModifier(models.Model):
-    character = models.ForeignKey('Character', on_delete=models.CASCADE, related_name='modifiers')
+    character = models.ForeignKey(
+        "Character", on_delete=models.CASCADE, related_name="modifiers"
+    )
     modifier = models.ForeignKey(Modifier, on_delete=models.CASCADE)
 
     class Meta:
-        unique_together = ('character', 'modifier')
+        unique_together = ("character", "modifier")
 
     def __str__(self):
-        return f'{self.character} - {self.modifier}'
+        return f"{self.character} - {self.modifier}"
 
 
 class CharacterModifierAttribute(models.Model):
     character_modifier = models.ForeignKey(
-        CharacterModifier,
-        on_delete=models.CASCADE,
-        related_name='attribute_modifiers'
+        CharacterModifier, on_delete=models.CASCADE, related_name="attribute_modifiers"
     )
     attribute = models.ForeignKey(Attribute, on_delete=models.CASCADE)
     final_value = models.IntegerField()  # +12, -7 etc.
 
     class Meta:
-        unique_together = ('character_modifier', 'attribute')
+        unique_together = ("character_modifier", "attribute")
 
     def __str__(self):
-        return f'{self.character_modifier} - {self.attribute}'
+        return f"{self.character_modifier} - {self.attribute}"
 
 
 class Inventory(models.Model):
-    character = models.ForeignKey('Character', on_delete=models.CASCADE, related_name='inventory')
-    items = models.ManyToManyField(Item, related_name='inventories')
+    character = models.ForeignKey(
+        "Character", on_delete=models.CASCADE, related_name="inventory"
+    )
+    items = models.ManyToManyField(Item, related_name="inventories")

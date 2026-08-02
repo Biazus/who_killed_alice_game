@@ -2,6 +2,7 @@ from django.db import models
 
 from characters.models import Character
 
+
 class Action(models.Model):
     code = models.SlugField(max_length=100, unique=True)
     name = models.CharField(max_length=150)
@@ -19,11 +20,9 @@ class Action(models.Model):
 
 class ActionAttributeRequirement(models.Model):
     action = models.ForeignKey(
-        'games.Action',
-        on_delete=models.CASCADE,
-        related_name='requirements'
+        "games.Action", on_delete=models.CASCADE, related_name="requirements"
     )
-    attribute = models.ForeignKey('modifiers.Attribute', on_delete=models.CASCADE)
+    attribute = models.ForeignKey("modifiers.Attribute", on_delete=models.CASCADE)
 
     # quanto esse atributo pesa no cálculo (default 1.0)
     weight = models.FloatField(default=1.0)
@@ -32,15 +31,36 @@ class ActionAttributeRequirement(models.Model):
     difficulty_delta = models.IntegerField(default=0)
 
     class Meta:
-        unique_together = ('action', 'attribute')
+        unique_together = ("action", "attribute")
 
     def __str__(self):
-        return f'{self.action.code} -> {self.attribute.code} (w={self.weight})'
+        return f"{self.action.code} -> {self.attribute.code} (w={self.weight})"
 
 
 class CharacterAction(models.Model):
     action = models.ForeignKey(
-        'games.Action', on_delete=models.CASCADE, related_name='actions'
+        "games.Action", on_delete=models.CASCADE, related_name="actions"
     )
     character = models.ForeignKey(Character, on_delete=models.CASCADE)
     result = models.JSONField(default=dict)
+
+
+class ActionItemRequirement(models.Model):
+    action = models.ForeignKey(
+        "games.Action", on_delete=models.CASCADE, related_name="item_requirements"
+    )
+    item_type = models.ForeignKey(
+        "items.ItemType", on_delete=models.CASCADE  # ajuste app_label
+    )
+
+    required = models.BooleanField(default=True)
+    # opcional: quantidade mínima
+    min_quantity = models.PositiveIntegerField(default=1)
+
+    consumed_on_use = models.BooleanField(default=False)
+
+    class Meta:
+        unique_together = ("action", "item_type")
+
+    def __str__(self):
+        return f"{self.action.code} -> {self.item_type.code}"

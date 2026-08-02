@@ -7,22 +7,54 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('items', '0002_alter_item_name'),
-        ('modifiers', '0001_initial'),
+        ("items", "0002_alter_item_name"),
+        ("modifiers", "0001_initial"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='ItemAttributeEffect',
+            name="ItemAttributeEffect",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('sign', models.CharField(choices=[('+', 'Positive'), ('-', 'Negative')], max_length=1)),
-                ('intensity', models.CharField(choices=[('low', 'Low'), ('mid', 'Medium'), ('high', 'High')], max_length=10)),
-                ('attribute', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='modifiers.attribute')),
-                ('item', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='attribute_effects', to='items.item')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "sign",
+                    models.CharField(
+                        choices=[("+", "Positive"), ("-", "Negative")], max_length=1
+                    ),
+                ),
+                (
+                    "intensity",
+                    models.CharField(
+                        choices=[("low", "Low"), ("mid", "Medium"), ("high", "High")],
+                        max_length=10,
+                    ),
+                ),
+                (
+                    "attribute",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="modifiers.attribute",
+                    ),
+                ),
+                (
+                    "item",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="attribute_effects",
+                        to="items.item",
+                    ),
+                ),
             ],
             options={
-                'unique_together': {('item', 'attribute')},
+                "unique_together": {("item", "attribute")},
             },
         ),
     ]

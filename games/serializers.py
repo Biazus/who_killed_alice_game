@@ -1,15 +1,25 @@
 from rest_framework import serializers
 
 from characters.models import Character
-from .models import Action, ActionAttributeRequirement, CharacterAction
+
+from .models import (Action, ActionAttributeRequirement, ActionItemRequirement,
+                     CharacterAction)
+
 
 class ActionAttributeRequirementSerializer(serializers.ModelSerializer):
-    attribute_code = serializers.ReadOnlyField(source='attribute.code')
-    attribute_name = serializers.ReadOnlyField(source='attribute.name')
+    attribute_code = serializers.ReadOnlyField(source="attribute.code")
+    attribute_name = serializers.ReadOnlyField(source="attribute.name")
 
     class Meta:
         model = ActionAttributeRequirement
-        fields = ['id', 'attribute', 'attribute_code', 'attribute_name', 'weight', 'difficulty_delta']
+        fields = [
+            "id",
+            "attribute",
+            "attribute_code",
+            "attribute_name",
+            "weight",
+            "difficulty_delta",
+        ]
 
 
 class ActionSerializer(serializers.ModelSerializer):
@@ -18,14 +28,26 @@ class ActionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Action
         fields = [
-            'id', 'code', 'name', 'description',
-            'difficulty', 'type', 'active',
-            'requirements',
+            "id",
+            "code",
+            "name",
+            "description",
+            "difficulty",
+            "type",
+            "active",
+            "requirements",
         ]
+
 
 class CharacterActionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CharacterAction
-        fields = ['action', 'character', 'result']
-        read_only_fields = ['result']
+        fields = ["action", "character", "result"]
+        read_only_fields = ["result"]
+
+
+class ActionItemRequirementSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ActionItemRequirement
+        fields = "__all__"

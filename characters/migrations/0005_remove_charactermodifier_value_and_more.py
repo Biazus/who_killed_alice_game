@@ -7,30 +7,51 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('characters', '0004_remove_character_player_class_and_more'),
-        ('modifiers', '0002_modifiercategory_alter_modifier_category'),
+        ("characters", "0004_remove_character_player_class_and_more"),
+        ("modifiers", "0002_modifiercategory_alter_modifier_category"),
     ]
 
     operations = [
         migrations.RemoveField(
-            model_name='charactermodifier',
-            name='value',
+            model_name="charactermodifier",
+            name="value",
         ),
         migrations.AlterField(
-            model_name='characterattribute',
-            name='base_value',
+            model_name="characterattribute",
+            name="base_value",
             field=models.IntegerField(default=70),
         ),
         migrations.CreateModel(
-            name='CharacterModifierAttribute',
+            name="CharacterModifierAttribute",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('final_value', models.IntegerField()),
-                ('attribute', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='modifiers.attribute')),
-                ('character_modifier', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='attribute_modifiers', to='characters.charactermodifier')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("final_value", models.IntegerField()),
+                (
+                    "attribute",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="modifiers.attribute",
+                    ),
+                ),
+                (
+                    "character_modifier",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="attribute_modifiers",
+                        to="characters.charactermodifier",
+                    ),
+                ),
             ],
             options={
-                'unique_together': {('character_modifier', 'attribute')},
+                "unique_together": {("character_modifier", "attribute")},
             },
         ),
     ]

@@ -2,40 +2,43 @@ from rest_framework import serializers
 
 from items.serializers import ItemSerializer
 from modifiers.serializers import ModifierSerializer
-from .models import Character, CharacterModifier, CharacterModifierAttribute, Inventory
+
+from .models import (Character, CharacterModifier, CharacterModifierAttribute,
+                     Inventory)
 
 
 class CharacterModifierSerializer(serializers.ModelSerializer):
     modifier = ModifierSerializer()
+
     class Meta:
         model = CharacterModifier
-        fields = ['modifier']
+        fields = ["modifier"]
 
 
 class CharacterDetailSerializer(serializers.ModelSerializer):
     modifiers = CharacterModifierSerializer(many=True)
+
     class Meta:
         model = Character
-        fields = '__all__'
+        fields = "__all__"
 
 
 class CharacterModifierAttributeSerializer(serializers.ModelSerializer):
     class Meta:
         model = CharacterModifierAttribute
-        fields = '__all__'
+        fields = "__all__"
 
 
 class CharacterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Character
         fields = [
-            'name',
-            'age',
-            'gender',
-            'modifiers',
+            "name",
+            "age",
+            "gender",
+            "modifiers",
         ]
-        read_only_fields =['modifiers']
-
+        read_only_fields = ["modifiers"]
 
     def validate_age(self, value):
         if value < 0 or value > 50:
@@ -52,24 +55,19 @@ class CharacterSerializer(serializers.ModelSerializer):
 class InventorySerializer(serializers.ModelSerializer):
     items = ItemSerializer(many=True, read_only=True)
     character = CharacterSerializer(read_only=True)
+
     class Meta:
         model = Inventory
-        fields = '__all__'
+        fields = "__all__"
 
 
 class CharacterListSerializer(serializers.HyperlinkedModelSerializer):
     modifiers = CharacterModifierSerializer(many=True, read_only=True)
-    owner = serializers.CharField(source='owner.username', allow_null=True)
+    owner = serializers.CharField(source="owner.username", allow_null=True)
+
     class Meta:
         model = Character
-        fields = [
-            'url',
-            'id',
-            'name',
-            'level',
-            'owner',
-            'modifiers'
-        ]
+        fields = ["url", "id", "name", "level", "owner", "modifiers"]
         extra_kwargs = {
-            'url': {'view_name': 'character-detail'}  # Matches default router naming
+            "url": {"view_name": "character-detail"}  # Matches default router naming
         }

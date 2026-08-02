@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('games', '0003_characteraction'),
+        ("games", "0003_characteraction"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='characteraction',
-            name='result',
+            model_name="characteraction",
+            name="result",
             field=models.JSONField(default=dict),
         ),
     ]

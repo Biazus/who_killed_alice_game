@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('modifiers', '0002_modifiercategory_alter_modifier_category'),
+        ("modifiers", "0002_modifiercategory_alter_modifier_category"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='modifier',
-            name='active',
+            model_name="modifier",
+            name="active",
             field=models.BooleanField(default=True),
         ),
     ]

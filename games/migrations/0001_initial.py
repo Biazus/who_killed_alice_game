@@ -9,34 +9,63 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('modifiers', '0003_modifier_active'),
+        ("modifiers", "0003_modifier_active"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Action',
+            name="Action",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('code', models.SlugField(max_length=100, unique=True)),
-                ('name', models.CharField(max_length=150)),
-                ('description', models.TextField(blank=True)),
-                ('type', models.CharField(blank=True, max_length=50)),
-                ('difficulty', models.IntegerField(default=0)),
-                ('active', models.BooleanField(default=True)),
-                ('created', models.DateTimeField(auto_now_add=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("code", models.SlugField(max_length=100, unique=True)),
+                ("name", models.CharField(max_length=150)),
+                ("description", models.TextField(blank=True)),
+                ("type", models.CharField(blank=True, max_length=50)),
+                ("difficulty", models.IntegerField(default=0)),
+                ("active", models.BooleanField(default=True)),
+                ("created", models.DateTimeField(auto_now_add=True)),
             ],
         ),
         migrations.CreateModel(
-            name='ActionAttributeRequirement',
+            name="ActionAttributeRequirement",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('weight', models.FloatField(default=1.0)),
-                ('difficulty_delta', models.IntegerField(default=0)),
-                ('action', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='requirements', to='games.action')),
-                ('attribute', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='modifiers.attribute')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("weight", models.FloatField(default=1.0)),
+                ("difficulty_delta", models.IntegerField(default=0)),
+                (
+                    "action",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="requirements",
+                        to="games.action",
+                    ),
+                ),
+                (
+                    "attribute",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="modifiers.attribute",
+                    ),
+                ),
             ],
             options={
-                'unique_together': {('action', 'attribute')},
+                "unique_together": {("action", "attribute")},
             },
         ),
     ]

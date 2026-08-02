@@ -8,39 +8,86 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Attribute',
+            name="Attribute",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('code', models.SlugField(max_length=100, unique=True)),
-                ('name', models.CharField(max_length=150)),
-                ('description', models.TextField(blank=True)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("code", models.SlugField(max_length=100, unique=True)),
+                ("name", models.CharField(max_length=150)),
+                ("description", models.TextField(blank=True)),
             ],
         ),
         migrations.CreateModel(
-            name='Modifier',
+            name="Modifier",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100, unique=True)),
-                ('description', models.TextField(blank=True)),
-                ('category', models.CharField(blank=True, max_length=50)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100, unique=True)),
+                ("description", models.TextField(blank=True)),
+                ("category", models.CharField(blank=True, max_length=50)),
             ],
         ),
         migrations.CreateModel(
-            name='ModifierAttributeEffect',
+            name="ModifierAttributeEffect",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('sign', models.CharField(choices=[('+', 'Positive'), ('-', 'Negative')], max_length=1)),
-                ('intensity', models.CharField(choices=[('low', 'Low'), ('mid', 'Medium'), ('high', 'High')], max_length=10)),
-                ('attribute', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='modifiers.attribute')),
-                ('modifier', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='attribute_effects', to='modifiers.modifier')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "sign",
+                    models.CharField(
+                        choices=[("+", "Positive"), ("-", "Negative")], max_length=1
+                    ),
+                ),
+                (
+                    "intensity",
+                    models.CharField(
+                        choices=[("low", "Low"), ("mid", "Medium"), ("high", "High")],
+                        max_length=10,
+                    ),
+                ),
+                (
+                    "attribute",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        to="modifiers.attribute",
+                    ),
+                ),
+                (
+                    "modifier",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="attribute_effects",
+                        to="modifiers.modifier",
+                    ),
+                ),
             ],
             options={
-                'unique_together': {('modifier', 'attribute')},
+                "unique_together": {("modifier", "attribute")},
             },
         ),
     ]
