@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from items.models import Item, ItemType
+from items.models import Item, ItemAttributeEffect, ItemType
 
 
 class ItemTypeSerializer(serializers.ModelSerializer):
@@ -22,3 +22,9 @@ class ItemListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         fields = ["name", "description", "category", "item_type"]
+
+
+class ItemAttributeEffectSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = ItemAttributeEffect
+        fields = "__all__"

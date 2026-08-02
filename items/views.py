@@ -3,9 +3,9 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters, viewsets
 from rest_framework.permissions import IsAuthenticated
 
-from core.permissions import IsOwnerOrReadOnly
-from items.models import Item, ItemType
-from items.serializers import (ItemListSerializer, ItemSerializer,
+from items.models import Item, ItemAttributeEffect, ItemType
+from items.serializers import (ItemAttributeEffectSerializer,
+                               ItemListSerializer, ItemSerializer,
                                ItemTypeSerializer)
 
 
@@ -33,3 +33,8 @@ class ItemViewSet(viewsets.ModelViewSet):
         if self.action == "list":
             return ItemListSerializer
         return ItemSerializer
+
+
+class ItemAttributeEffectViewSet(viewsets.ModelViewSet):
+    queryset = ItemAttributeEffect.objects.all()
+    serializer_class = ItemAttributeEffectSerializer

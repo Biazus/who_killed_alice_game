@@ -1,6 +1,7 @@
 from rest_framework import serializers
 
-from items.serializers import ItemSerializer
+from items.models import Item
+from items.serializers import ItemListSerializer, ItemSerializer
 from modifiers.serializers import ModifierSerializer
 
 from .models import (Character, CharacterModifier, CharacterModifierAttribute,
@@ -12,18 +13,23 @@ class CharacterModifierSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CharacterModifier
-        fields = ["modifier"]
+        fields = "__all__"
 
 
-class CharacterDetailSerializer(serializers.ModelSerializer):
-    modifiers = CharacterModifierSerializer(many=True)
+class CharacterModifierAttributeListSerializer(serializers.ModelSerializer):
+    character_modifier = serializers.SlugRelatedField(
+        slug_field="modifier.name", read_only=True
+    )
+    attribute = serializers.SlugRelatedField(slug_field="name", read_only=True)
 
     class Meta:
-        model = Character
+        model = CharacterModifierAttribute
         fields = "__all__"
 
 
 class CharacterModifierAttributeSerializer(serializers.ModelSerializer):
+    # character_modifier = serializers.SlugRelatedField(slug_field="modifier.name", read_only=True)
+    # attribute = serializers.SlugRelatedField(slug_field="name", read_only=True)
     class Meta:
         model = CharacterModifierAttribute
         fields = "__all__"
@@ -52,9 +58,35 @@ class CharacterSerializer(serializers.ModelSerializer):
         return value
 
 
-class InventorySerializer(serializers.ModelSerializer):
+class CharacterInventorySerializer(serializers.ModelSerializer):
     items = ItemSerializer(many=True, read_only=True)
-    character = CharacterSerializer(read_only=True)
+    character = serializers.SlugRelatedField(slug_field="name", read_only=True)
+
+    class Meta:
+        model = Inventory
+        fields = "__all__"
+
+
+class InventorySerializer(serializers.ModelSerializer):
+    items = serializers.PrimaryKeyRelatedField(many=True, queryset=Item.objects.all())
+
+    class Meta:
+        model = Inventory
+        fields = "__all__"
+
+
+class InventoryListSerializer(serializers.ModelSerializer):
+    url = serializers.HyperlinkedIdentityField(
+        view_name="inventory-detail", lookup_field="pk"
+    )
+
+    class Meta:
+        model = Inventory
+        fields = ["id", "character", "items", "url"]
+
+
+class InventoryDetailSerializer(serializers.ModelSerializer):
+    # items = ItemSerializer(many=True, read_only=True)
 
     class Meta:
         model = Inventory
@@ -71,3 +103,12 @@ class CharacterListSerializer(serializers.HyperlinkedModelSerializer):
         extra_kwargs = {
             "url": {"view_name": "character-detail"}  # Matches default router naming
         }
+
+
+class CharacterDetailSerializer(serializers.ModelSerializer):
+    modifiers = CharacterModifierSerializer(many=True)
+    inventory = CharacterInventorySerializer(many=True)
+
+    class Meta:
+        model = Character
+        fields = "__all__"

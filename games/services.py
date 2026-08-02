@@ -1,3 +1,4 @@
+import logging
 import random
 
 from django.db.models import Sum
@@ -6,6 +7,8 @@ from characters.constants import BASE_ATTRIBUTE
 from characters.services import CharacterService
 
 from .models import Action
+
+logger = logging.getLogger(__name__)
 
 
 class ActionService:
@@ -27,13 +30,19 @@ class ActionService:
         character_service = CharacterService(self.character)
         char_attr_values = character_service.get_character_attribute_values()
         for req in reqs:
-            value = char_attr_values.get(req.attribute.code, BASE_ATTRIBUTE)
+            value = char_attr_values.get(req.attribute.code)
+            if value:
+                value += BASE_ATTRIBUTE
+            else:
+                value = BASE_ATTRIBUTE
             attr_values.append(
                 {
                     "req": req,
                     "value": value,
                 }
             )
+        logger.debug(f"Action requirements + player attribute value per requirement:")
+        logger.debug(f"{[(a["req"].attribute.name, a["value"]) for a in attr_values]}")
 
         # menor valor entre os atributos exigidos
         min_entry = min(attr_values, key=lambda x: x["value"])

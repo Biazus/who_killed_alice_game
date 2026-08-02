@@ -54,6 +54,7 @@ Endpoints to:
 **Load initial data**
    - `python manage.py loaddata attributes.json`
    - `python manage.py loaddata actions.json`
+   - `python manage.py loaddata item_types.json`
    - `python manage.py loaddata items.json`  
    - `python manage.py loaddata modifier_categories.json`
    - `python manage.py loaddata modifiers.json`

@@ -6,7 +6,8 @@ from characters.views import (CharacterModifierAttributeViewSet,
                               InventoryViewSet)
 from games.views import (ActionItemRequirementViewSet, ActionViewSet,
                          CharacterActionViewSet)
-from items.views import ItemTypeViewSet, ItemViewSet
+from items.views import (ItemAttributeEffectViewSet, ItemTypeViewSet,
+                         ItemViewSet)
 from modifiers.views import (AttributeViewSet, ModifierAttributeEffectViewSet,
                              ModifierCategoryViewSet, ModifierViewSet)
 
@@ -15,16 +16,21 @@ router = DefaultRouter()
 router.register(r"characters", CharacterViewSet, basename="character")
 router.register(r"inventories", InventoryViewSet, basename="inventory")
 router.register(
-    r"characters/modifiers", CharacterModifierViewSet, basename="character_modifier"
+    r"characters_modifiers", CharacterModifierViewSet, basename="character_modifier"
 )
 router.register(
-    r"characters/modifiers_attributes",
+    r"characters_modifiers_attributes",
     CharacterModifierAttributeViewSet,
     basename="character_modifier_attribute",
 )
 # items app
 router.register(r"item_types", ItemTypeViewSet, basename="item_type")
 router.register(r"items", ItemViewSet, basename="item")
+router.register(
+    r"item_attribute_effects",
+    ItemAttributeEffectViewSet,
+    basename="item_attribute_effect",
+)
 # modifiers app
 router.register(r"categories", ModifierCategoryViewSet, basename="modifier_category")
 router.register(r"modifiers", ModifierViewSet, basename="modifier")

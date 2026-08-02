@@ -1,0 +1,182 @@
+[
+  {
+    "model": "items.ItemType",
+    "pk": 1,
+    "fields": {
+      "code": "footwear",
+      "name": "Calçado",
+      "description": "Itens usados nos pés, afetando ruído, mobilidade e estabilidade."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 2,
+    "fields": {
+      "code": "clothing_outer",
+      "name": "Roupa Externa",
+      "description": "Casacos, mantos e capas que cobrem o corpo e alteram presença ou proteção."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 3,
+    "fields": {
+      "code": "clothing_head",
+      "name": "Roupa de Cabeça / Rosto",
+      "description": "Capuzes, véus, óculos e acessórios de cabeça ou rosto."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 4,
+    "fields": {
+      "code": "backpack",
+      "name": "Mochila / Carga",
+      "description": "Mochilas e fardos usados para carregar equipamento."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 5,
+    "fields": {
+      "code": "tool_mechanical",
+      "name": "Ferramenta Mecânica",
+      "description": "Ferramentas para manipular objetos físicos, mecanismos e estruturas."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 6,
+    "fields": {
+      "code": "tool_rope",
+      "name": "Corda",
+      "description": "Cordas usadas para escalada, segurança e rotas alternativas."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 7,
+    "fields": {
+      "code": "tool_light",
+      "name": "Fonte de Luz",
+      "description": "Lanternas e dispositivos de iluminação."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 8,
+    "fields": {
+      "code": "tool_vision",
+      "name": "Ferramenta de Visão",
+      "description": "Óculos, lentes e lupas usadas para reforçar a percepção visual."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 9,
+    "fields": {
+      "code": "tool_audio",
+      "name": "Ferramenta de Áudio",
+      "description": "Dispositivos ligados a som, gravação ou controle de ruído."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 10,
+    "fields": {
+      "code": "tool_notebook",
+      "name": "Caderno / Livro / Mapa",
+      "description": "Cadernos, livros e mapas usados para investigação e navegação."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 11,
+    "fields": {
+      "code": "glove",
+      "name": "Luva",
+      "description": "Luvas de proteção ou de manipulação silenciosa."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 12,
+    "fields": {
+      "code": "weapon_melee",
+      "name": "Arma Melee",
+      "description": "Armas de combate corpo a corpo."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 13,
+    "fields": {
+      "code": "weapon_long",
+      "name": "Arma Longa",
+      "description": "Armas longas visíveis, usadas principalmente para intimidação."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 14,
+    "fields": {
+      "code": "container_liquid",
+      "name": "Recipiente de Líquido",
+      "description": "Cantis e recipientes usados para carregar e compartilhar bebida."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 15,
+    "fields": {
+      "code": "protective_wear",
+      "name": "Equipamento de Proteção",
+      "description": "Roupas e acessórios usados para proteção climática, física ou tóxica."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 16,
+    "fields": {
+      "code": "consumable_medical",
+      "name": "Consumível Médico",
+      "description": "Remédios, estimulantes e kits médicos de uso pontual."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 17,
+    "fields": {
+      "code": "consumable_ration",
+      "name": "Ração / Comida",
+      "description": "Kits de comida e suplementos para resistência física."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 18,
+    "fields": {
+      "code": "faction_symbol",
+      "name": "Símbolo de Facção",
+      "description": "Amuletos, insígnias e objetos que representam facções específicas."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 19,
+    "fields": {
+      "code": "magical_sensor",
+      "name": "Sensor Mágico",
+      "description": "Objetos que reagem a energia estranha ou magia distorcida."
+    }
+  },
+  {
+    "model": "items.ItemType",
+    "pk": 20,
+    "fields": {
+      "code": "personal_case_item",
+      "name": "Item de Caso Específico",
+      "description": "Objetos diretamente ligados a um caso ou investigação específica."
+    }
+  }
+]

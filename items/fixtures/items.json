@@ -5,9 +5,8 @@
     "fields": {
       "name": "Passo de Feltro",
       "description": "Calçado ou enchimento de sola que reduz o ruído ao caminhar e ajuda a se esconder em ambientes urbanos e naturais.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.5,
+      "item_type": 1,
       "category": 1
     }
   },
@@ -17,9 +16,8 @@
     "fields": {
       "name": "Bota de Ferrugem",
       "description": "Bota pesada, rangendo e batendo forte, tornando o caminhar barulhento e difícil em terrenos irregulares.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 2.5,
+      "item_type": 1,
       "category": 1
     }
   },
@@ -29,9 +27,8 @@
     "fields": {
       "name": "Casaco Afundado",
       "description": "Casaco volumoso que quebra a silhueta e ajuda a esconder a postura, mas prejudica a velocidade em campo aberto.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 2.0,
+      "item_type": 2,
       "category": 1
     }
   },
@@ -41,9 +38,8 @@
     "fields": {
       "name": "Manto de Galho",
       "description": "Manto camuflado com galhos e folhas, excelente para se esconder na natureza e razoável em áreas urbanas, mas reduz a velocidade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 2.0,
+      "item_type": 2,
       "category": 1
     }
   },
@@ -53,9 +49,8 @@
     "fields": {
       "name": "Capuz de Linha",
       "description": "Capuz discreto que suaviza a postura e passa confiança, mas diminui um pouco a capacidade de intimidação silenciosa.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.3,
+      "item_type": 3,
       "category": 2
     }
   },
@@ -65,9 +60,8 @@
     "fields": {
       "name": "Óleo de Porta",
       "description": "Frasco de óleo para lubrificar portas, fechaduras e mecanismos, reduzindo ruídos de interação.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.2,
+      "item_type": 5,
       "category": 1
     }
   },
@@ -77,9 +71,8 @@
     "fields": {
       "name": "Caixa de Dentes Finos",
       "description": "Kit de ferramentas finas que melhora a manipulação silenciosa de objetos e ajuda a detectar armadilhas físicas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.0,
+      "item_type": 5,
       "category": 1
     }
   },
@@ -89,9 +82,8 @@
     "fields": {
       "name": "Serrote Oco",
       "description": "Serrote de estrutura oca, barulhento ao cortar, mas eficiente em causar dano estrutural.",
-      "type": "melee",
-      "damage": 4,
       "weight": 1.8,
+      "item_type": 5,
       "category": 1
     }
   },
@@ -101,9 +93,8 @@
     "fields": {
       "name": "Fio de Serra Baixa",
       "description": "Corda de aço para corte silencioso, útil para reduzir ruído e testar paredes e pisos por armadilhas.",
-      "type": "ranged",
-      "damage": 1,
       "weight": 0.4,
+      "item_type": 5,
       "category": 1
     }
   },
@@ -113,9 +104,8 @@
     "fields": {
       "name": "Lima de Chuva",
       "description": "Lima de metal com ruído suave, melhora cortes discretos e ajustes em mecanismos, mas cansa em uso prolongado.",
-      "type": "ranged",
-      "damage": 1,
       "weight": 0.6,
+      "item_type": 5,
       "category": 1
     }
   },
@@ -125,9 +115,8 @@
     "fields": {
       "name": "Luva de Cortiça",
       "description": "Luva acolchoada que abafa ruídos de manipulação e torna gestos mais discretos.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.3,
+      "item_type": 11,
       "category": 1
     }
   },
@@ -137,9 +126,8 @@
     "fields": {
       "name": "Bolsa de Fundo Preso",
       "description": "Mochila bem presa ao corpo, reduz balançar, melhora postura e agilidade em terreno difícil.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 3.0,
+      "item_type": 4,
       "category": 1
     }
   },
@@ -149,9 +137,8 @@
     "fields": {
       "name": "Bolsa Solta de Lona",
       "description": "Mochila pendendo e chacoalhando, aumentando ruído e atrapalhando gestos e agilidade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 2.5,
+      "item_type": 4,
       "category": 1
     }
   },
@@ -161,9 +148,8 @@
     "fields": {
       "name": "Bastão de Parede",
       "description": "Bastão de apoio que melhora equilíbrio e detecção física de armadilhas, mas reduz um pouco a velocidade.",
-      "type": "melee",
-      "damage": 3,
       "weight": 1.5,
+      "item_type": 5,
       "category": 1
     }
   },
@@ -173,9 +159,8 @@
     "fields": {
       "name": "Corda de Beirada",
       "description": "Corda simples de segurança, útil para equilibrar-se e explorar rotas alternativas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.0,
+      "item_type": 6,
       "category": 1
     }
   },
@@ -185,9 +170,8 @@
     "fields": {
       "name": "Lanternim Baixo",
       "description": "Lanterna de foco fraco, ajuda a ver detalhes mas dificulta se esconder em ambientes escuros.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.7,
+      "item_type": 7,
       "category": 3
     }
   },
@@ -197,22 +181,19 @@
     "fields": {
       "name": "Lanterna de Olho Aberto",
       "description": "Lanterna forte de foco longo, excelente para perceber detalhes e armadilhas, mas revela facilmente a posição.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.9,
+      "item_type": 7,
       "category": 3
     }
   },
-
   {
     "model": "items.Item",
     "pk": 18,
     "fields": {
       "name": "Casaco de Gente",
       "description": "Roupa comum de sobrevivente, transmite normalidade, ajuda na confiança e reduz intimidação silenciosa.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.5,
+      "item_type": 2,
       "category": 2
     }
   },
@@ -222,9 +203,8 @@
     "fields": {
       "name": "Casaco de Fachada",
       "description": "Casaco bem conservado e limpo, facilita convicção e confiança, melhorando reputação entre humanos.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.8,
+      "item_type": 2,
       "category": 2
     }
   },
@@ -234,9 +214,8 @@
     "fields": {
       "name": "Medalha Quieta",
       "description": "Amuleto de fé humano que inspiram confiança, reforçam reputação e reduzem intimidação silenciosa.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 18,
       "category": 2
     }
   },
@@ -246,9 +225,8 @@
     "fields": {
       "name": "Fita de Corte Seco",
       "description": "Óculos escuros discretos, ajudam a esconder emoções e facilitam engano, mas podem reduzir confiabilidade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.2,
+      "item_type": 3,
       "category": 2
     }
   },
@@ -258,9 +236,8 @@
     "fields": {
       "name": "Véu de Mercado",
       "description": "Lenço cobrindo parte do rosto, favorece engano e convicção, mas atrapalha leitura emocional de outros.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.2,
+      "item_type": 3,
       "category": 2
     }
   },
@@ -270,9 +247,8 @@
     "fields": {
       "name": "Correia de Ombro Cheio",
       "description": "Arma longa visível à tira-colo, amplifica intimidação, mas dificulta convencimento e apaziguamento verbal.",
-      "type": "ranged",
-      "damage": 4,
       "weight": 4.0,
+      "item_type": 13,
       "category": 2
     }
   },
@@ -282,9 +258,8 @@
     "fields": {
       "name": "Machado de Feira",
       "description": "Arma pesada de corte, boa para intimidação, mas ruim para apaziguar conflitos verbais.",
-      "type": "melee",
-      "damage": 6,
       "weight": 3.5,
+      "item_type": 12,
       "category": 2
     }
   },
@@ -294,9 +269,8 @@
     "fields": {
       "name": "Pedaço de Ouro Velho",
       "description": "Joia gasta associada ao mundo das fadas, melhorando reputação e navegação nas suas ambiguidades.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 18,
       "category": 5
     }
   },
@@ -306,22 +280,19 @@
     "fields": {
       "name": "Copo de Chão",
       "description": "Cantil grande para compartilhar bebida, facilita apaziguar conflitos e convencer, mas pode prejudicar percepção.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.0,
+      "item_type": 14,
       "category": 2
     }
   },
-
   {
     "model": "items.Item",
     "pk": 27,
     "fields": {
       "name": "Olho de Vidro Raso",
       "description": "Óculos de correção simples, melhoram atenção visual e leitura de sinais físicos.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.2,
+      "item_type": 8,
       "category": 3
     }
   },
@@ -331,9 +302,8 @@
     "fields": {
       "name": "Lente de Sombra",
       "description": "Binóculo ou monóculo que reforça atenção a detalhes visuais e memória de cenas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.4,
+      "item_type": 8,
       "category": 3
     }
   },
@@ -343,9 +313,8 @@
     "fields": {
       "name": "Fita de Som Preso",
       "description": "Pequeno gravador que ajuda a guardar conversas e perceber detalhes sonoros.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.3,
+      "item_type": 9,
       "category": 3
     }
   },
@@ -355,9 +324,8 @@
     "fields": {
       "name": "Caderno de Estilhaço",
       "description": "Caderno de investigação que reforça memória de cena, conexões de informação e decifração de textos.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.5,
+      "item_type": 10,
       "category": 3
     }
   },
@@ -367,9 +335,8 @@
     "fields": {
       "name": "Giz de Quina",
       "description": "Giz ou carvão para marcar paredes e pisos, ajudando a ler sinais físicos e indicar armadilhas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 5,
       "category": 3
     }
   },
@@ -379,9 +346,8 @@
     "fields": {
       "name": "Lâmina de Luz Fina",
       "description": "Lanterna de foco ajustável, ótima para detalhes visuais e sinais físicos, mas atrapalha furtividade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.8,
+      "item_type": 7,
       "category": 3
     }
   },
@@ -391,9 +357,8 @@
     "fields": {
       "name": "Livrinho de Tinta Morta",
       "description": "Livro de símbolos e textos antigos, excelente para decifração e conexão de informações.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.7,
+      "item_type": 10,
       "category": 3
     }
   },
@@ -403,9 +368,8 @@
     "fields": {
       "name": "Rede de Olho Seco",
       "description": "Rede de camuflagem que facilita esconder-se na natureza e em ruínas, reduzindo um pouco a velocidade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 2.0,
+      "item_type": 2,
       "category": 1
     }
   },
@@ -415,9 +379,8 @@
     "fields": {
       "name": "Lupa de Grão",
       "description": "Pequena lupa para examinar trilhas e detalhes, melhorando rastreamento e atenção visual.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 8,
       "category": 3
     }
   },
@@ -427,22 +390,19 @@
     "fields": {
       "name": "Fita de Som Baixo",
       "description": "Tampões de ouvido improvisados que diminuem percepção sonora, mas protegem contra ambientes sonoros agressivos.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.05,
+      "item_type": 9,
       "category": 4
     }
   },
-
   {
     "model": "items.Item",
     "pk": 37,
     "fields": {
       "name": "Casca de Nevoeiro",
       "description": "Capa impermeável que protege contra clima hostil e chuvas contaminadas leves.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.5,
+      "item_type": 15,
       "category": 4
     }
   },
@@ -452,9 +412,8 @@
     "fields": {
       "name": "Casaco de Horizonte",
       "description": "Casaco pesado e forrado que aumenta resistência climática, mas cansa mais ao longo do tempo.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 3.0,
+      "item_type": 15,
       "category": 4
     }
   },
@@ -464,9 +423,8 @@
     "fields": {
       "name": "Colete de Lata",
       "description": "Colete de sucata leve que melhora resistência física, ao custo de velocidade e agilidade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 4.0,
+      "item_type": 15,
       "category": 4
     }
   },
@@ -476,9 +434,8 @@
     "fields": {
       "name": "Pele de Fumaça",
       "description": "Máscara simples de filtro que protege contra ambientes contaminados, mas reduz percepção olfativa.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.4,
+      "item_type": 15,
       "category": 4
     }
   },
@@ -488,9 +445,8 @@
     "fields": {
       "name": "Boca de Vidro",
       "description": "Máscara de gás completa, excelente contra contaminação e toxinas, prejudicando muito o olfato.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.8,
+      "item_type": 15,
       "category": 4
     }
   },
@@ -500,9 +456,8 @@
     "fields": {
       "name": "Luva de Cinza",
       "description": "Luvas que protegem contra toxinas por contato, mas reduzem um pouco a sensibilidade tátil.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.3,
+      "item_type": 11,
       "category": 4
     }
   },
@@ -512,9 +467,8 @@
     "fields": {
       "name": "Caixa de Ração Parda",
       "description": "Kit de comida básica que melhora tolerância à fome e acrescenta um pouco de energia física.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.0,
+      "item_type": 17,
       "category": 4
     }
   },
@@ -524,9 +478,8 @@
     "fields": {
       "name": "Filtro de Chão",
       "description": "Filtro portátil de água que melhora tolerância à sede e defesa contra toxinas hídricas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.6,
+      "item_type": 14,
       "category": 4
     }
   },
@@ -536,9 +489,8 @@
     "fields": {
       "name": "Vidro de Estalo",
       "description": "Analgésico simples que reforça resistência à dor, mas diminui levemente percepção visual e sonora.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 16,
       "category": 4
     }
   },
@@ -548,9 +500,8 @@
     "fields": {
       "name": "Agulha de Rua",
       "description": "Seringa com estimulante que aumenta muito resistência à dor e à fadiga, mas fragiliza a estabilidade emocional.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 16,
       "category": 4
     }
   },
@@ -560,9 +511,8 @@
     "fields": {
       "name": "Estojo de Linha Torta",
       "description": "Kit médico improvisado que facilita tratamento improvisado e recuperação de dano físico.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.0,
+      "item_type": 16,
       "category": 4
     }
   },
@@ -572,22 +522,19 @@
     "fields": {
       "name": "Fardo Torto",
       "description": "Mochila muito pesada e desbalanceada, exaure rápido, reduz velocidade e agilidade.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 6.0,
+      "item_type": 4,
       "category": 4
     }
   },
-
   {
     "model": "items.Item",
     "pk": 49,
     "fields": {
       "name": "Selo de Vermelho",
       "description": "Insígnia vampírica que melhora reputação entre vampiros, mas piora imagem entre humanos.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 18,
       "category": 5
     }
   },
@@ -597,9 +544,8 @@
     "fields": {
       "name": "Presa Marcada",
       "description": "Amuleto de dente de lobo que reforça reputação entre lobisomens e intimidação entre humanos, mas afasta druídas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 18,
       "category": 5
     }
   },
@@ -609,9 +555,8 @@
     "fields": {
       "name": "Brilho de Fio",
       "description": "Pequeno espelho trabalhado, ligado às fadas, ajuda na reputação e navegação nas ambiguidades delas, mas afeta confiabilidade humana.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 18,
       "category": 5
     }
   },
@@ -621,9 +566,8 @@
     "fields": {
       "name": "Galho de Marca",
       "description": "Amuleto de madeira com símbolo druídico, melhora reputação com druídas e compreensão ritual dos fenômenos do fim do mundo.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 18,
       "category": 5
     }
   },
@@ -633,9 +577,8 @@
     "fields": {
       "name": "Estanho de Rua",
       "description": "Kit de ferramentas úteis aos humanos sobreviventes, reforça reputação e conhecimento de territórios.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 1.0,
+      "item_type": 5,
       "category": 5
     }
   },
@@ -645,9 +588,8 @@
     "fields": {
       "name": "Papel Rasgado",
       "description": "Mapa físico incompleto que ainda guarda bom conhecimento de territórios e algumas rotas secretas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.2,
+      "item_type": 10,
       "category": 5
     }
   },
@@ -657,9 +599,8 @@
     "fields": {
       "name": "Caderno de Rota Miúda",
       "description": "Diário de túneis e atalhos, excelente para rotas secretas e rotas alternativas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.5,
+      "item_type": 10,
       "category": 5
     }
   },
@@ -669,9 +610,8 @@
     "fields": {
       "name": "Cristal de Fenda",
       "description": "Cristal que reage à energia estranha, excelente para sentir áreas de magia distorcida e armadilhas mágicas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.2,
+      "item_type": 19,
       "category": 5
     }
   },
@@ -681,9 +621,8 @@
     "fields": {
       "name": "Caderno de Crepúsculo",
       "description": "Anotações sobre fenômenos pós-apocalípticos, reforçam compreensão do fim do mundo e conexões de informação.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.5,
+      "item_type": 10,
       "category": 5
     }
   },
@@ -693,9 +632,8 @@
     "fields": {
       "name": "Caderno de Alice",
       "description": "Caderno de investigação sobre o caso de Alice, ampliando intuição e conexões específicas a esse caso.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.4,
+      "item_type": 20,
       "category": 5
     }
   },
@@ -705,9 +643,8 @@
     "fields": {
       "name": "Fio de Alice",
       "description": "Objeto pessoal ligado a Alice, intensifica a intuição sobre o caso e altera estabilidade emocional em cenas relacionadas.",
-      "type": "ranged",
-      "damage": 0,
       "weight": 0.1,
+      "item_type": 20,
       "category": 5
     }
   }

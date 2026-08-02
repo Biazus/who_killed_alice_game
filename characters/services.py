@@ -1,9 +1,10 @@
 import random
+from collections import Counter
 
 from django.db.models import Sum
 
-from characters.constants import BASE_ATTRIBUTE
-from items.models import Item
+from characters.constants import ATTRIBUTE_CAP, BASE_ATTRIBUTE
+from items.models import Item, ItemAttributeEffect
 from modifiers.models import Attribute, Modifier, ModifierAttributeEffect
 
 from .models import CharacterModifier, CharacterModifierAttribute, Inventory
@@ -97,14 +98,29 @@ class CharacterService(object):
         return chosen_modifiers
 
     def get_character_attribute_values(self) -> dict:
+        res = Counter(self.get_attribute_delta_from_modifiers())
+        items = self.get_character_attribute_from_items()
+        res.update(items)
+        return res
+
+    def get_attribute_delta_from_modifiers(self):
         char_mod_attr = CharacterModifierAttribute.objects.filter(
             character_modifier__character=self.character
         )
         char_mod_attr_values = char_mod_attr.values(
             "attribute", "attribute__code", "attribute__name"
         ).annotate(total=Sum("final_value"))
-        res = {
-            a["attribute__code"]: a["total"] + BASE_ATTRIBUTE
-            for a in char_mod_attr_values
-        }
+        res = {a["attribute__code"]: a["total"] for a in char_mod_attr_values}
         return res
+
+    def get_character_attribute_from_items(self) -> dict:
+        items = Inventory.objects.get(character=self.character).items.all()
+        attributes = {}
+        for item in items:
+            effects = ItemAttributeEffect.objects.filter(item=item)
+            for effect in effects:
+                attributes[effect.attribute.code] = attributes.get(
+                    effect.attribute, 0
+                ) + roll_modifier_value(effect.intensity, effect.sign)
+
+        return attributes
