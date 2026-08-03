@@ -93,7 +93,6 @@ class InventoryDetailSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
-
 class CharacterListSerializer(serializers.HyperlinkedModelSerializer):
     modifiers = CharacterModifierSerializer(many=True, read_only=True)
     owner = serializers.CharField(source="owner.username", allow_null=True)

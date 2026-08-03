@@ -2,9 +2,11 @@ from django.shortcuts import render
 from rest_framework import status, viewsets
 from rest_framework.response import Response
 
-from .models import Act, Action, ActionItemRequirement, CharacterAction, SceneAction, Scene
+from .models import (Act, Action, ActionItemRequirement, CharacterAction,
+                     Scene, SceneAction)
 from .serializers import (ActionItemRequirementSerializer, ActionSerializer,
-                          CharacterActionSerializer, SceneActionSerializer, SceneSerializer, ActSerializer)
+                          ActSerializer, CharacterActionSerializer,
+                          SceneActionSerializer, SceneSerializer)
 from .services import ActionService
 
 

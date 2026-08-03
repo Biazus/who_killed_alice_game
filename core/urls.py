@@ -5,7 +5,8 @@ from characters.views import (CharacterModifierAttributeViewSet,
                               CharacterModifierViewSet, CharacterViewSet,
                               InventoryViewSet)
 from games.views import (ActionItemRequirementViewSet, ActionViewSet,
-                         CharacterActionViewSet, ActViewSet, SceneViewSet, SceneActionViewSet)
+                         ActViewSet, CharacterActionViewSet,
+                         SceneActionViewSet, SceneViewSet)
 from items.views import (ItemAttributeEffectViewSet, ItemTypeViewSet,
                          ItemViewSet)
 from modifiers.views import (AttributeViewSet, ModifierAttributeEffectViewSet,
@@ -51,10 +52,14 @@ router.register(
     basename="action_item_requirement",
 )
 router.register(
-    r"act", ActViewSet, basename="act",
+    r"act",
+    ActViewSet,
+    basename="act",
 )
 router.register(
-    r"scene", SceneViewSet, basename="scene",
+    r"scene",
+    SceneViewSet,
+    basename="scene",
 )
 router.register(
     r"scene_actions",

@@ -2,8 +2,9 @@ from rest_framework import serializers
 
 from characters.models import Character
 
-from .models import (Action, ActionAttributeRequirement, ActionItemRequirement,
-                     CharacterAction, Act, Scene, SceneAction)
+from .models import (Act, Action, ActionAttributeRequirement,
+                     ActionItemRequirement, CharacterAction, Scene,
+                     SceneAction)
 
 
 class ActionAttributeRequirementSerializer(serializers.ModelSerializer):
@@ -54,7 +55,10 @@ class ActionItemRequirementSerializer(serializers.ModelSerializer):
 
 
 class SceneSerializer(serializers.ModelSerializer):
-    url = serializers.HyperlinkedIdentityField(view_name="scene-detail", lookup_field="pk")
+    url = serializers.HyperlinkedIdentityField(
+        view_name="scene-detail", lookup_field="pk"
+    )
+
     class Meta:
         model = Scene
         fields = "__all__"
