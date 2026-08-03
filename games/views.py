@@ -3,9 +3,9 @@ from rest_framework import status, viewsets
 from rest_framework.response import Response
 
 from .models import (Act, Action, ActionItemRequirement, CharacterAction,
-                     Scene, SceneAction)
+                     Scene, SceneAction, CharacterProgressOnAct)
 from .serializers import (ActionItemRequirementSerializer, ActionSerializer,
-                          ActSerializer, CharacterActionSerializer,
+                          ActSerializer, CharacterActionSerializer, CharacterProgressOnActSerializer,
                           SceneActionSerializer, SceneSerializer)
 from .services import ActionService
 
@@ -43,6 +43,18 @@ class ActionItemRequirementViewSet(viewsets.ModelViewSet):
 class SceneActionViewSet(viewsets.ModelViewSet):
     serializer_class = SceneActionSerializer
     queryset = SceneAction.objects.all()
+
+
+class CharacterProgressOnActViewSet(viewsets.ModelViewSet):
+    queryset = CharacterProgressOnAct.objects.all()
+    serializer_class = CharacterProgressOnActSerializer
+
+    def get_queryset(self):
+        # Permite filtrar por personagem, se necessário
+        character_id = self.request.query_params.get('character_id')
+        if character_id:
+            return self.queryset.filter(character__id=character_id)
+        return self.queryset
 
 
 class SceneViewSet(viewsets.ModelViewSet):

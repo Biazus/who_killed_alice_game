@@ -6,7 +6,7 @@ from characters.views import (CharacterModifierAttributeViewSet,
                               InventoryViewSet)
 from games.views import (ActionItemRequirementViewSet, ActionViewSet,
                          ActViewSet, CharacterActionViewSet,
-                         SceneActionViewSet, SceneViewSet)
+                         SceneActionViewSet, SceneViewSet, CharacterProgressOnActViewSet)
 from items.views import (ItemAttributeEffectViewSet, ItemTypeViewSet,
                          ItemViewSet)
 from modifiers.views import (AttributeViewSet, ModifierAttributeEffectViewSet,
@@ -65,6 +65,11 @@ router.register(
     r"scene_actions",
     SceneActionViewSet,
     basename="scene_action",
+)
+router.register(
+    r"character_progresses",
+    CharacterProgressOnActViewSet,
+    basename="character_progress"
 )
 
 urlpatterns = [

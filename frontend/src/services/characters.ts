@@ -45,6 +45,58 @@ export interface Character {
   updated?: string;
 }
 
+// Novas interfaces para o jogo
+export interface Action {
+  id: number;
+  code: string;
+  name: string;
+  description: string;
+  difficulty: number;
+  type: string;
+  active: boolean;
+  requirements: any[]; // Ajuste conforme ActionAttributeRequirementSerializer
+}
+
+export interface SceneAction {
+  id: number;
+  description: string;
+  action_type: "P" | "H"; // Player Action ou History Action
+  action: Action | null; // Detalhes da ação se for PLAYER_ACTION
+  history_action: string | null;
+  on_fail: number | null; // ID da próxima cena em caso de falha
+  on_success: number | null; // ID da próxima cena em caso de sucesso
+  on_hard_fail: number | null; // ID da próxima cena em caso de falha crítica
+}
+
+export interface Scene {
+  id: number;
+  title: string;
+  location: string;
+  initial: boolean;
+  description: string;
+  act: number; // ID do Act
+  order: number;
+  scene_actions: SceneAction[]; // Ações disponíveis nesta cena
+  url: string;
+}
+
+export interface Act {
+  id: number;
+  title: string;
+  description: string;
+  reward_type: string;
+  reward_id: number;
+  scenes: Scene[]; // Cenas dentro deste ato
+}
+
+export interface CharacterProgressOnAct {
+  id: number;
+  character: number; // ID do personagem
+  act: Act; // Detalhes do Act
+  current_scene: Scene; // Detalhes da cena atual
+  finished: boolean;
+}
+
 interface PaginatedResponse<T> {
   count: number;
   next: string | null;
@@ -93,5 +145,35 @@ export async function createCharacter(
     payload
   );
 
+  return response.data;
+}
+
+// Novas funções para o jogo
+export async function fetchCharacterProgress(
+  characterId: number
+): Promise<CharacterProgressOnAct | null> {
+  try {
+    const response = await api.get<PaginatedResponse<CharacterProgressOnAct>>(
+      `/character_progresses/?character_id=${characterId}`
+    );
+    // Retorna o primeiro progresso não finalizado, se houver
+    const activeProgress = response.data.results.find(
+      (progress) => !progress.finished
+    );
+    return activeProgress || null;
+  } catch (error) {
+    console.error("Erro ao buscar progresso do personagem:", error);
+    return null;
+  }
+}
+
+export async function selectSceneAction(
+  characterId: number,
+  sceneActionId: number
+): Promise<CharacterProgressOnAct> {
+  const response = await api.post<CharacterProgressOnAct>(
+    "/scene_action_select/",
+    { character_id: characterId, scene_action_id: sceneActionId }
+  );
   return response.data;
 }

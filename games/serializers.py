@@ -4,7 +4,7 @@ from characters.models import Character
 
 from .models import (Act, Action, ActionAttributeRequirement,
                      ActionItemRequirement, CharacterAction, Scene,
-                     SceneAction)
+                     SceneAction, CharacterProgressOnAct)
 
 
 class ActionAttributeRequirementSerializer(serializers.ModelSerializer):
@@ -54,23 +54,45 @@ class ActionItemRequirementSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class SceneActionSerializer(serializers.ModelSerializer):
+    action = ActionSerializer(read_only=True)  # Inclui os detalhes da Action
+
+    class Meta:
+        model = SceneAction
+        fields = [
+            "id",
+            "description",
+            "action_type",
+            "action",
+            "history_action",
+            "on_fail",
+            "on_success",
+            "on_hard_fail",
+        ]
+
+
 class SceneSerializer(serializers.ModelSerializer):
     url = serializers.HyperlinkedIdentityField(
         view_name="scene-detail", lookup_field="pk"
     )
+    scene_actions = SceneActionSerializer(many=True, read_only=True)  # Inclui as ações da cena
 
     class Meta:
         model = Scene
         fields = "__all__"
 
 
-class SceneActionSerializer(serializers.ModelSerializer):
+class ActSerializer(serializers.ModelSerializer):
+    scenes = SceneSerializer(many=True, read_only=True)  # Inclui as cenas do ato
     class Meta:
-        model = SceneAction
+        model = Act
         fields = "__all__"
 
 
-class ActSerializer(serializers.ModelSerializer):
+class CharacterProgressOnActSerializer(serializers.ModelSerializer):
+    act = ActSerializer(read_only=True)
+    current_scene = SceneSerializer(read_only=True)
+
     class Meta:
-        model = Act
+        model = CharacterProgressOnAct
         fields = "__all__"
