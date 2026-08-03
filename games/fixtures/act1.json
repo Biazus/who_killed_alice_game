@@ -1,0 +1,3334 @@
+[
+  {
+    "model": "games.Act",
+    "pk": 1,
+    "fields": {
+      "title": "Reconhecimento (Versão Estendida)",
+      "description": "Você desperta em um mundo pós-apocalíptico, a memória em frangalhos. Apenas o nome \"Alice\" e uma sensação de urgência o impulsionam. Este hospital abandonado parece chamá-lo, um eco de algo perdido. É aqui que sua busca por identidade e pela verdade sobre Alice começa. O Hospital Psiquiátrico \"Aurora Eterna\" é um monumento à desolação, onde a natureza e o esquecimento se entrelaçam com vestígios de uma presença sinistra. Corredores escuros, salas de tratamento macabras e a constante sensação de estar sendo caçado definem este lugar. A ameaça principal é a Vigilância Oculta: criaturas das sombras, sentinelas e talvez até armadilhas arcanas protegem seus segredos. O desafio é a sobrevivência e a discrição, pois um confronto direto seria suicídio em seu estado atual. O objetivo do ato é recuperar o \"Diário Fragmentado de Alice\" de uma sala de arquivos secreta no subsolo, que contém as primeiras pistas sobre seu passado e o destino de Alice.",
+      "reward_type": "MO",
+      "reward_id": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 1,
+    "fields": {
+      "title": "BLOCO 1: O Limiar Esquecido",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Você está à beira do Hospital Aurora Eterna, escondido entre arbustos densos. A fachada é um esqueleto de concreto e vidro quebrado. A entrada principal está desmoronada, mas uma porta de serviço lateral parece mais acessível. Um arrepio percorre sua espinha; a sensação de estar sendo observado é quase palpável.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 2,
+    "fields": {
+      "title": "BLOCO 2: A Porta Rangente",
+      "location": "Porta de Serviço Lateral",
+      "description": "Você está diante da porta de serviço, uma estrutura de metal enferrujado que parece prestes a ceder. Um som de gotejamento constante vem de dentro, e um cheiro metálico e úmido paira no ar. A porta está entreaberta, revelando um corredor escuro.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 3,
+    "fields": {
+      "title": "BLOCO 3: Presságio nas Sombras",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Você se esconde rapidamente, o coração batendo forte. A sensação de estar sendo observado é intensa, e você ouve passos arrastados se aproximando da sua posição. Algo está caçando você.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 4,
+    "fields": {
+      "title": "BLOCO 4: Perseguição Inicial",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Uma criatura sombria, com olhos vermelhos brilhantes, persegue você implacavelmente. Seus passos são rápidos e silenciosos, e você sente seu hálito frio em sua nuca.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 5,
+    "fields": {
+      "title": "BLOCO 5: Observação Atenta",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Você tem uma ideia melhor dos perigos e das rotas. A porta de serviço parece ser a rota mais usada, o que significa que pode estar mais vigiada, mas também é a mais provável de levar a algo.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 6,
+    "fields": {
+      "title": "BLOCO 6: Incerto e Exposto",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Você está exposto, sem uma rota clara ou informações. A tensão aumenta, e a sensação de que o tempo está se esgotando é esmagadora.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 7,
+    "fields": {
+      "title": "BLOCO 7: Encontro Inesperado",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Uma figura sombria, alta e esguia, está parada atrás de você. Seus olhos brilham com uma luz fraca e antinatural. Ela não faz som, apenas observa.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 8,
+    "fields": {
+      "title": "BLOCO 8: Hall Ecoante",
+      "location": "Hall de Entrada Principal",
+      "description": "Você está no hall de entrada principal, um espaço cavernoso com o teto desabado em alguns pontos. O ar é frio e parado. O silêncio é quebrado apenas pelo som de seus próprios passos ecoando. Há uma recepção em ruínas e um corredor principal à frente.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 9,
+    "fields": {
+      "title": "BLOCO 9: Capturado!",
+      "location": "Cativeiro",
+      "description": "Você é dominado pela criatura. Seus sentidos falham, e você sente garras afiadas perfurando sua pele. A escuridão o engole.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 10,
+    "fields": {
+      "title": "BLOCO 10: Corredor dos Sussurros",
+      "location": "Corredor de Serviço",
+      "description": "Você está em um corredor estreito e escuro. A luz fraca que entra pelas janelas quebradas mal ilumina as paredes descascadas. O ar é pesado com cheiro de mofo e algo mais, algo doce e pútrido. Você ouve sussurros indistintos que parecem vir das paredes.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 11,
+    "fields": {
+      "title": "BLOCO 11: Sentinela Alerta",
+      "location": "Porta de Serviço Lateral",
+      "description": "Uma sentinela, uma criatura humanóide com olhos vermelhos brilhantes, está patrulhando a área da porta de serviço. Ela parece estar procurando por algo, ou alguém. Você está escondido, mas sabe que ela está perto.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 12,
+    "fields": {
+      "title": "BLOCO 12: Emboscada na Entrada",
+      "location": "Porta de Serviço Lateral",
+      "description": "Uma sentinela o ataca no momento em que você tenta entrar. Seus golpes são rápidos e brutais.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 13,
+    "fields": {
+      "title": "BLOCO 13: Presença Adormecida",
+      "location": "Corredor de Serviço",
+      "description": "Você sabe que há algo adormecido ou em repouso dentro do corredor. Isso o torna perigoso, mas também uma oportunidade para passar despercebido.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 14,
+    "fields": {
+      "title": "BLOCO 14: Ataque Psíquico",
+      "location": "Vários",
+      "description": "Uma dor lancinante perfura sua mente. Imagens distorcidas e vozes sussurrantes tentam invadir seus pensamentos, desorientando-o.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 15,
+    "fields": {
+      "title": "BLOCO 15: Lavanderia Sombria",
+      "location": "Lavanderia",
+      "description": "Você entra por uma janela quebrada em uma lavanderia escura e úmida. Máquinas de lavar enferrujadas e cestos de roupa suja se amontoam. O cheiro de mofo e produtos químicos antigos é forte. Há uma porta de metal que parece levar a um corredor principal.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 16,
+    "fields": {
+      "title": "BLOCO 16: Armadilha Cruel",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "A armadilha de urso se fecha em sua perna com um estalo doloroso. A dor é excruciante, e você está preso.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 17,
+    "fields": {
+      "title": "BLOCO 17: Ferido em Fuga",
+      "location": "Vários",
+      "description": "Você está ferido, com um corte ou arranhão profundo. A dor é constante, mas você precisa continuar se movendo.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 18,
+    "fields": {
+      "title": "BLOCO 18: Despiste Bem-Sucedido",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Você conseguiu despistar a criatura. Ela parece ter perdido seu rastro, e você tem um momento de alívio.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 19,
+    "fields": {
+      "title": "BLOCO 19: Alarme Ativado",
+      "location": "Vários",
+      "description": "Um alarme ensurdecedor ecoa pelo hospital. As luzes de emergência piscam em vermelho, e você ouve sons de criaturas se movendo rapidamente em sua direção.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 20,
+    "fields": {
+      "title": "BLOCO 20: Pânico Crescente",
+      "location": "Vários",
+      "description": "O pânico começa a tomar conta. Sua mente está turva, e você sente uma urgência desesperada para escapar.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 21,
+    "fields": {
+      "title": "BLOCO 21: Mapa Encontrado",
+      "location": "Hall de Entrada Principal",
+      "description": "Você encontrou um mapa rudimentar do hospital, desenhado à mão. Ele indica a localização de uma \"Sala de Arquivos\" no subsolo. Isso é uma pista valiosa!",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 22,
+    "fields": {
+      "title": "BLOCO 22: Corredor Principal",
+      "location": "Corredor Principal",
+      "description": "Você está em um longo corredor principal, com portas em ambos os lados e o teto desabado em alguns pontos. A luz fraca do exterior mal alcança aqui. O ar é frio e parado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 23,
+    "fields": {
+      "title": "BLOCO 23: Desabamento Parcial",
+      "location": "Hall de Entrada Principal",
+      "description": "Um pedaço do teto desaba perigosamente perto de você, levantando uma nuvem de poeira e fazendo um barulho estrondoso.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 24,
+    "fields": {
+      "title": "BLOCO 24: Tonto e Vulnerável",
+      "location": "Hall de Entrada Principal",
+      "description": "Você está tonto e desorientado após bater a cabeça. Sua visão está turva, e você se sente vulnerável.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 25,
+    "fields": {
+      "title": "BLOCO 25: Sons no Corredor",
+      "location": "Corredor Principal",
+      "description": "Você capta um som fraco e rítmico vindo do corredor principal, como um arrastar de correntes. Parece distante, mas se aproxima.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 26,
+    "fields": {
+      "title": "BLOCO 26: Cativeiro Sombrio",
+      "location": "Celas do Subsolo",
+      "description": "Você está preso em uma cela escura e úmida, com correntes em seus pulsos. A dor é constante, mas você está consciente. Você ouve sons de outras criaturas nas celas próximas.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 27,
+    "fields": {
+      "title": "BLOCO 27: Despertar no Escuro",
+      "location": "Subsolo Desconhecido",
+      "description": "Você acorda em um lugar escuro e desconhecido. Não há luz, e você não sabe onde está ou como chegou ali.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 28,
+    "fields": {
+      "title": "BLOCO 28: Escadaria para o Subsolo",
+      "location": "Escadaria para o Subsolo",
+      "description": "A escadaria de concreto desce em espiral para a escuridão. O ar fica mais frio e úmido a cada degrau. Você sente uma forte corrente de ar vindo de baixo, carregando um cheiro de terra molhada e algo metálico, quase elétrico.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 29,
+    "fields": {
+      "title": "BLOCO 29: Perseguido no Corredor",
+      "location": "Corredor de Serviço",
+      "description": "Uma criatura sombria persegue você pelo corredor. Seus passos são rápidos e silenciosos, e você sente seu hálito frio em sua nuca.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 30,
+    "fields": {
+      "title": "BLOCO 30: Emboscada no Corredor",
+      "location": "Corredor de Serviço",
+      "description": "Uma criatura salta das sombras e o ataca. Seus golpes são rápidos e brutais.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 31,
+    "fields": {
+      "title": "BLOCO 31: Zumbido Elétrico",
+      "location": "Corredor de Serviço",
+      "description": "Você detectou um leve zumbido elétrico vindo de uma porta no final do corredor. Isso pode ser uma armadilha ou uma fonte de energia.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 32,
+    "fields": {
+      "title": "BLOCO 32: Criatura Inquieta",
+      "location": "Corredor de Serviço",
+      "description": "A criatura adormecida está inquieta. Ela grunhe e se mexe, mas ainda não acordou completamente. Você precisa ser extremamente cuidadoso.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 33,
+    "fields": {
+      "title": "BLOCO 33: Kit de Primeiros Socorros",
+      "location": "Lavanderia Sombria",
+      "description": "Você encontrou um pequeno kit de primeiros socorros improvisado, com algumas bandagens e um analgésico.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 34,
+    "fields": {
+      "title": "BLOCO 34: Ajuda Inesperada",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Seus gritos atraem a atenção de uma figura sombria, que se aproxima, mas parece curiosa, não imediatamente hostil. Ela é alta e esguia, com olhos que brilham na escuridão.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 35,
+    "fields": {
+      "title": "BLOCO 35: Esconderijo Temporário",
+      "location": "Vários",
+      "description": "Você encontrou um esconderijo temporário. Você está seguro por enquanto, mas não pode ficar aqui para sempre.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 36,
+    "fields": {
+      "title": "BLOCO 36: Arma Improvisada",
+      "location": "Exterior do Hospital Aurora Eterna",
+      "description": "Você encontrou um pedaço de cano de metal enferrujado que pode servir como arma.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 37,
+    "fields": {
+      "title": "BLOCO 37: Esconderijo no Hall",
+      "location": "Hall de Entrada Principal",
+      "description": "Você se escondeu com sucesso no hall de entrada. As criaturas passaram correndo, sem notá-lo. O alarme ainda soa, mas parece mais distante.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 38,
+    "fields": {
+      "title": "BLOCO 38: Corredor Lateral Desconhecido",
+      "location": "Corredor Lateral",
+      "description": "Você se encontra em um corredor lateral escuro e empoeirado, que não estava no mapa. Há portas em ambos os lados, e o ar é pesado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 39,
+    "fields": {
+      "title": "BLOCO 39: Sala de Armazenamento",
+      "location": "Sala de Armazenamento",
+      "description": "Você encontrou uma sala de armazenamento com um símbolo arcano gravado na porta. A sala está cheia de caixas empoeiradas e equipamentos antigos.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 40,
+    "fields": {
+      "title": "BLOCO 40: Correntes Fracas",
+      "location": "Celas do Subsolo",
+      "description": "Você percebe que as correntes estão enferrujadas e fracas em um ponto.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 41,
+    "fields": {
+      "title": "BLOCO 41: Desespero na Cela",
+      "location": "Celas do Subsolo",
+      "description": "Você está preso na cela, e o desespero começa a tomar conta. A sensação de impotência é esmagadora.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 42,
+    "fields": {
+      "title": "BLOCO 42: Tortura Psíquica",
+      "location": "Celas do Subsolo",
+      "description": "Um guarda entra na sua cela e começa a torturá-lo, não fisicamente, mas com uma invasão psíquica que causa uma dor excruciante em sua mente.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 43,
+    "fields": {
+      "title": "BLOCO 43: Fuga da Cela",
+      "location": "Corredor das Celas",
+      "description": "Você está livre da cela. O corredor das celas é escuro e silencioso, mas você sabe que não pode ficar aqui por muito tempo.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 44,
+    "fields": {
+      "title": "BLOCO 44: Guarda Desinteressado",
+      "location": "Celas do Subsolo",
+      "description": "Um guarda se aproxima da sua cela, mas parece desinteressado, apenas passando para verificar. Ele não parece estar prestando muita atenção.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 45,
+    "fields": {
+      "title": "BLOCO 45: Subsolo Escuro",
+      "location": "Subsolo Desconhecido",
+      "description": "Você está em um subsolo escuro e úmido. O gotejamento de água ecoa, e você ouve um som distante de arrastar de correntes.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 46,
+    "fields": {
+      "title": "BLOCO 46: Desorientado no Escuro",
+      "location": "Subsolo Desconhecido",
+      "description": "Você está completamente desorientado no escuro. Não há luz, e você não sabe para onde ir.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 47,
+    "fields": {
+      "title": "BLOCO 47: Náusea e Fraqueza",
+      "location": "Subsolo Desconhecido",
+      "description": "O cheiro pútrido é tão forte que você sente náuseas e vomita. Você se sente fraco e desorientado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 48,
+    "fields": {
+      "title": "BLOCO 48: Luz na Escuridão",
+      "location": "Subsolo Desconhecido",
+      "description": "Você encontrou uma fonte de luz improvisada. A luz revela um corredor escuro e úmido.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 49,
+    "fields": {
+      "title": "BLOCO 49: Corredor Inundado",
+      "location": "Corredor do Subsolo",
+      "description": "Você está em um corredor do subsolo, com água escura e estagnada cobrindo o chão até os tornozelos. O cheiro de esgoto e metal enferrujado é avassalador. A água reflete fracamente a luz que entra, criando sombras dançantes. No final do corredor, há uma porta de metal pesado, com um painel de controle ao lado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 50,
+    "fields": {
+      "title": "BLOCO 50: Queda na Escadaria",
+      "location": "Escadaria para o Subsolo",
+      "description": "Você escorregou na escadaria, batendo o joelho e fazendo um barulho considerável. Você sente uma dor aguda e a sensação de que algo foi alertado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 51,
+    "fields": {
+      "title": "BLOCO 51: Armadilha Elétrica",
+      "location": "Corredor Inundado",
+      "description": "Você percebe que o corredor inundado tem uma armadilha elétrica ativada pela água. Há fios expostos e um painel de controle desativado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 52,
+    "fields": {
+      "title": "BLOCO 52: Símbolo de Proteção",
+      "location": "Escadaria para o Subsolo",
+      "description": "A luz revela um símbolo arcano gravado na parede, que você reconhece como um sinal de proteção contra espíritos. Você se sente um pouco mais seguro.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 53,
+    "fields": {
+      "title": "BLOCO 53: Confronto Etéreo!",
+      "location": "Escadaria para o Subsolo",
+      "description": "A luz atrai a atenção. Você ouve um chiado vindo das sombras, e a chama do seu isqueiro pisca violentamente, quase se apagando. Você sente uma presença etérea se aproximando.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 54,
+    "fields": {
+      "title": "BLOCO 54: Barreira de Energia",
+      "location": "Corredor de Serviço",
+      "description": "Você percebe que o zumbido vem de um painel de controle eletrônico que alimenta uma barreira de energia invisível na porta.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 55,
+    "fields": {
+      "title": "BLOCO 55: Sala de Equipamentos",
+      "location": "Sala de Equipamentos",
+      "description": "Você entra em uma sala cheia de equipamentos eletrônicos antigos e máquinas enferrujadas. O zumbido elétrico é mais forte aqui.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 56,
+    "fields": {
+      "title": "BLOCO 56: Poção de Cura",
+      "location": "Sala de Armazenamento",
+      "description": "Você encontrou um pequeno frasco de líquido brilhante, que parece ser uma poção de cura.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 57,
+    "fields": {
+      "title": "BLOCO 57: Água Escura",
+      "location": "Corredor Inundado",
+      "description": "Você está no corredor inundado, e a água escura e estagnada cobre o chão até os tornozelos. A sensação de perigo persiste.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 58,
+    "fields": {
+      "title": "BLOCO 58: Sala de Arquivos Submersa",
+      "location": "Sala de Arquivos Submersa",
+      "description": "Você entra em uma sala ampla, mas quase completamente submersa em água escura. Armários de arquivo enferrujados se inclinam precariamente, alguns flutuando. O ar é pesado e frio. No centro da sala, sobre uma mesa de metal que mal emerge da água, há um pequeno volume encadernado em couro, parcialmente molhado: o Diário Fragmentado de Alice.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 59,
+    "fields": {
+      "title": "BLOCO 59: Criatura Aquática",
+      "location": "Sala de Arquivos Submersa",
+      "description": "Algo na água o ataca. Você sente garras afiadas e uma dor excruciante.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 60,
+    "fields": {
+      "title": "BLOCO 60: Diário de Alice Encontrado",
+      "location": "Sala de Arquivos Submersa",
+      "description": "Você segura o diário em suas mãos. A capa de couro está úmida, mas as páginas internas parecem ter sido protegidas. Você sente uma conexão imediata com o objeto, como se ele contivesse a chave para sua própria existência.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 61,
+    "fields": {
+      "title": "BLOCO 61: Olhos na Água",
+      "location": "Sala de Arquivos Submersa",
+      "description": "Você notou que a água não é apenas escura, mas tem um brilho esverdeado fraco em alguns pontos, e pequenos olhos vermelhos parecem piscar nas profundezas. Há criaturas aquáticas, mas elas parecem evitar a área diretamente ao redor da mesa.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 62,
+    "fields": {
+      "title": "SUCESSO DO ATO: Diário Desvendado!",
+      "location": "Fim do Ato",
+      "description": "As palavras de Alice são claras, mesmo que fragmentadas. Ela descreve experimentos estranhos, uma \"voz\" que a guiava e a sensação de estar sendo observada. Você lê sobre um \"ritual de ascensão\" e um \"amuleto de sangue\" que ela escondeu.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 63,
+    "fields": {
+      "title": "SUCESSO DO ATO: Diário Recuperado",
+      "location": "Fim do Ato",
+      "description": "Você recuperou o Diário Fragmentado de Alice. Embora ainda não tenha decifrado todos os seus segredos, você tem a primeira peça do quebra-cabeça. A sensação de ter a primeira peça do quebra-cabeça é eletrizante.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 64,
+    "fields": {
+      "title": "FALHA DO ATO: Devorado pelas Sombras!",
+      "location": "Fim do Ato",
+      "description": "Você foi dominado pelas criaturas e devorado pelas sombras. Seu fim chegou antes mesmo de começar.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 65,
+    "fields": {
+      "title": "FALHA DO ATO: Capturado!",
+      "location": "Fim do Ato",
+      "description": "Você foi capturado e levado para um destino incerto. Sua busca por Alice termina aqui, ou talvez apenas comece de uma forma muito mais sombria.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 66,
+    "fields": {
+      "title": "FALHA DO ATO: Retirada Forçada!",
+      "location": "Fim do Ato",
+      "description": "Você foi forçado a recuar do hospital. A missão falhou, e a sensação de fracasso é amarga. Você terá que encontrar outra forma de descobrir a verdade sobre Alice.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 67,
+    "fields": {
+      "title": "FALHA DO ATO: Cercado e Perdido!",
+      "location": "Fim do Ato",
+      "description": "Você foi cercado por criaturas e não teve chance de escapar. Seu fim é incerto, mas certamente não é o que você esperava.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 68,
+    "fields": {
+      "title": "FALHA DO ATO: Mente Escravizada!",
+      "location": "Fim do Ato",
+      "description": "Sua mente foi quebrada e escravizada por uma força psíquica. Você não é mais você mesmo, e a busca por Alice está perdida para sempre.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 69,
+    "fields": {
+      "title": "FALHA DO ATO: Armadilha Fatal!",
+      "location": "Fim do Ato",
+      "description": "Você caiu em uma armadilha fatal e não conseguiu escapar. Seu fim é rápido e doloroso.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 70,
+    "fields": {
+      "title": "FALHA DO ATO: Morte Prematura!",
+      "location": "Fim do Ato",
+      "description": "Você sofreu um ferimento fatal e sua vida se esvaiu. A busca por Alice termina aqui.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 71,
+    "fields": {
+      "title": "FALHA DO ATO: Sacrifício Iminente!",
+      "location": "Fim do Ato",
+      "description": "Você foi levado para um lugar sombrio, onde um sacrifício está prestes a acontecer. Seu destino é selado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 72,
+    "fields": {
+      "title": "FALHA DO ATO: Mente Quebrada!",
+      "location": "Fim do Ato",
+      "description": "Sua mente foi inundada por vozes e imagens perturbadoras, levando-o à loucura. Você não é mais capaz de continuar sua busca.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 73,
+    "fields": {
+      "title": "FALHA DO ATO: Devorado na Cela!",
+      "location": "Fim do Ato",
+      "description": "Você foi devorado pelas criaturas nas celas próximas. Um fim terrível e solitário.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 74,
+    "fields": {
+      "title": "FALHA DO ATO: Eletrocutado!",
+      "location": "Fim do Ato",
+      "description": "Você foi eletrocutado pela armadilha elétrica. Seu corpo jaz inerte na água.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 75,
+    "fields": {
+      "title": "FALHA DO ATO: Afogado nas Sombras!",
+      "location": "Fim do Ato",
+      "description": "Você foi arrastado para as profundezas da água e se afogou nas sombras. A escuridão o engoliu por completo.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.Scene",
+    "pk": 76,
+    "fields": {
+      "title": "FALHA DO ATO: Envenenado!",
+      "location": "Fim do Ato",
+      "description": "Você bebeu uma poção venenosa e sucumbiu aos seus efeitos. Seu corpo agora é apenas mais um resíduo neste hospital amaldiçoado.",
+      "act": 1
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 1,
+    "fields": {
+      "scene": 1,
+      "description": "Tentar usar a vegetação densa para se aproximar da porta de serviço sem ser notado.",
+      "action_type": "P",
+      "action": 6,
+      "history_action": null,
+      "on_fail": 3,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 2,
+    "fields": {
+      "scene": 1,
+      "description": "Observar a entrada principal e os arredores em busca de qualquer sinal de perigo ou de uma rota mais segura.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 6,
+      "on_success": 5,
+      "on_hard_fail": 7
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 3,
+    "fields": {
+      "scene": 1,
+      "description": "Decidir correr pela área aberta em direção à entrada principal, contando com a velocidade para evitar a detecção.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 4,
+      "on_success": 8,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 4,
+    "fields": {
+      "scene": 2,
+      "description": "Tentar abrir a porta o suficiente para passar sem fazer barulho.",
+      "action_type": "P",
+      "action": 2,
+      "history_action": null,
+      "on_fail": 11,
+      "on_success": 10,
+      "on_hard_fail": 12
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 5,
+    "fields": {
+      "scene": 2,
+      "description": "Parar e tentar discernir o que está acontecendo dentro do corredor antes de entrar.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 6,
+      "on_success": 13,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 6,
+    "fields": {
+      "scene": 2,
+      "description": "Você decide que esta porta é muito arriscada e tenta encontrar outra forma de entrar no hospital.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar Outra Entrada",
+      "on_fail": 6,
+      "on_success": 15,
+      "on_hard_fail": 16
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 7,
+    "fields": {
+      "scene": 3,
+      "description": "Tentar se aprofundar na vegetação, esperando que a criatura passe.",
+      "action_type": "P",
+      "action": 6,
+      "history_action": null,
+      "on_fail": 4,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 8,
+    "fields": {
+      "scene": 3,
+      "description": "Fazer uma corrida desesperada para a porta de serviço, esperando ser mais rápido que a ameaça.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 17,
+      "on_success": 10,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 9,
+    "fields": {
+      "scene": 3,
+      "description": "Ficar imóvel, controlando sua respiração e batimentos cardíacos, esperando que a criatura não o encontre.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 4,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 10,
+    "fields": {
+      "scene": 4,
+      "description": "Tentar despistar a criatura usando o terreno irregular e os escombros.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 17,
+      "on_success": 18,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 11,
+    "fields": {
+      "scene": 4,
+      "description": "Correr em linha reta, esperando que a velocidade pura o salve.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 10,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 12,
+    "fields": {
+      "scene": 4,
+      "description": "Você se vira, pronto para lutar, mesmo sabendo que está em desvantagem.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Confrontar a Criatura",
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 13,
+    "fields": {
+      "scene": 5,
+      "description": "Usar a vegetação para se aproximar da porta de serviço, ciente de que pode haver sentinelas.",
+      "action_type": "P",
+      "action": 6,
+      "history_action": null,
+      "on_fail": 11,
+      "on_success": 13,
+      "on_hard_fail": 12
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 14,
+    "fields": {
+      "scene": 5,
+      "description": "Procurar por uma entrada menos óbvia, mesmo que mais difícil de encontrar.",
+      "action_type": "P",
+      "action": 12,
+      "history_action": null,
+      "on_fail": 6,
+      "on_success": 15,
+      "on_hard_fail": 16
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 15,
+    "fields": {
+      "scene": 5,
+      "description": "Ignorar os avisos e tentar a sorte na entrada principal desmoronada.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Ir Direto para a Entrada Principal",
+      "on_fail": 12,
+      "on_success": 8,
+      "on_hard_fail": 19
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 16,
+    "fields": {
+      "scene": 6,
+      "description": "Tentar se acalmar e reavaliar a situação.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 17,
+    "fields": {
+      "scene": 6,
+      "description": "Fazer uma corrida desesperada para a porta de serviço.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 4,
+      "on_success": 10,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 18,
+    "fields": {
+      "scene": 6,
+      "description": "A pressão é demais. Você decide que não vale a pena o risco e tenta sair da área.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Desistir e Recuar",
+      "on_fail": 4,
+      "on_success": 66,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 19,
+    "fields": {
+      "scene": 7,
+      "description": "Tentar parecer perigoso e inabalável, esperando que a figura recue.",
+      "action_type": "P",
+      "action": 17,
+      "history_action": null,
+      "on_fail": 14,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 20,
+    "fields": {
+      "scene": 7,
+      "description": "Tentar ignorar a figura e continuar seu caminho, como se ela não fosse uma ameaça.",
+      "action_type": "P",
+      "action": 7,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 21,
+    "fields": {
+      "scene": 7,
+      "description": "Correr sem olhar para trás, esperando escapar da figura.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Fugir Desesperadamente",
+      "on_fail": 9,
+      "on_success": 10,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 22,
+    "fields": {
+      "scene": 8,
+      "description": "Inspecionar a recepção em busca de qualquer coisa útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 21,
+      "on_hard_fail": 23
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 23,
+    "fields": {
+      "scene": 8,
+      "description": "Seguir diretamente pelo corredor principal, evitando os escombros.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 19,
+      "on_success": 22,
+      "on_hard_fail": 24
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 24,
+    "fields": {
+      "scene": 8,
+      "description": "Parar e tentar captar qualquer som além do eco.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 25,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 25,
+    "fields": {
+      "scene": 9,
+      "description": "Tentar resistir à dor e lutar contra a inconsciência.",
+      "action_type": "P",
+      "action": 35,
+      "history_action": null,
+      "on_fail": 27,
+      "on_success": 26,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 26,
+    "fields": {
+      "scene": 9,
+      "description": "Tentar manter sua mente clara contra qualquer tentativa de controle.",
+      "action_type": "P",
+      "action": 42,
+      "history_action": null,
+      "on_fail": 27,
+      "on_success": 26,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 27,
+    "fields": {
+      "scene": 9,
+      "description": "Você se entrega à inconsciência, esperando que isso seja menos doloroso.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Desmaiar e Esperar",
+      "on_fail": 26,
+      "on_success": 27,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 28,
+    "fields": {
+      "scene": 10,
+      "description": "Tentar se esgueirar pelas sombras e escombros, evitando qualquer coisa que possa estar espreitando.",
+      "action_type": "P",
+      "action": 5,
+      "history_action": null,
+      "on_fail": 29,
+      "on_success": 28,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 29,
+    "fields": {
+      "scene": 10,
+      "description": "Tentar entender a origem dos sussurros e o que eles podem significar.",
+      "action_type": "P",
+      "action": 27,
+      "history_action": null,
+      "on_fail": 14,
+      "on_success": 31,
+      "on_hard_fail": 72
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 30,
+    "fields": {
+      "scene": 10,
+      "description": "Você decide que a melhor estratégia é avançar rapidamente, ignorando os sons perturbadores.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Ignorar os Sussurros e Correr",
+      "on_fail": 29,
+      "on_success": 28,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 31,
+    "fields": {
+      "scene": 11,
+      "description": "Tentar se aprofundar na vegetação, esperando que a sentinela passe.",
+      "action_type": "P",
+      "action": 6,
+      "history_action": null,
+      "on_fail": 12,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 32,
+    "fields": {
+      "scene": 11,
+      "description": "Tentar se mover discretamente para a porta de serviço, agindo como se não fosse uma ameaça.",
+      "action_type": "P",
+      "action": 7,
+      "history_action": null,
+      "on_fail": 29,
+      "on_success": 10,
+      "on_hard_fail": 12
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 33,
+    "fields": {
+      "scene": 11,
+      "description": "Jogar uma pedra ou um objeto para longe, desviando a atenção da sentinela.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Criar uma Distração",
+      "on_fail": 12,
+      "on_success": 10,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 34,
+    "fields": {
+      "scene": 12,
+      "description": "Tentar resistir aos golpes e encontrar uma abertura para fugir.",
+      "action_type": "P",
+      "action": 35,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 35,
+    "fields": {
+      "scene": 12,
+      "description": "Tentar desviar e contra-atacar, buscando uma chance de escapar.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 36,
+    "fields": {
+      "scene": 12,
+      "description": "Abandonar a tentativa de entrar e correr para longe.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Recuar e Fugir",
+      "on_fail": 4,
+      "on_success": 66,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 37,
+    "fields": {
+      "scene": 13,
+      "description": "Tentar abrir a porta o suficiente para passar sem fazer barulho, ciente da presença.",
+      "action_type": "P",
+      "action": 2,
+      "history_action": null,
+      "on_fail": 32,
+      "on_success": 10,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 38,
+    "fields": {
+      "scene": 13,
+      "description": "Entrar e tentar se esgueirar pelas sombras do corredor, evitando a criatura adormecida.",
+      "action_type": "P",
+      "action": 5,
+      "history_action": null,
+      "on_fail": 32,
+      "on_success": 28,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 39,
+    "fields": {
+      "scene": 13,
+      "description": "Você decide que é melhor saber o que está lá e tenta fazer barulho para acordá-la.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Tentar Acordar a Criatura",
+      "on_fail": 30,
+      "on_success": 10,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 40,
+    "fields": {
+      "scene": 14,
+      "description": "Tentar bloquear a invasão psíquica com força de vontade.",
+      "action_type": "P",
+      "action": 42,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 41,
+    "fields": {
+      "scene": 14,
+      "description": "Tentar ignorar a dor e focar em uma saída.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 42,
+    "fields": {
+      "scene": 14,
+      "description": "Você grita de dor e tenta lutar contra a força invisível.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Gritar e Lutar",
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 43,
+    "fields": {
+      "scene": 15,
+      "description": "Tentar abrir a porta de metal para o corredor principal.",
+      "action_type": "P",
+      "action": 2,
+      "history_action": null,
+      "on_fail": 25,
+      "on_success": 22,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 44,
+    "fields": {
+      "scene": 15,
+      "description": "Inspecionar a lavanderia em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 33,
+      "on_hard_fail": 19
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 45,
+    "fields": {
+      "scene": 15,
+      "description": "Você decide se esconder e observar o corredor através da fresta da porta antes de entrar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Esconder-se e Observar",
+      "on_fail": 22,
+      "on_success": 25,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 46,
+    "fields": {
+      "scene": 16,
+      "description": "Tentar suportar a dor e se libertar da armadilha.",
+      "action_type": "P",
+      "action": 35,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 47,
+    "fields": {
+      "scene": 16,
+      "description": "Tentar usar algo ao redor para abrir a armadilha.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 48,
+    "fields": {
+      "scene": 16,
+      "description": "Você grita, esperando que alguém o ouça, mesmo que seja uma ameaça.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Gritar por Ajuda",
+      "on_fail": 9,
+      "on_success": 34,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 49,
+    "fields": {
+      "scene": 17,
+      "description": "Tentar estancar o sangramento e cuidar do ferimento.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 50,
+    "fields": {
+      "scene": 17,
+      "description": "Ignorar a dor e continuar correndo para um lugar seguro.",
+      "action_type": "P",
+      "action": 37,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 10,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 51,
+    "fields": {
+      "scene": 17,
+      "description": "Você decide que precisa de um lugar seguro para se recuperar antes de continuar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar um Esconderijo",
+      "on_fail": 20,
+      "on_success": 35,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 52,
+    "fields": {
+      "scene": 18,
+      "description": "Permanecer escondido e observar a área antes de se mover.",
+      "action_type": "P",
+      "action": 6,
+      "history_action": null,
+      "on_fail": 3,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 53,
+    "fields": {
+      "scene": 18,
+      "description": "Aproveitar a oportunidade para correr para a porta de serviço.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 4,
+      "on_success": 10,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 54,
+    "fields": {
+      "scene": 18,
+      "description": "Você decide que precisa de algo para se defender.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar uma Arma Improvisada",
+      "on_fail": 2,
+      "on_success": 36,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 55,
+    "fields": {
+      "scene": 19,
+      "description": "Correr para o corredor principal, esperando ser mais rápido que as ameaças.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 22,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 56,
+    "fields": {
+      "scene": 19,
+      "description": "Tentar encontrar um esconderijo rapidamente no hall de entrada.",
+      "action_type": "P",
+      "action": 5,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 37,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 57,
+    "fields": {
+      "scene": 19,
+      "description": "Você decide que é muito perigoso e tenta sair do hospital.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Fugir do Hospital",
+      "on_fail": 4,
+      "on_success": 66,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 58,
+    "fields": {
+      "scene": 20,
+      "description": "Tentar se acalmar e recuperar o controle.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 59,
+    "fields": {
+      "scene": 20,
+      "description": "Correr em qualquer direção, esperando encontrar uma saída.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 66,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 60,
+    "fields": {
+      "scene": 20,
+      "description": "Você grita, esperando que o barulho afaste o que quer que esteja causando seu pânico.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Gritar e Chamar Atenção",
+      "on_fail": 4,
+      "on_success": 2,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 61,
+    "fields": {
+      "scene": 21,
+      "description": "Tentar memorizar o mapa antes de guardá-lo.",
+      "action_type": "P",
+      "action": 28,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 23
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 62,
+    "fields": {
+      "scene": 21,
+      "description": "Tentar entender o significado de outras anotações no mapa.",
+      "action_type": "P",
+      "action": 27,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 63,
+    "fields": {
+      "scene": 21,
+      "description": "Você decide seguir as indicações do mapa para a Sala de Arquivos.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Seguir o Mapa Imediatamente",
+      "on_fail": 38,
+      "on_success": 22,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 64,
+    "fields": {
+      "scene": 22,
+      "description": "Seguir pelo corredor, evitando os escombros.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 25,
+      "on_success": 28,
+      "on_hard_fail": 24
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 65,
+    "fields": {
+      "scene": 22,
+      "description": "Inspecionar uma das portas em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 28,
+      "on_success": 39,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 66,
+    "fields": {
+      "scene": 22,
+      "description": "Parar e tentar captar qualquer som no corredor.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 28,
+      "on_success": 25,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 67,
+    "fields": {
+      "scene": 23,
+      "description": "Tentar se proteger da queda de escombros.",
+      "action_type": "P",
+      "action": 35,
+      "history_action": null,
+      "on_fail": 17,
+      "on_success": 22,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 68,
+    "fields": {
+      "scene": 23,
+      "description": "Correr para longe da área do desabamento.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 29,
+      "on_success": 22,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 69,
+    "fields": {
+      "scene": 23,
+      "description": "Você decide que o hospital é muito instável e tenta encontrar uma saída imediata.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar uma Saída Rápida",
+      "on_fail": 29,
+      "on_success": 66,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 70,
+    "fields": {
+      "scene": 24,
+      "description": "Tentar se recuperar e focar.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 22,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 71,
+    "fields": {
+      "scene": 24,
+      "description": "Tentar estancar o sangramento e cuidar do ferimento na cabeça.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 22,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 72,
+    "fields": {
+      "scene": 24,
+      "description": "Você decide que precisa de um lugar seguro para se recuperar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar um Esconderijo",
+      "on_fail": 20,
+      "on_success": 35,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 73,
+    "fields": {
+      "scene": 25,
+      "description": "Tentar encontrar um esconderijo rapidamente no corredor.",
+      "action_type": "P",
+      "action": 5,
+      "history_action": null,
+      "on_fail": 29,
+      "on_success": 28,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 74,
+    "fields": {
+      "scene": 25,
+      "description": "Correr para o final do corredor, esperando ser mais rápido que a ameaça.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 28,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 75,
+    "fields": {
+      "scene": 25,
+      "description": "Você decide se esconder e esperar a criatura, pronto para um ataque surpresa.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Preparar uma Emboscada",
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 76,
+    "fields": {
+      "scene": 26,
+      "description": "Tentar ignorar a dor e procurar uma forma de escapar.",
+      "action_type": "P",
+      "action": 36,
+      "history_action": null,
+      "on_fail": 41,
+      "on_success": 40,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 77,
+    "fields": {
+      "scene": 26,
+      "description": "Tentar manipular as correntes ou a fechadura da cela.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 78,
+    "fields": {
+      "scene": 26,
+      "description": "Você decide gritar ou fazer barulho para atrair a atenção de quem o prendeu.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Chamar Atenção",
+      "on_fail": 42,
+      "on_success": 44,
+      "on_hard_fail": 71
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 79,
+    "fields": {
+      "scene": 27,
+      "description": "Tentar captar qualquer som para se orientar.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 46,
+      "on_success": 45,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 80,
+    "fields": {
+      "scene": 27,
+      "description": "Tentar usar o olfato para identificar o ambiente.",
+      "action_type": "P",
+      "action": 26,
+      "history_action": null,
+      "on_fail": 46,
+      "on_success": 45,
+      "on_hard_fail": 47
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 81,
+    "fields": {
+      "scene": 27,
+      "description": "Você decide que precisa de luz para se orientar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar uma Fonte de Luz",
+      "on_fail": 46,
+      "on_success": 48,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 82,
+    "fields": {
+      "scene": 28,
+      "description": "Descer a escadaria com cautela, evitando os degraus quebrados e o entulho.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 50,
+      "on_success": 49,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 83,
+    "fields": {
+      "scene": 28,
+      "description": "Tentar usar seus sentidos aguçados para detectar qualquer ameaça abaixo.",
+      "action_type": "P",
+      "action": 13,
+      "history_action": null,
+      "on_fail": 49,
+      "on_success": 51,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 84,
+    "fields": {
+      "scene": 28,
+      "description": "Você decide que a escuridão é muito perigosa e acende um isqueiro ou uma lanterna improvisada.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Acender uma Fonte de Luz",
+      "on_fail": 53,
+      "on_success": 52,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 85,
+    "fields": {
+      "scene": 29,
+      "description": "Tentar despistar a criatura usando o terreno irregular e os escombros.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 17,
+      "on_success": 18,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 86,
+    "fields": {
+      "scene": 29,
+      "description": "Correr em linha reta para a escadaria, esperando ser mais rápido que a ameaça.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 28,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 87,
+    "fields": {
+      "scene": 29,
+      "description": "Você se vira, pronto para lutar, mesmo sabendo que está em desvantagem.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Confrontar a Criatura",
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 88,
+    "fields": {
+      "scene": 30,
+      "description": "Tentar resistir aos golpes e encontrar uma abertura para fugir.",
+      "action_type": "P",
+      "action": 35,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 89,
+    "fields": {
+      "scene": 30,
+      "description": "Tentar desviar e contra-atacar, buscando uma chance de escapar.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 90,
+    "fields": {
+      "scene": 30,
+      "description": "Abandonar a tentativa de avançar e correr para longe.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Recuar e Fugir",
+      "on_fail": 29,
+      "on_success": 2,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 91,
+    "fields": {
+      "scene": 31,
+      "description": "Tentar identificar se a porta está armadilhada ou se o zumbido indica algo mais.",
+      "action_type": "P",
+      "action": 32,
+      "history_action": null,
+      "on_fail": 28,
+      "on_success": 54,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 92,
+    "fields": {
+      "scene": 31,
+      "description": "Tentar desativar a fonte do zumbido ou abrir a porta com cautela.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 19,
+      "on_success": 55,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 93,
+    "fields": {
+      "scene": 31,
+      "description": "Você decide que é muito arriscado e continua para a escadaria.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Ignorar e Continuar",
+      "on_fail": 28,
+      "on_success": 28,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 94,
+    "fields": {
+      "scene": 32,
+      "description": "Tentar se esgueirar pelas sombras do corredor, evitando a criatura inquieta.",
+      "action_type": "P",
+      "action": 5,
+      "history_action": null,
+      "on_fail": 30,
+      "on_success": 28,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 95,
+    "fields": {
+      "scene": 32,
+      "description": "Correr para a escadaria, esperando ser mais rápido que a criatura.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 28,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 96,
+    "fields": {
+      "scene": 32,
+      "description": "Você tenta fazer um som suave ou um gesto para acalmar a criatura.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Tentar Acalmar a Criatura",
+      "on_fail": 30,
+      "on_success": 28,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 97,
+    "fields": {
+      "scene": 33,
+      "description": "Usar o kit para cuidar de qualquer ferimento que você possa ter.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 98,
+    "fields": {
+      "scene": 33,
+      "description": "Guardar o kit para mais tarde e continuar explorando.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 25,
+      "on_success": 22,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 99,
+    "fields": {
+      "scene": 33,
+      "description": "Você decide que pode haver mais suprimentos na lavanderia.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar Mais Suprimentos",
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 25
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 100,
+    "fields": {
+      "scene": 34,
+      "description": "Tentar se comunicar com a figura, pedindo ajuda.",
+      "action_type": "P",
+      "action": 15,
+      "history_action": null,
+      "on_fail": 16,
+      "on_success": 17,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 101,
+    "fields": {
+      "scene": 34,
+      "description": "Tentar parecer perigoso e inabalável, esperando que a figura recue.",
+      "action_type": "P",
+      "action": 17,
+      "history_action": null,
+      "on_fail": 14,
+      "on_success": 17,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 102,
+    "fields": {
+      "scene": 34,
+      "description": "Você decide que é uma ameaça e a ataca.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Atacar a Figura",
+      "on_fail": 9,
+      "on_success": 17,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 103,
+    "fields": {
+      "scene": 35,
+      "description": "Usar este momento para cuidar de seus ferimentos.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 104,
+    "fields": {
+      "scene": 35,
+      "description": "Tentar captar qualquer som para se orientar.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 28,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 105,
+    "fields": {
+      "scene": 35,
+      "description": "Você decide que é hora de sair e continuar sua busca.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Sair do Esconderijo",
+      "on_fail": 4,
+      "on_success": 2,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 106,
+    "fields": {
+      "scene": 36,
+      "description": "Guardar a arma e continuar explorando.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 3,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 107,
+    "fields": {
+      "scene": 36,
+      "description": "Você decide testar a arma em um objeto próximo.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Testar a Arma",
+      "on_fail": 2,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 108,
+    "fields": {
+      "scene": 36,
+      "description": "Você decide que pode haver mais armas na área.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar Mais Armas",
+      "on_fail": 2,
+      "on_success": 2,
+      "on_hard_fail": 4
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 109,
+    "fields": {
+      "scene": 37,
+      "description": "Tentar captar qualquer som para se orientar.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 25,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 110,
+    "fields": {
+      "scene": 37,
+      "description": "Sair do esconderijo e seguir pelo corredor principal.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 19,
+      "on_success": 22,
+      "on_hard_fail": 24
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 111,
+    "fields": {
+      "scene": 37,
+      "description": "Você decide esperar que o alarme pare antes de se mover.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Esperar o Alarme Cessar",
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 112,
+    "fields": {
+      "scene": 38,
+      "description": "Inspecionar uma das portas em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 39,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 113,
+    "fields": {
+      "scene": 38,
+      "description": "Seguir pelo corredor, esperando encontrar uma saída.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 25,
+      "on_success": 22,
+      "on_hard_fail": 24
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 114,
+    "fields": {
+      "scene": 38,
+      "description": "Você decide que é melhor voltar para o hall principal e tentar novamente.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Voltar para o Hall",
+      "on_fail": 29,
+      "on_success": 8,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 115,
+    "fields": {
+      "scene": 39,
+      "description": "Inspecionar as caixas em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 56,
+      "on_hard_fail": 25
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 116,
+    "fields": {
+      "scene": 39,
+      "description": "Tentar entender o significado do símbolo na porta ou em outros objetos.",
+      "action_type": "P",
+      "action": 31,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 117,
+    "fields": {
+      "scene": 39,
+      "description": "Você decide que não há nada útil aqui e sai da sala.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Sair da Sala",
+      "on_fail": 29,
+      "on_success": 22,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 118,
+    "fields": {
+      "scene": 40,
+      "description": "Tentar quebrar as correntes com força.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 119,
+    "fields": {
+      "scene": 40,
+      "description": "Tentar usar a fraqueza das correntes para se libertar com cuidado.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 120,
+    "fields": {
+      "scene": 40,
+      "description": "Você decide esperar por uma oportunidade melhor para escapar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Esperar por uma Oportunidade",
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 71
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 121,
+    "fields": {
+      "scene": 41,
+      "description": "Tentar se acalmar e recuperar o controle.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 42,
+      "on_success": 40,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 122,
+    "fields": {
+      "scene": 41,
+      "description": "Você decide gritar ou fazer barulho para atrair a atenção de quem o prendeu.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Chamar Atenção",
+      "on_fail": 42,
+      "on_success": 44,
+      "on_hard_fail": 71
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 123,
+    "fields": {
+      "scene": 41,
+      "description": "Você se entrega ao desespero, perdendo a esperança.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Desistir",
+      "on_fail": 71,
+      "on_success": 27,
+      "on_hard_fail": 73
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 124,
+    "fields": {
+      "scene": 42,
+      "description": "Tentar bloquear a invasão psíquica com força de vontade.",
+      "action_type": "P",
+      "action": 42,
+      "history_action": null,
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 125,
+    "fields": {
+      "scene": 42,
+      "description": "Tentar suportar a dor e esperar que a tortura termine.",
+      "action_type": "P",
+      "action": 36,
+      "history_action": null,
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 72
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 126,
+    "fields": {
+      "scene": 42,
+      "description": "Você implora ao guarda para parar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Implorar por Misericórdia",
+      "on_fail": 41,
+      "on_success": 43,
+      "on_hard_fail": 71
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 127,
+    "fields": {
+      "scene": 43,
+      "description": "Tentar se esgueirar pelas sombras do corredor, evitando qualquer guarda.",
+      "action_type": "P",
+      "action": 5,
+      "history_action": null,
+      "on_fail": 29,
+      "on_success": 28,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 128,
+    "fields": {
+      "scene": 43,
+      "description": "Inspecionar as celas próximas em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 28,
+      "on_success": 33,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 129,
+    "fields": {
+      "scene": 43,
+      "description": "Você decide que é hora de correr para a saída mais próxima.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Correr para a Saída",
+      "on_fail": 29,
+      "on_success": 22,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 130,
+    "fields": {
+      "scene": 44,
+      "description": "Tentar manipular as correntes ou a fechadura da cela discretamente.",
+      "action_type": "P",
+      "action": 8,
+      "history_action": null,
+      "on_fail": 42,
+      "on_success": 43,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 131,
+    "fields": {
+      "scene": 44,
+      "description": "Tentar parecer adormecido ou inconsciente, esperando que ele o ignore.",
+      "action_type": "P",
+      "action": 7,
+      "history_action": null,
+      "on_fail": 42,
+      "on_success": 43,
+      "on_hard_fail": 42
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 132,
+    "fields": {
+      "scene": 44,
+      "description": "Você decide que é sua chance e o ataca.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Atacar o Guarda",
+      "on_fail": 42,
+      "on_success": 43,
+      "on_hard_fail": 71
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 133,
+    "fields": {
+      "scene": 45,
+      "description": "Tentar captar qualquer som para se orientar.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 46,
+      "on_success": 49,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 134,
+    "fields": {
+      "scene": 45,
+      "description": "Tentar se mover no escuro, tateando o caminho.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 29,
+      "on_success": 28,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 135,
+    "fields": {
+      "scene": 45,
+      "description": "Você decide que precisa de luz para se orientar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar uma Fonte de Luz",
+      "on_fail": 46,
+      "on_success": 48,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 136,
+    "fields": {
+      "scene": 46,
+      "description": "Tentar se acalmar e recuperar o controle.",
+      "action_type": "P",
+      "action": 14,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 45,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 137,
+    "fields": {
+      "scene": 46,
+      "description": "Correr em qualquer direção, esperando encontrar uma saída.",
+      "action_type": "P",
+      "action": 9,
+      "history_action": null,
+      "on_fail": 9,
+      "on_success": 28,
+      "on_hard_fail": 64
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 138,
+    "fields": {
+      "scene": 46,
+      "description": "Você grita, esperando que o barulho afaste o que quer que esteja causando seu pânico.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Gritar e Chamar Atenção",
+      "on_fail": 29,
+      "on_success": 45,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 139,
+    "fields": {
+      "scene": 47,
+      "description": "Tentar resistir aos efeitos da náusea e da fraqueza.",
+      "action_type": "P",
+      "action": 39,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 45,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 140,
+    "fields": {
+      "scene": 47,
+      "description": "Tentar ignorar o cheiro e continuar se movendo.",
+      "action_type": "P",
+      "action": 40,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 28,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 141,
+    "fields": {
+      "scene": 47,
+      "description": "Você decide que precisa de ar fresco e tenta encontrar uma saída.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar Ar Fresco",
+      "on_fail": 20,
+      "on_success": 66,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 142,
+    "fields": {
+      "scene": 48,
+      "description": "Inspecionar o corredor em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 49,
+      "on_success": 21,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 143,
+    "fields": {
+      "scene": 48,
+      "description": "Seguir pelo corredor, usando a luz para se orientar.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 25,
+      "on_success": 28,
+      "on_hard_fail": 24
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 144,
+    "fields": {
+      "scene": 48,
+      "description": "Você decide que a luz pode atrair atenção e a apaga.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Apagar a Luz",
+      "on_fail": 29,
+      "on_success": 45,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 145,
+    "fields": {
+      "scene": 49,
+      "description": "Procurar por armadilhas ou perigos ocultos na água ou nas paredes.",
+      "action_type": "P",
+      "action": 32,
+      "history_action": null,
+      "on_fail": 57,
+      "on_success": 51,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 146,
+    "fields": {
+      "scene": 49,
+      "description": "Tentar desativar o painel de controle da porta ou a armadilha elétrica.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 50,
+      "on_success": 58,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 147,
+    "fields": {
+      "scene": 49,
+      "description": "Você decide que não tem tempo para desativar nada e tenta forçar a porta de metal.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Tentar Forçar a Porta",
+      "on_fail": 59,
+      "on_success": 58,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 148,
+    "fields": {
+      "scene": 50,
+      "description": "Tentar estancar o sangramento e cuidar do ferimento.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 49,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 149,
+    "fields": {
+      "scene": 50,
+      "description": "Ignorar a dor e continuar se movendo para o corredor inundado.",
+      "action_type": "P",
+      "action": 37,
+      "history_action": null,
+      "on_fail": 20,
+      "on_success": 49,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 150,
+    "fields": {
+      "scene": 50,
+      "description": "Você decide que precisa de um lugar seguro para se recuperar antes de continuar.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar um Esconderijo",
+      "on_fail": 20,
+      "on_success": 35,
+      "on_hard_fail": 9
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 151,
+    "fields": {
+      "scene": 51,
+      "description": "Tentar desativar o painel de controle da porta ou a armadilha elétrica.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 50,
+      "on_success": 58,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 152,
+    "fields": {
+      "scene": 51,
+      "description": "Tentar atravessar a água, evitando os fios expostos.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 17,
+      "on_success": 58,
+      "on_hard_fail": 74
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 153,
+    "fields": {
+      "scene": 51,
+      "description": "Você decide que não tem tempo para desativar nada e tenta forçar a porta de metal.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Tentar Forçar a Porta",
+      "on_fail": 59,
+      "on_success": 58,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 154,
+    "fields": {
+      "scene": 52,
+      "description": "Tentar entender o significado completo do símbolo.",
+      "action_type": "P",
+      "action": 31,
+      "history_action": null,
+      "on_fail": 49,
+      "on_success": 49,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 155,
+    "fields": {
+      "scene": 52,
+      "description": "Tentar memorizar o símbolo para usá-lo mais tarde.",
+      "action_type": "P",
+      "action": 28,
+      "history_action": null,
+      "on_fail": 49,
+      "on_success": 49,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 156,
+    "fields": {
+      "scene": 52,
+      "description": "Você decide que é hora de continuar descendo a escadaria.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Continuar Descendo",
+      "on_fail": 53,
+      "on_success": 49,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 157,
+    "fields": {
+      "scene": 53,
+      "description": "Tentar bloquear a influência da presença etérea.",
+      "action_type": "P",
+      "action": 42,
+      "history_action": null,
+      "on_fail": 14,
+      "on_success": 49,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 158,
+    "fields": {
+      "scene": 53,
+      "description": "Tentar encarar a presença etérea, esperando que ela recue.",
+      "action_type": "P",
+      "action": 43,
+      "history_action": null,
+      "on_fail": 14,
+      "on_success": 49,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 159,
+    "fields": {
+      "scene": 53,
+      "description": "Você decide que é muito perigoso e tenta fugir.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Fugir Desesperadamente",
+      "on_fail": 29,
+      "on_success": 49,
+      "on_hard_fail": 68
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 160,
+    "fields": {
+      "scene": 54,
+      "description": "Tentar desativar o painel de controle para desativar a barreira.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 19,
+      "on_success": 55,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 161,
+    "fields": {
+      "scene": 54,
+      "description": "Tentar passar pela barreira, esperando que ela não seja letal.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 17,
+      "on_success": 55,
+      "on_hard_fail": 74
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 162,
+    "fields": {
+      "scene": 54,
+      "description": "Você decide que é muito arriscado e continua para a escadaria.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Ignorar e Continuar",
+      "on_fail": 28,
+      "on_success": 28,
+      "on_hard_fail": 17
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 163,
+    "fields": {
+      "scene": 55,
+      "description": "Inspecionar os equipamentos em busca de algo útil.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 28,
+      "on_success": 56,
+      "on_hard_fail": 29
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 164,
+    "fields": {
+      "scene": 55,
+      "description": "Tentar desativar a fonte do zumbido.",
+      "action_type": "P",
+      "action": 3,
+      "history_action": null,
+      "on_fail": 19,
+      "on_success": 28,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 165,
+    "fields": {
+      "scene": 55,
+      "description": "Você decide que não há nada útil aqui e sai da sala.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Sair da Sala",
+      "on_fail": 29,
+      "on_success": 28,
+      "on_hard_fail": 67
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 166,
+    "fields": {
+      "scene": 56,
+      "description": "Usar a poção para curar seus ferimentos.",
+      "action_type": "P",
+      "action": 44,
+      "history_action": null,
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 76
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 167,
+    "fields": {
+      "scene": 56,
+      "description": "Guardar a poção para mais tarde.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 25,
+      "on_success": 22,
+      "on_hard_fail": 30
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 168,
+    "fields": {
+      "scene": 56,
+      "description": "Você decide que pode haver mais poções na sala.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Procurar Mais Poções",
+      "on_fail": 22,
+      "on_success": 22,
+      "on_hard_fail": 25
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 169,
+    "fields": {
+      "scene": 57,
+      "description": "Tentar atravessar a água, tateando o caminho.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 59,
+      "on_success": 58,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 170,
+    "fields": {
+      "scene": 57,
+      "description": "Tentar captar qualquer som na água.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 58,
+      "on_success": 59,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 171,
+    "fields": {
+      "scene": 57,
+      "description": "Você decide que não tem tempo para desativar nada e tenta forçar a porta de metal.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Tentar Forçar a Porta",
+      "on_fail": 59,
+      "on_success": 58,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 172,
+    "fields": {
+      "scene": 58,
+      "description": "Atravessar a sala inundada até a mesa, evitando os armários instáveis e o que quer que esteja na água.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 59,
+      "on_success": 60,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 173,
+    "fields": {
+      "scene": 58,
+      "description": "Observar a sala em busca de outros itens ou perigos antes de pegar o diário.",
+      "action_type": "P",
+      "action": 24,
+      "history_action": null,
+      "on_fail": 60,
+      "on_success": 61,
+      "on_hard_fail": 59
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 174,
+    "fields": {
+      "scene": 58,
+      "description": "Você ignora os perigos e se apressa para pegar o diário.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Pegar o Diário Imediatamente",
+      "on_fail": 59,
+      "on_success": 60,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 175,
+    "fields": {
+      "scene": 59,
+      "description": "Tentar resistir à dor e lutar contra a criatura.",
+      "action_type": "P",
+      "action": 35,
+      "history_action": null,
+      "on_fail": 75,
+      "on_success": 60,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 176,
+    "fields": {
+      "scene": 59,
+      "description": "Tentar se soltar da criatura e fugir.",
+      "action_type": "P",
+      "action": 45,
+      "history_action": null,
+      "on_fail": 75,
+      "on_success": 60,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 177,
+    "fields": {
+      "scene": 59,
+      "description": "Você decide lutar contra a criatura.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Atacar a Criatura",
+      "on_fail": 75,
+      "on_success": 60,
+      "on_hard_fail": 70
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 178,
+    "fields": {
+      "scene": 60,
+      "description": "Tentar ler as primeiras páginas do diário imediatamente.",
+      "action_type": "P",
+      "action": 34,
+      "history_action": null,
+      "on_fail": 63,
+      "on_success": 62,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 179,
+    "fields": {
+      "scene": 60,
+      "description": "Fazer um último escaneamento da sala, tentando memorizar a localização exata do diário e qualquer outra coisa que possa ser relevante.",
+      "action_type": "P",
+      "action": 28,
+      "history_action": null,
+      "on_fail": 63,
+      "on_success": 63,
+      "on_hard_fail": 59
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 180,
+    "fields": {
+      "scene": 60,
+      "description": "Você tem o que veio buscar. É hora de sair deste lugar antes que seja tarde demais.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Sair Imediatamente",
+      "on_fail": 75,
+      "on_success": 63,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 181,
+    "fields": {
+      "scene": 61,
+      "description": "Atravessar a sala inundada até a mesa, usando a informação das criaturas para evitar os pontos perigosos.",
+      "action_type": "P",
+      "action": 10,
+      "history_action": null,
+      "on_fail": 59,
+      "on_success": 60,
+      "on_hard_fail": 75
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 182,
+    "fields": {
+      "scene": 61,
+      "description": "Tentar captar qualquer som na água para entender melhor as criaturas.",
+      "action_type": "P",
+      "action": 25,
+      "history_action": null,
+      "on_fail": 60,
+      "on_success": 60,
+      "on_hard_fail": 14
+    }
+  },
+  {
+    "model": "games.SceneAction",
+    "pk": 183,
+    "fields": {
+      "scene": 61,
+      "description": "Você ignora os perigos e se apressa para pegar o diário.",
+      "action_type": "H",
+      "action": null,
+      "history_action": "Pegar o Diário Imediatamente",
+      "on_fail": 59,
+      "on_success": 60,
+      "on_hard_fail": 75
+    }
+  }
+]

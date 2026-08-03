@@ -2,9 +2,9 @@ from django.shortcuts import render
 from rest_framework import status, viewsets
 from rest_framework.response import Response
 
-from .models import Action, ActionItemRequirement, CharacterAction
+from .models import Act, Action, ActionItemRequirement, CharacterAction, SceneAction, Scene
 from .serializers import (ActionItemRequirementSerializer, ActionSerializer,
-                          CharacterActionSerializer)
+                          CharacterActionSerializer, SceneActionSerializer, SceneSerializer, ActSerializer)
 from .services import ActionService
 
 
@@ -36,3 +36,18 @@ class CharacterActionViewSet(viewsets.ModelViewSet):
 class ActionItemRequirementViewSet(viewsets.ModelViewSet):
     serializer_class = ActionItemRequirementSerializer
     queryset = ActionItemRequirement.objects.all()
+
+
+class SceneActionViewSet(viewsets.ModelViewSet):
+    serializer_class = SceneActionSerializer
+    queryset = SceneAction.objects.all()
+
+
+class SceneViewSet(viewsets.ModelViewSet):
+    serializer_class = SceneSerializer
+    queryset = Scene.objects.all()
+
+
+class ActViewSet(viewsets.ModelViewSet):
+    serializer_class = ActSerializer
+    queryset = Act.objects.all()

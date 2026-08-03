@@ -3,7 +3,7 @@ from rest_framework import serializers
 from characters.models import Character
 
 from .models import (Action, ActionAttributeRequirement, ActionItemRequirement,
-                     CharacterAction)
+                     CharacterAction, Act, Scene, SceneAction)
 
 
 class ActionAttributeRequirementSerializer(serializers.ModelSerializer):
@@ -50,4 +50,23 @@ class CharacterActionSerializer(serializers.ModelSerializer):
 class ActionItemRequirementSerializer(serializers.ModelSerializer):
     class Meta:
         model = ActionItemRequirement
+        fields = "__all__"
+
+
+class SceneSerializer(serializers.ModelSerializer):
+    url = serializers.HyperlinkedIdentityField(view_name="scene-detail", lookup_field="pk")
+    class Meta:
+        model = Scene
+        fields = "__all__"
+
+
+class SceneActionSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = SceneAction
+        fields = "__all__"
+
+
+class ActSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Act
         fields = "__all__"
