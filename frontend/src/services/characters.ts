@@ -12,6 +12,21 @@ export interface CharacterModifier {
   character: number;
 }
 
+export interface InventoryItem {
+  id: number;
+  name: string;
+  description: string;
+  weight: number;
+  created?: string | null;
+  item_type?: number;
+  category?: number;
+}
+
+export interface CharacterInventory {
+  id: number;
+  items: InventoryItem[];
+}
+
 export interface Character {
   id: number;
   name: string;
@@ -24,6 +39,7 @@ export interface Character {
   max_health?: number;
 
   modifiers: CharacterModifier[];
+  inventory?: CharacterInventory[];
 
   created?: string;
   updated?: string;
@@ -48,6 +64,16 @@ export async function fetchCharacters(): Promise<Character[]> {
   }
 
   return data.results;
+}
+
+export async function fetchCharacter(
+  characterId: number
+): Promise<Character> {
+  const response = await api.get<Character>(
+    `/characters/${characterId}/`
+  );
+
+  return response.data;
 }
 
 export interface CreateCharacterPayload {

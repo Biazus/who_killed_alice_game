@@ -1,5 +1,6 @@
 import type { CSSProperties } from "react";
-import { CircleHelp, UserRound } from "lucide-react";
+import { CircleHelp, UserRound, ArrowUpRight } from "lucide-react"; // Importe ArrowUpRight
+import { useNavigate } from "react-router-dom"; // Importe useNavigate
 
 import type { Character } from "./services/characters";
 import { modifierVisualMap } from "./modifierVisuals";
@@ -85,6 +86,11 @@ function getInitials(name: string): string {
 
 function CharacterCard({ character }: CharacterCardProps) {
   const modifiers = character.modifiers ?? [];
+  const navigate = useNavigate(); // Inicialize useNavigate
+
+  function openCharacterDetail() {
+    navigate(`/characters/${character.id}`);
+  }
 
   const owner = character.owner
     ? `@${character.owner}`
@@ -92,8 +98,9 @@ function CharacterCard({ character }: CharacterCardProps) {
 
   return (
     <article
-      className="character-card"
+      className="character-card character-card--clickable" // Adicione a classe para estilo de cursor
       style={getCharacterPalette(character.id)}
+      onClick={openCharacterDetail} // Adicione o evento de clique ao card
     >
       <div className="character-card__accent" />
 
@@ -187,6 +194,7 @@ function CharacterCard({ character }: CharacterCardProps) {
                   key={item.id}
                   tabIndex={0}
                   aria-describedby={tooltipId}
+                  onClick={(event) => event.stopPropagation()} // Impede que o clique no modificador propague para o card
                 >
                   <div className="modifier-tile__icon">
                     <Icon
@@ -226,8 +234,19 @@ function CharacterCard({ character }: CharacterCardProps) {
       </section>
 
       <footer className="character-card__footer">
-        <span>ARQUIVO CONFIDENCIAL</span>
-        <span>CASO Nº 001</span>
+        <span>ARQUIVO CONFIDENCIAL · CASO Nº 001</span>{" "}
+        {/* Unifiquei as duas spans para melhor alinhamento */}
+        <button
+          type="button"
+          className="character-card__open"
+          onClick={(event) => {
+            event.stopPropagation(); // Impede que o clique no botão propague para o card
+            openCharacterDetail();
+          }}
+        >
+          Abrir dossiê
+          <ArrowUpRight size={15} aria-hidden="true" />
+        </button>
       </footer>
     </article>
   );

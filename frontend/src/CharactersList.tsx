@@ -54,8 +54,8 @@ function CharactersList() {
           <span>
             {loading
               ? "Consultando arquivos..."
-              : `${characters.length} personagem${
-                  characters.length === 1 ? "" : "ns"
+              : `${characters.length} personage${
+                  characters.length === 1 ? "m" : "ns"
                 } registrado${characters.length === 1 ? "" : "s"}`}
           </span>
         </div>
