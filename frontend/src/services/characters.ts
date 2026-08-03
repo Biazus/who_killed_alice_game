@@ -66,6 +66,7 @@ export interface SceneAction {
   on_fail: number | null; // ID da próxima cena em caso de falha
   on_success: number | null; // ID da próxima cena em caso de sucesso
   on_hard_fail: number | null; // ID da próxima cena em caso de falha crítica
+  scene: number; // ID da cena à qual esta ação pertence
 }
 
 export interface Scene {
@@ -76,7 +77,7 @@ export interface Scene {
   description: string;
   act: number; // ID do Act
   order: number;
-  scene_actions: SceneAction[]; // Ações disponíveis nesta cena
+  // scene_actions: SceneAction[]; // REMOVIDO - Agora buscado sob demanda
   url: string;
 }
 
@@ -86,14 +87,14 @@ export interface Act {
   description: string;
   reward_type: string;
   reward_id: number;
-  scenes: Scene[]; // Cenas dentro deste ato
+  // scenes: Scene[]; // REMOVIDO - Agora buscado sob demanda
 }
 
 export interface CharacterProgressOnAct {
   id: number;
   character: number; // ID do personagem
-  act: Act; // Detalhes do Act
-  current_scene: Scene; // Detalhes da cena atual
+  act: Act; // Detalhes do Act (sem scenes aninhadas)
+  current_scene: Scene; // Detalhes da cena atual (sem scene_actions aninhadas)
   finished: boolean;
   game_message?: string; // Adicionado para receber mensagens do backend
 }
@@ -149,13 +150,11 @@ export async function createCharacter(
   return response.data;
 }
 
-// Novas funções para o jogo
+// Funções para o jogo
 export async function fetchCharacterProgress(
   characterId: number
 ): Promise<CharacterProgressOnAct | null> {
   try {
-    // Agora, a primeira chamada para /scene_action_select sem scene_action_id
-    // fará com que o backend crie o progresso se ele não existir.
     const response = await api.post<CharacterProgressOnAct>(
       "/scene_action_select/",
       { character_id: characterId }
@@ -175,5 +174,23 @@ export async function selectSceneAction(
     "/scene_action_select/",
     { character_id: characterId, scene_action_id: sceneActionId }
   );
+  return response.data;
+}
+
+// NOVAS FUNÇÕES para buscar cenas e ações sob demanda
+export async function fetchScene(sceneId: number): Promise<Scene> {
+  const response = await api.get<Scene>(`/scenes/${sceneId}/`);
+  return response.data;
+}
+
+export async function fetchSceneActionsForScene(sceneId: number): Promise<SceneAction[]> {
+  // Assumindo que você tem um endpoint para listar SceneActions filtradas por scene_id
+  // Ou você pode buscar todas e filtrar no frontend, mas um endpoint filtrado é melhor
+  const response = await api.get<PaginatedResponse<SceneAction>>(`/scene_actions/?scene=${sceneId}`);
+  return response.data.results;
+}
+
+export async function fetchAct(actId: number): Promise<Act> {
+  const response = await api.get<Act>(`/acts/${actId}/`);
   return response.data;
 }

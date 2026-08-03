@@ -14,13 +14,17 @@ import {
   fetchCharacter,
   type Character,
   type InventoryItem,
-  fetchCharacterProgress, // Importar nova função
-  selectSceneAction, // Importar nova função
-  type CharacterProgressOnAct, // Importar nova interface
-  type SceneAction, // Importar nova interface
+  fetchCharacterProgress,
+  selectSceneAction,
+  type CharacterProgressOnAct,
+  type SceneAction,
+  type Scene,
+  type Act,
+  fetchSceneActionsForScene, // Importar nova função
+  fetchScene, // Importar nova função
+  fetchAct, // Importar nova função
 } from "./services/characters";
-import { modifierVisualMap } from "./modifierVisuals"; // Certifique-se de que este import está correto
-// import api from "../api"; // Não é mais necessário importar api diretamente aqui
+import { modifierVisualMap } from "./modifierVisuals";
 
 function decodeHtmlEntities(value: string): string {
   const textarea = document.createElement("textarea");
@@ -38,7 +42,7 @@ function formatWeight(weight?: number): string {
 }
 
 function CharacterDetail() {
-  const { id } = useParams(); // Obtém o ID da URL
+  const { id } = useParams();
   const navigate = useNavigate();
 
   const [character, setCharacter] = useState<Character | null>(null);
@@ -50,6 +54,7 @@ function CharacterDetail() {
     useState<SceneAction | null>(null);
   const [isSubmittingAction, setIsSubmittingAction] = useState(false);
   const [gameMessage, setGameMessage] = useState<string | null>(null);
+  const [currentSceneActions, setCurrentSceneActions] = useState<SceneAction[]>([]); // Estado para as ações da cena atual
 
   const characterId = useMemo(() => Number(id), [id]);
 
@@ -67,7 +72,7 @@ function CharacterDetail() {
     try {
       setLoading(true);
       setError(null);
-      setGameMessage(null); // Limpa mensagens de jogo ao recarregar
+      setGameMessage(null);
 
       const charData = await fetchCharacter(characterId);
       setCharacter(charData);
@@ -75,9 +80,15 @@ function CharacterDetail() {
       const progressData = await fetchCharacterProgress(characterId);
       setCharacterProgress(progressData);
 
-      if (progressData?.game_message) {
-        setGameMessage(progressData.game_message);
-      } else if (!progressData) {
+      if (progressData) {
+        // Agora, buscamos as ações da cena atual separadamente
+        const actions = await fetchSceneActionsForScene(progressData.current_scene.id);
+        setCurrentSceneActions(actions.filter(sa => sa.action_type === "P")); // Apenas ações do jogador
+
+        if (progressData.game_message) {
+          setGameMessage(progressData.game_message);
+        }
+      } else {
         setGameMessage("Nenhum progresso encontrado. Iniciando nova aventura...");
       }
     } catch (requestError: any) {
@@ -96,9 +107,28 @@ function CharacterDetail() {
     loadCharacterAndProgress();
   }, [loadCharacterAndProgress]);
 
+  // Efeito para recarregar as ações da cena quando a cena atual muda
+  useEffect(() => {
+    async function loadSceneActions() {
+      if (characterProgress && characterProgress.current_scene && !characterProgress.finished) {
+        try {
+          const actions = await fetchSceneActionsForScene(characterProgress.current_scene.id);
+          setCurrentSceneActions(actions.filter(sa => sa.action_type === "P"));
+        } catch (err) {
+          console.error("Erro ao carregar ações da cena:", err);
+          setCurrentSceneActions([]);
+        }
+      } else {
+        setCurrentSceneActions([]);
+      }
+    }
+    loadSceneActions();
+  }, [characterProgress?.current_scene, characterProgress?.finished]);
+
+
   const handleSelectAction = (action: SceneAction) => {
     setSelectedSceneAction(action);
-    setGameMessage(null); // Limpa mensagem ao selecionar nova ação
+    setGameMessage(null);
   };
 
   const handleSubmitAction = async () => {
@@ -113,7 +143,7 @@ function CharacterDetail() {
         selectedSceneAction.id
       );
       setCharacterProgress(updatedProgress);
-      setSelectedSceneAction(null); // Limpa a seleção após a submissão
+      setSelectedSceneAction(null);
 
       if (updatedProgress.game_message) {
         setGameMessage(updatedProgress.game_message);
@@ -121,7 +151,6 @@ function CharacterDetail() {
         setGameMessage("Ação realizada! Avançando para a próxima cena...");
       }
 
-      // Se o progresso foi finalizado, podemos exibir uma mensagem diferente
       if (updatedProgress.finished) {
         setGameMessage(updatedProgress.game_message || "O jogo chegou ao fim!");
       }
@@ -178,10 +207,9 @@ function CharacterDetail() {
 
   const currentAct = characterProgress?.act;
   const currentScene = characterProgress?.current_scene;
-  const availableSceneActions =
-    currentScene?.scene_actions.filter(
-      (sa) => sa.action_type === "P"
-    ) || []; // Apenas ações do jogador
+  // availableSceneActions agora vem do estado currentSceneActions
+  const availableSceneActions = currentSceneActions;
+
 
   return (
     <main className="character-detail-page">
