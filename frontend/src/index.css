@@ -1,28 +1,50 @@
 :root {
-  --bg: #171719;
-  --bg-deep: #0e0e10;
+  /* Mundo destruído — versão clara */
+  --bg-deep: #d8c7ad;
+  --bg: #eee3d1;
+  --bg-elevated: #f8f1e5;
 
-  --surface: #232225;
-  --surface-light: #302e30;
-  --surface-glass: rgba(28, 27, 29, 0.88);
+  /* Superfícies: osso, concreto desgastado e papel queimado */
+  --surface: #fffaf1;
+  --surface-light: #fffdf8;
+  --surface-glass: rgba(255, 250, 241, 0.9);
+  --surface-black: #342c28;
 
-  --text: #fffaf2;
-  --text-strong: #ffffff;
-  --muted: #c9c0b5;
-  --muted-dark: #9a918a;
+  /* Texto: carvão, poeira e areia */
+  --text-strong: #2d211d;
+  --text: #473832;
+  --muted: #766358;
+  --muted-dark: #9a8068;
 
-  --sand: #d9c6a5;
-  --sand-light: #f1e4ce;
+  /* Areia e ruínas */
+  --sand-light: #fff7e8;
+  --sand: #e7d1ad;
+  --sand-dark: #a47f5a;
 
-  --blood: #b82028;
-  --blood-bright: #ed3d47;
-  --blood-soft: rgba(184, 32, 40, 0.3);
+  /* Sangue, ferrugem e ameaça */
+  --blood-deep: #651d20;
+  --blood-dark: #8c292c;
+  --blood: #b93638;
+  --blood-bright: #d94a49;
+  --blood-pale: #f07b70;
+  --rust: #a94c36;
 
-  --border: rgba(255, 250, 242, 0.18);
-  --border-strong: rgba(237, 61, 71, 0.76);
+  /* Estados */
+  --danger: #bf3638;
+  --success: #657654;
+  --warning: #b87838;
 
-  --danger: #ff817d;
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.46);
+  /* Bordas e profundidade */
+  --border: rgba(70, 47, 37, 0.2);
+  --border-muted: rgba(126, 92, 64, 0.2);
+  --border-strong: rgba(185, 54, 56, 0.75);
+
+  --blood-soft: rgba(185, 54, 56, 0.14);
+  --blood-glow: rgba(217, 74, 73, 0.25);
+  --sand-soft: rgba(180, 133, 83, 0.15);
+
+  --shadow: 0 24px 70px rgba(79, 53, 38, 0.18);
+  --shadow-hard: 0 12px 36px rgba(79, 53, 38, 0.26);
 }
 
 * {
@@ -41,16 +63,21 @@ body {
   color: var(--text);
   background:
     radial-gradient(
-      circle at 78% 8%,
-      rgba(237, 61, 71, 0.12),
+      circle at 84% 4%,
+      rgba(217, 74, 73, 0.16),
       transparent 26rem
     ),
     radial-gradient(
-      circle at 15% 22%,
-      rgba(217, 198, 165, 0.08),
-      transparent 30rem
+      circle at 10% 24%,
+      rgba(255, 253, 245, 0.88),
+      transparent 31rem
     ),
-    linear-gradient(180deg, #222124 0%, var(--bg-deep) 100%);
+    radial-gradient(
+      circle at 48% 100%,
+      rgba(180, 133, 83, 0.2),
+      transparent 38rem
+    ),
+    linear-gradient(180deg, #fffaf0 0%, #ead8bb 50%, #d8bea0 100%);
 }
 
 button,

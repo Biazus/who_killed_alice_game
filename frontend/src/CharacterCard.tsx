@@ -1,25 +1,12 @@
-import type { ComponentType, CSSProperties } from "react";
+import type { CSSProperties } from "react";
+import { CircleHelp, UserRound } from "lucide-react";
 
-import {
-  Brain,
-  CircleHelp,
-  Eye,
-  Footprints,
-  Handshake,
-  HeartPulse,
-  MessageCircle,
-  Search,
-  Shield,
-  UserRound,
-  type LucideProps,
-} from "lucide-react";
 import type { Character } from "./services/characters";
+import { modifierVisualMap } from "./modifierVisuals";
 
 interface CharacterCardProps {
   character: Character;
 }
-
-type ModifierIcon = ComponentType<LucideProps>;
 
 type CharacterPalette = {
   accent: string;
@@ -96,62 +83,9 @@ function getInitials(name: string): string {
     .toUpperCase();
 }
 
-function getModifierIcon(
-  name: string,
-  category: string
-): ModifierIcon {
-  const normalizedName = name.toLowerCase();
-  const normalizedCategory = category.toLowerCase();
-
-  if (
-    normalizedName.includes("coração") ||
-    normalizedCategory.includes("resistência") ||
-    normalizedCategory.includes("sobrevivência")
-  ) {
-    return HeartPulse;
-  }
-
-  if (
-    normalizedName.includes("rosto") ||
-    normalizedCategory.includes("persuasão") ||
-    normalizedCategory.includes("interação social")
-  ) {
-    return MessageCircle;
-  }
-
-  if (
-    normalizedName.includes("chão") ||
-    normalizedName.includes("passagem") ||
-    normalizedCategory.includes("investigação")
-  ) {
-    return Footprints;
-  }
-
-  if (normalizedCategory.includes("observação")) {
-    return Eye;
-  }
-
-  if (normalizedCategory.includes("proteção")) {
-    return Shield;
-  }
-
-  if (normalizedCategory.includes("inteligência")) {
-    return Brain;
-  }
-
-  if (normalizedCategory.includes("social")) {
-    return Handshake;
-  }
-
-  if (normalizedCategory.includes("busca")) {
-    return Search;
-  }
-
-  return CircleHelp;
-}
-
 function CharacterCard({ character }: CharacterCardProps) {
   const modifiers = character.modifiers ?? [];
+
   const owner = character.owner
     ? `@${character.owner}`
     : "Desconhecido";
@@ -174,6 +108,7 @@ function CharacterCard({ character }: CharacterCardProps) {
 
           <div className="character-card__name">
             <span className="eyebrow">SOBREVIVENTE REGISTRADO</span>
+
             <h2>{character.name}</h2>
 
             <span className="character-owner">
@@ -191,7 +126,10 @@ function CharacterCard({ character }: CharacterCardProps) {
 
       <div className="character-card__divider" />
 
-      <section className="character-summary" aria-label="Resumo do personagem">
+      <section
+        className="character-summary"
+        aria-label="Resumo do personagem"
+      >
         <div className="summary-item">
           <span className="summary-item__label">Registro</span>
           <strong>#{String(character.id).padStart(3, "0")}</strong>
@@ -214,15 +152,16 @@ function CharacterCard({ character }: CharacterCardProps) {
       >
         <div className="modifiers-section__heading">
           <div>
-            <span className="eyebrow">EVIDÊNCIAS COMPORTAMENTAIS</span>
+            <span className="eyebrow">
+              EVIDÊNCIAS COMPORTAMENTAIS
+            </span>
+
             <h3 id={`modifiers-${character.id}`}>
               Traços revelados
             </h3>
           </div>
 
-          <span className="modifier-count">
-            {modifiers.length}
-          </span>
+          <span className="modifier-count">{modifiers.length}</span>
         </div>
 
         {modifiers.length > 0 ? (
@@ -232,10 +171,13 @@ function CharacterCard({ character }: CharacterCardProps) {
                 item.modifier.category
               );
 
-              const Icon = getModifierIcon(
-                item.modifier.name,
-                category
-              );
+              const visual = modifierVisualMap[item.modifier.name];
+
+              /*
+               * Caso a API retorne um nome ainda não incluído no mapa,
+               * o sistema mantém a tela funcionando com CircleHelp.
+               */
+              const Icon = visual?.icon ?? CircleHelp;
 
               const tooltipId = `modifier-description-${item.id}`;
 
@@ -250,6 +192,7 @@ function CharacterCard({ character }: CharacterCardProps) {
                     <Icon
                       size={27}
                       strokeWidth={1.7}
+                      className={visual?.iconClassName}
                       aria-hidden="true"
                     />
                   </div>

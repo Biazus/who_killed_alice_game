@@ -20,6 +20,7 @@ function CharactersList() {
         setCharacters(data);
       } catch (error) {
         console.error("Erro ao carregar personagens:", error);
+
         setError(
           "Os arquivos foram comprometidos. Não foi possível carregar os personagens."
         );
@@ -33,25 +34,32 @@ function CharactersList() {
 
   return (
     <main className="characters-page">
-      <section className="characters-header" aria-label="Resumo da investigação">
-          <div className="characters-header__title">
-            <span className="eyebrow">CASO Nº 001 · INVESTIGAÇÃO ATIVA</span>
+      <section
+        className="characters-header"
+        aria-label="Resumo da investigação"
+      >
+        <div className="characters-header__title">
+          <span className="eyebrow">
+            CASO Nº 001 · INVESTIGAÇÃO ATIVA
+          </span>
 
-            <h1>
-              Quem matou <span>Alice?</span>
-            </h1>
-          </div>
+          <h1>
+            Quem matou <span>Alice?</span>
+          </h1>
+        </div>
 
-          <div className="characters-header__status">
-            <span className="status-dot" />
+        <div className="characters-header__status">
+          <span className="status-dot" />
 
-            <span>
-              {loading
-                ? "Consultando arquivos..."
-                : `${characters.length} personagem${characters.length === 1 ? "" : "ns"} registrado${characters.length === 1 ? "" : "s"}`}
-            </span>
-          </div>
-        </section>
+          <span>
+            {loading
+              ? "Consultando arquivos..."
+              : `${characters.length} personagem${
+                  characters.length === 1 ? "" : "ns"
+                } registrado${characters.length === 1 ? "" : "s"}`}
+          </span>
+        </div>
+      </section>
 
       <div className="section-title">
         <div>

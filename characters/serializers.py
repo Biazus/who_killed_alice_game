@@ -68,11 +68,11 @@ class CharacterInventorySerializer(serializers.ModelSerializer):
 
 
 class InventorySerializer(serializers.ModelSerializer):
-    items = serializers.PrimaryKeyRelatedField(many=True, queryset=Item.objects.all())
+    items = ItemSerializer(many=True, read_only=True)
 
     class Meta:
         model = Inventory
-        fields = "__all__"
+        fields = ["id", "items"]  # ou outros campos, se houver
 
 
 class InventoryListSerializer(serializers.ModelSerializer):
@@ -93,13 +93,15 @@ class InventoryDetailSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+
 class CharacterListSerializer(serializers.HyperlinkedModelSerializer):
     modifiers = CharacterModifierSerializer(many=True, read_only=True)
     owner = serializers.CharField(source="owner.username", allow_null=True)
+    inventory = InventorySerializer(many=True, read_only=True)
 
     class Meta:
         model = Character
-        fields = ["url", "id", "name", "level", "owner", "modifiers"]
+        fields = ["url", "id", "name", "level", "owner", "modifiers", "inventory"]
         extra_kwargs = {
             "url": {"view_name": "character-detail"}  # Matches default router naming
         }

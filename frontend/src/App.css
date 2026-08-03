@@ -222,9 +222,9 @@
   padding: 14px 18px;
   border: 1px solid #ff5a4b;
   border-radius: 2px;
+  color: var(--text-strong);
+  background: linear-gradient(135deg, var(--blood) 0%, var(--blood-dark) 100%);
   border-color: var(--blood-bright);
-  color: #ffffff;
-  background: var(--blood);
   box-shadow: 0 9px 20px rgba(126, 22, 16, 0.3);
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -233,7 +233,7 @@
 
 .primary-button:hover:not(:disabled) {
   transform: translateY(-1px);
-  background: var(--blood-bright);
+  background: linear-gradient(135deg, var(--blood-bright) 0%, var(--blood) 100%);
 }
 
 .primary-button:disabled {
@@ -365,17 +365,10 @@
   overflow: hidden;
   border: 1px solid rgba(220, 70, 57, 0.65);
   border-radius: 4px;
+  border-color: rgba(237, 61, 71, 0.46);
   background:
-    linear-gradient(
-      145deg,
-      rgba(180, 48, 37, 0.16),
-      transparent 35%
-    ),
-    linear-gradient(
-      180deg,
-      rgba(36, 21, 18, 0.98),
-      rgba(19, 14, 13, 0.98)
-    );
+    linear-gradient(145deg, rgba(184, 32, 40, 0.14), transparent 40%),
+    linear-gradient(180deg, #292628 0%, #181719 100%);
   box-shadow:
     inset 0 0 0 3px rgba(0, 0, 0, 0.22),
     0 18px 48px rgba(0, 0, 0, 0.3);
@@ -383,10 +376,11 @@
 }
 
 .character-card:hover {
-  border-color: #ff6556;
+  border-color: var(--blood-bright);
   box-shadow:
-    inset 0 0 0 3px rgba(0, 0, 0, 0.22),
-    0 26px 56px rgba(0, 0, 0, 0.42);
+    inset 0 0 0 2px rgba(255, 255, 255, 0.03),
+    0 24px 55px rgba(0, 0, 0, 0.5),
+    0 0 28px rgba(237, 61, 71, 0.18);
   transform: translateY(-4px);
 }
 
@@ -1197,6 +1191,16 @@
   white-space: nowrap;
 }
 
+.meta-label,
+.summary-item__label {
+  color: var(--sand-dark);
+}
+
+.character-meta strong,
+.summary-item strong {
+  color: var(--sand-light);
+}
+
 .modifiers-section {
   padding: 0 28px 26px;
 }
@@ -1288,4 +1292,433 @@
   .modifiers-section {
     padding: 0 20px 22px;
   }
+}
+
+/* ========================================
+   WHO KILLED ALICE — TEMA APOCALÍPTICO CLARO
+   Adicionar ao final de App.css
+   ======================================== */
+
+.app-shell {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 250, 241, 0.78) 0,
+      rgba(247, 235, 216, 0.86) 460px,
+      rgba(225, 200, 165, 0.95) 100%
+    ),
+    url("./assets/wasteland-bg.png") center top / 100% auto no-repeat,
+    var(--bg);
+  background-blend-mode: normal, luminosity, normal;
+}
+
+.topbar {
+  border-bottom-color: rgba(80, 53, 39, 0.22);
+}
+
+.brand {
+  color: var(--text-strong);
+}
+
+.brand__symbol {
+  border-color: var(--blood);
+  color: var(--blood-deep);
+  background: rgba(255, 250, 241, 0.72);
+  box-shadow: 0 0 18px var(--blood-glow);
+}
+
+.logout-button {
+  border-color: rgba(88, 57, 42, 0.3);
+  color: var(--text);
+  background: rgba(255, 250, 241, 0.64);
+}
+
+.logout-button:hover {
+  border-color: var(--blood);
+  color: #fffaf5;
+  background: var(--blood);
+}
+
+/* Login */
+
+.auth-page {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(255, 250, 241, 0.9),
+      rgba(237, 218, 191, 0.68)
+    ),
+    url("./assets/wasteland-bg.png") center / cover no-repeat,
+    var(--bg);
+  background-blend-mode: normal, luminosity, normal;
+}
+
+.auth-page::before {
+  background:
+    radial-gradient(
+      circle at 78% 30%,
+      rgba(185, 54, 56, 0.22),
+      transparent 28rem
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.16),
+      rgba(145, 100, 69, 0.12)
+    );
+}
+
+.auth-decoration {
+  border-color: rgba(89, 56, 41, 0.18);
+}
+
+.auth-decoration--two {
+  border-color: rgba(185, 54, 56, 0.28);
+}
+
+.login-card {
+  border-color: rgba(91, 58, 42, 0.26);
+  border-top-color: var(--blood);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.92),
+      rgba(255, 248, 236, 0.72) 55%
+    ),
+    rgba(255, 250, 241, 0.94);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.55),
+    var(--shadow);
+}
+
+.login-card__mark {
+  border-color: var(--blood);
+  color: var(--blood-deep);
+  background: var(--blood-soft);
+  box-shadow: 0 0 18px var(--blood-glow);
+}
+
+.eyebrow,
+.login-card .eyebrow {
+  color: var(--blood-dark);
+}
+
+.login-card h1 {
+  color: var(--text-strong);
+}
+
+.login-card__description {
+  color: var(--muted);
+}
+
+.form-field label {
+  color: var(--text);
+}
+
+.form-field input {
+  border-color: rgba(87, 56, 41, 0.26);
+  color: var(--text-strong);
+  background: rgba(255, 253, 247, 0.9);
+}
+
+.form-field input::placeholder {
+  color: var(--muted-dark);
+}
+
+.form-field input:focus {
+  border-color: var(--blood);
+  box-shadow: 0 0 0 3px var(--blood-soft);
+}
+
+.primary-button {
+  border-color: var(--blood-dark);
+  color: #fffaf5;
+  background: linear-gradient(135deg, var(--blood) 0%, var(--blood-dark) 100%);
+  box-shadow: 0 9px 20px rgba(140, 41, 44, 0.22);
+}
+
+.primary-button:hover:not(:disabled) {
+  background: linear-gradient(
+    135deg,
+    var(--blood-bright) 0%,
+    var(--blood) 100%
+  );
+}
+
+.form-error {
+  color: var(--blood-dark);
+}
+
+/* Cabeçalho de personagens */
+
+.characters-header {
+  border-bottom-color: rgba(80, 53, 39, 0.22);
+}
+
+.characters-header__title .eyebrow {
+  color: var(--blood-dark);
+}
+
+.characters-header h1,
+.characters-header h1 span {
+  color: var(--text-strong);
+}
+
+.characters-header h1 span {
+  color: var(--blood);
+}
+
+.characters-header__status {
+  color: var(--muted);
+}
+
+.status-dot {
+  background: var(--blood);
+  box-shadow: 0 0 12px var(--blood-glow);
+}
+
+.section-title h2 {
+  color: var(--text-strong);
+}
+
+.section-title__line {
+  background: linear-gradient(
+    90deg,
+    rgba(185, 54, 56, 0.72),
+    transparent
+  );
+}
+
+/* Cartões de personagem */
+
+.character-card {
+  border-color: rgba(169, 76, 54, 0.38);
+  background:
+    linear-gradient(
+      145deg,
+      rgba(185, 54, 56, 0.1),
+      transparent 42%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 253, 247, 0.96),
+      rgba(240, 225, 202, 0.98)
+    );
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.48),
+    0 18px 48px rgba(79, 53, 38, 0.15);
+}
+
+.character-card:hover {
+  border-color: var(--blood);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 255, 255, 0.55),
+    0 24px 55px rgba(79, 53, 38, 0.2),
+    0 0 24px var(--blood-glow);
+}
+
+.character-card::after {
+  border-color: rgba(185, 54, 56, 0.22);
+}
+
+.character-card__accent {
+  background: var(--blood);
+  box-shadow: 0 0 14px var(--blood-glow);
+}
+
+.character-card__top .eyebrow,
+.character-card__name .eyebrow {
+  color: var(--blood-dark);
+}
+
+.character-card h2,
+.character-card__name h2 {
+  color: var(--text-strong);
+}
+
+.level-badge {
+  border-color: rgba(185, 54, 56, 0.45);
+  color: var(--blood-deep);
+  background: var(--blood-soft);
+}
+
+.character-card__divider {
+  background: linear-gradient(
+    90deg,
+    var(--blood),
+    rgba(89, 56, 41, 0.18),
+    transparent
+  );
+}
+
+.character-portrait {
+  border-color: var(--rust);
+  color: var(--blood-deep);
+  background:
+    linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.6),
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 50% 35%,
+      #ead8bc,
+      #ba9270 52%,
+      #6e4b3b
+    );
+  box-shadow: inset 0 0 0 3px rgba(255, 255, 255, 0.22);
+}
+
+.character-owner {
+  color: var(--muted);
+}
+
+.character-level span,
+.meta-label,
+.summary-item__label {
+  color: var(--muted-dark);
+}
+
+.character-level strong,
+.character-meta strong,
+.summary-item strong {
+  color: var(--text-strong);
+}
+
+.character-meta strong {
+  color: var(--text);
+}
+
+.status-active {
+  color: var(--blood-dark) !important;
+}
+
+/* Modificadores */
+
+.section-mark {
+  background: var(--blood);
+  box-shadow: 0 0 10px var(--blood-glow);
+}
+
+.section-heading h3,
+.modifiers-section h3 {
+  color: var(--text-strong);
+}
+
+.modifier-count {
+  border-color: rgba(185, 54, 56, 0.45);
+  color: var(--blood-deep);
+  background: var(--blood-soft);
+}
+
+.character-card .modifier-tile,
+.modifier-tile {
+  border-color: rgba(89, 56, 41, 0.18);
+  border-bottom-color: rgba(185, 54, 56, 0.68);
+  color: var(--text-strong);
+  background:
+    linear-gradient(
+      160deg,
+      rgba(185, 54, 56, 0.09),
+      transparent 58%
+    ),
+    rgba(255, 253, 247, 0.68);
+}
+
+.character-card .modifier-tile:hover,
+.character-card .modifier-tile:focus,
+.modifier-tile:hover,
+.modifier-tile:focus {
+  border-color: var(--blood);
+  border-bottom-color: var(--blood-deep);
+  background:
+    linear-gradient(
+      160deg,
+      rgba(185, 54, 56, 0.18),
+      transparent 58%
+    ),
+    rgba(255, 253, 247, 0.92);
+}
+
+.modifier-tile:focus-visible {
+  box-shadow: 0 0 0 3px var(--blood-soft);
+}
+
+.character-card .modifier-tile__icon,
+.modifier-tile__icon {
+  color: var(--blood-dark);
+}
+
+.character-card .modifier-tile__icon svg,
+.modifier-tile__icon svg {
+  filter: drop-shadow(0 0 8px rgba(185, 54, 56, 0.23));
+}
+
+.modifier-tile__category {
+  color: var(--muted-dark);
+}
+
+.modifier-tile h4 {
+  color: var(--text-strong);
+}
+
+.character-card .modifier-tooltip,
+.modifier-tooltip {
+  border-color: var(--blood);
+  color: var(--text);
+  background: var(--surface-light);
+  box-shadow: var(--shadow-hard);
+}
+
+.character-card .modifier-tooltip::after,
+.modifier-tooltip::after {
+  border-right-color: var(--blood);
+  border-bottom-color: var(--blood);
+  background: var(--surface-light);
+}
+
+.character-card .modifier-tooltip__label,
+.modifier-tooltip__label {
+  color: var(--blood-dark);
+}
+
+.modifier-tooltip p {
+  color: var(--text);
+}
+
+.modifier-empty {
+  border-color: rgba(89, 56, 41, 0.25);
+  color: var(--muted);
+  background: rgba(255, 253, 247, 0.46);
+}
+
+.character-card__footer {
+  border-top-color: rgba(89, 56, 41, 0.15);
+  color: var(--muted-dark);
+}
+
+/* Estados de carregamento e erro */
+
+.state-message {
+  border-color: rgba(89, 56, 41, 0.24);
+  color: var(--muted);
+  background: rgba(255, 250, 241, 0.38);
+}
+
+.state-message--loading {
+  color: var(--text);
+}
+
+.loading-mark {
+  border-color: rgba(185, 54, 56, 0.2);
+  border-top-color: var(--blood);
+}
+
+.state-message--error {
+  border-color: rgba(185, 54, 56, 0.55);
+  color: var(--blood-dark);
+  background: rgba(255, 244, 239, 0.72);
+}
+
+.state-message--error strong {
+  color: var(--blood-deep);
 }
