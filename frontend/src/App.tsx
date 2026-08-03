@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Routes, Route, useNavigate } from "react-router-dom"; // Importe Routes, Route e useNavigate
+import { Routes, Route, useNavigate } from "react-router-dom";
 
 import CharactersList from "./CharactersList";
-import CharacterDetail from "./CharacterDetail"; // Importe o novo componente CharacterDetail
+import CharacterDetail from "./CharacterDetail";
 import LoginForm from "./LoginForm";
 import { logout } from "./services/auth";
 import { isAuthenticated } from "./tokenStorage";
@@ -15,7 +15,7 @@ function App() {
   function handleLogout() {
     logout();
     setAuthenticated(false);
-    navigate("/login"); // Redireciona para a tela de login após o logout
+    navigate("/login");
   }
 
   if (!authenticated) {
