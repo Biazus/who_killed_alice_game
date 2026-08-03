@@ -1,6 +1,6 @@
 import type { CSSProperties } from "react";
-import { CircleHelp, UserRound, ArrowUpRight } from "lucide-react"; // Importe ArrowUpRight
-import { useNavigate } from "react-router-dom"; // Importe useNavigate
+import { CircleHelp, UserRound, ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 import type { Character } from "./services/characters";
 import { modifierVisualMap } from "./modifierVisuals";
@@ -86,7 +86,7 @@ function getInitials(name: string): string {
 
 function CharacterCard({ character }: CharacterCardProps) {
   const modifiers = character.modifiers ?? [];
-  const navigate = useNavigate(); // Inicialize useNavigate
+  const navigate = useNavigate();
 
   function openCharacterDetail() {
     navigate(`/characters/${character.id}`);
@@ -98,9 +98,9 @@ function CharacterCard({ character }: CharacterCardProps) {
 
   return (
     <article
-      className="character-card character-card--clickable" // Adicione a classe para estilo de cursor
+      className="character-card character-card--clickable"
       style={getCharacterPalette(character.id)}
-      onClick={openCharacterDetail} // Adicione o evento de clique ao card
+      onClick={openCharacterDetail}
     >
       <div className="character-card__accent" />
 
@@ -180,10 +180,6 @@ function CharacterCard({ character }: CharacterCardProps) {
 
               const visual = modifierVisualMap[item.modifier.name];
 
-              /*
-               * Caso a API retorne um nome ainda não incluído no mapa,
-               * o sistema mantém a tela funcionando com CircleHelp.
-               */
               const Icon = visual?.icon ?? CircleHelp;
 
               const tooltipId = `modifier-description-${item.id}`;
@@ -194,11 +190,11 @@ function CharacterCard({ character }: CharacterCardProps) {
                   key={item.id}
                   tabIndex={0}
                   aria-describedby={tooltipId}
-                  onClick={(event) => event.stopPropagation()} // Impede que o clique no modificador propague para o card
+                  onClick={(event) => event.stopPropagation()}
                 >
                   <div className="modifier-tile__icon">
                     <Icon
-                      size={27}
+                      size={22} /* Ajustado para 22px */
                       strokeWidth={1.7}
                       className={visual?.iconClassName}
                       aria-hidden="true"
@@ -234,18 +230,17 @@ function CharacterCard({ character }: CharacterCardProps) {
       </section>
 
       <footer className="character-card__footer">
-        <span>ARQUIVO CONFIDENCIAL · CASO Nº 001</span>{" "}
-        {/* Unifiquei as duas spans para melhor alinhamento */}
+        <span>ARQUIVO CONFIDENCIAL · CASO Nº 001</span>
         <button
           type="button"
           className="character-card__open"
           onClick={(event) => {
-            event.stopPropagation(); // Impede que o clique no botão propague para o card
+            event.stopPropagation();
             openCharacterDetail();
           }}
         >
           Abrir dossiê
-          <ArrowUpRight size={15} aria-hidden="true" />
+          <ArrowUpRight size={14} aria-hidden="true" /> {/* Ajustado para 14px */}
         </button>
       </footer>
     </article>

@@ -53,6 +53,14 @@ function getDifficultyBackgroundColor(difficulty: number): string {
   return "rgba(200, 200, 200, 0.8)"; // Cor padrão para casos não mapeados
 }
 
+// NOVA FUNÇÃO: Limpa o prefixo "BLOCO X: " do título da cena
+function cleanSceneTitle(title: string | undefined): string {
+  if (!title) return ""; // Retorna string vazia se o título for undefined ou null
+  // A expressão regular busca "BLOCO " seguido de um ou mais dígitos, e depois ": "
+  // O 'i' no final torna a busca case-insensitive (ignora maiúsculas/minúsculas)
+  return title.replace(/BLOCO \d+: /i, "");
+}
+
 function CharacterDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -264,26 +272,6 @@ function CharacterDetail() {
             </div>
           </header>
 
-          <section className="detail-stats" aria-label="Dados do personagem">
-            <div>
-              <span>Saúde</span>
-              <strong>
-                <HeartPulse size={16} aria-hidden="true" />
-                {healthLabel}
-              </strong>
-            </div>
-
-            <div>
-              <span>Idade</span>
-              <strong>{character.age ?? "Não informada"}</strong>
-            </div>
-
-            <div>
-              <span>Identidade</span>
-              <strong>{character.gender ?? "Não informada"}</strong>
-            </div>
-          </section>
-
           <section className="detail-section">
             <div className="detail-section__heading">
               <div>
@@ -364,7 +352,8 @@ function CharacterDetail() {
             <div className="game-content">
               <div className="game-scene">
                 <span className="eyebrow">CENA ATUAL</span>
-                <h3>{currentScene?.title}</h3>
+                {/* AQUI ESTÁ A MUDANÇA: Aplicando cleanSceneTitle */}
+                <h3>{cleanSceneTitle(currentScene?.title)}</h3>
                 <p>{currentScene?.description}</p>
               </div>
 
