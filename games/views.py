@@ -12,15 +12,13 @@ from characters.models import Character
 from .serializers import (ActionItemRequirementSerializer, ActionSerializer,
                           ActSerializer, CharacterActionSerializer, CharacterProgressOnActSerializer,
                           SceneActionSerializer, SceneSerializer)
-from .services import ActionService
-
+from .services import ActionService # Certifique-se de que ActionService está definido ou remova se não for usar
 
 class ActionViewSet(viewsets.ModelViewSet):
     serializer_class = ActionSerializer
 
     def get_queryset(self):
         return Action.objects.all()
-
 
 class CharacterActionViewSet(viewsets.ModelViewSet):
     serializer_class = CharacterActionSerializer
@@ -30,7 +28,7 @@ class CharacterActionViewSet(viewsets.ModelViewSet):
         serializer.is_valid(raise_exception=True)
         character = serializer.validated_data["character"]
         action = serializer.validated_data["action"]
-        action_service = ActionService(character)
+        action_service = ActionService(character) # <-- Verifique se ActionService está definido
         action_result = action_service.resolve_action_min_gate(action.code)
         serializer.save(result=action_result)
         # Customize response data
@@ -39,16 +37,13 @@ class CharacterActionViewSet(viewsets.ModelViewSet):
     def get_queryset(self):
         return CharacterAction.objects.all()
 
-
 class ActionItemRequirementViewSet(viewsets.ModelViewSet):
     serializer_class = ActionItemRequirementSerializer
     queryset = ActionItemRequirement.objects.all()
 
-
 class SceneActionViewSet(viewsets.ModelViewSet):
     serializer_class = SceneActionSerializer
     queryset = SceneAction.objects.all()
-
 
 class CharacterProgressOnActViewSet(viewsets.ModelViewSet):
     queryset = CharacterProgressOnAct.objects.all()
@@ -61,16 +56,13 @@ class CharacterProgressOnActViewSet(viewsets.ModelViewSet):
             return self.queryset.filter(character__id=character_id)
         return self.queryset
 
-
 class SceneViewSet(viewsets.ModelViewSet):
     serializer_class = SceneSerializer
     queryset = Scene.objects.all()
 
-
 class ActViewSet(viewsets.ModelViewSet):
     serializer_class = ActSerializer
     queryset = Act.objects.all()
-
 
 class SceneActionSelectView(APIView):
     """
@@ -97,13 +89,15 @@ class SceneActionSelectView(APIView):
             if not first_act:
                 raise ValueError("Nenhum Ato configurado no sistema para iniciar o jogo.")
 
-            first_scene_of_act = Scene.objects.filter(initial=True).first() # Pega a primeira cena do ato
+            # Pega a primeira cena do primeiro ato, ordenada pelo campo 'order'
+            first_scene_of_act = first_act.scenes.order_by('order').first() # <-- Ajustado para usar related_name 'scenes' e 'order'
             if not first_scene_of_act:
                 raise ValueError(f"O Ato '{first_act.title}' não possui cenas configuradas.")
 
             with transaction.atomic():
                 character_progress = CharacterProgressOnAct.objects.create(
                     character=character,
+                    act=first_act, # <-- Adicionado o act
                     current_scene=first_scene_of_act,
                     finished=False
                 )
@@ -141,7 +135,6 @@ class SceneActionSelectView(APIView):
             serializer = CharacterProgressOnActSerializer(character_progress)
             return Response(serializer.data, status=status.HTTP_200_OK)
 
-
         scene_action = get_object_or_404(SceneAction, id=scene_action_id)
 
         if scene_action.scene != character_progress.current_scene:
@@ -162,7 +155,7 @@ class SceneActionSelectView(APIView):
             if roll_result >= threshold:
                 next_scene = scene_action.on_success
                 message = f"Você rolou {roll_result} e obteve sucesso! Aventura continua..."
-            elif roll_result <= (threshold / 2) and scene_action.on_hard_fail: # Exemplo de falha crítica
+            elif scene_action.on_hard_fail and roll_result <= (threshold / 2): # Exemplo de falha crítica
                 next_scene = scene_action.on_hard_fail
                 message = f"Você rolou {roll_result} e falhou criticamente! Consequências inesperadas..."
             else:
@@ -173,7 +166,6 @@ class SceneActionSelectView(APIView):
             # assume-se que sempre avança para o sucesso (ou a próxima cena lógica)
             next_scene = scene_action.on_success
             message = "A história avança..."
-
 
         if not next_scene:
             # Se não houver uma cena de transição definida para o resultado,
