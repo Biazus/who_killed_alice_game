@@ -5,7 +5,7 @@ from characters.views import (CharacterModifierAttributeViewSet,
                               CharacterModifierViewSet, CharacterViewSet,
                               InventoryViewSet)
 from games.views import (ActionItemRequirementViewSet, ActionViewSet,
-                         ActViewSet, CharacterActionViewSet,
+                         ActViewSet, CharacterActionViewSet, SceneActionSelectView,
                          SceneActionViewSet, SceneViewSet, CharacterProgressOnActViewSet)
 from items.views import (ItemAttributeEffectViewSet, ItemTypeViewSet,
                          ItemViewSet)
@@ -74,4 +74,5 @@ router.register(
 
 urlpatterns = [
     path("", include(router.urls)),
+    path("scene_action_select/", SceneActionSelectView.as_view(), name="scene_action_select")
 ]

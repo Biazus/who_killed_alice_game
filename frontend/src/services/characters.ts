@@ -95,6 +95,7 @@ export interface CharacterProgressOnAct {
   act: Act; // Detalhes do Act
   current_scene: Scene; // Detalhes da cena atual
   finished: boolean;
+  game_message?: string; // Adicionado para receber mensagens do backend
 }
 
 interface PaginatedResponse<T> {
@@ -153,16 +154,15 @@ export async function fetchCharacterProgress(
   characterId: number
 ): Promise<CharacterProgressOnAct | null> {
   try {
-    const response = await api.get<PaginatedResponse<CharacterProgressOnAct>>(
-      `/character_progresses/?character_id=${characterId}`
+    // Agora, a primeira chamada para /scene_action_select sem scene_action_id
+    // fará com que o backend crie o progresso se ele não existir.
+    const response = await api.post<CharacterProgressOnAct>(
+      "/scene_action_select/",
+      { character_id: characterId }
     );
-    // Retorna o primeiro progresso não finalizado, se houver
-    const activeProgress = response.data.results.find(
-      (progress) => !progress.finished
-    );
-    return activeProgress || null;
+    return response.data;
   } catch (error) {
-    console.error("Erro ao buscar progresso do personagem:", error);
+    console.error("Erro ao buscar ou iniciar progresso do personagem:", error);
     return null;
   }
 }

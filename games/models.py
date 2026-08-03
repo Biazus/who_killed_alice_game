@@ -94,7 +94,6 @@ class Scene(models.Model):
     location = models.CharField(max_length=100)
     initial = models.BooleanField(default=False)
     description = models.TextField(blank=True)
-    act = models.ForeignKey(Act, on_delete=models.CASCADE)
 
 
 class SceneAction(models.Model):

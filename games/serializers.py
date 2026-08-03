@@ -72,9 +72,9 @@ class SceneActionSerializer(serializers.ModelSerializer):
 
 
 class SceneSerializer(serializers.ModelSerializer):
-    url = serializers.HyperlinkedIdentityField(
-        view_name="scene-detail", lookup_field="pk"
-    )
+    #url = serializers.HyperlinkedIdentityField(
+    #    view_name="scene-detail", lookup_field="pk"
+    #)
     scene_actions = SceneActionSerializer(many=True, read_only=True)  # Inclui as ações da cena
 
     class Meta:

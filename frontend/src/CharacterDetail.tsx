@@ -20,7 +20,7 @@ import {
   type SceneAction, // Importar nova interface
 } from "./services/characters";
 import { modifierVisualMap } from "./modifierVisuals"; // Certifique-se de que este import está correto
-import api from "./api"; // Importar a instância do axios
+// import api from "../api"; // Não é mais necessário importar api diretamente aqui
 
 function decodeHtmlEntities(value: string): string {
   const textarea = document.createElement("textarea");
@@ -75,19 +75,10 @@ function CharacterDetail() {
       const progressData = await fetchCharacterProgress(characterId);
       setCharacterProgress(progressData);
 
-      // Se não houver progresso, podemos iniciar um novo (ex: primeiro ato/cena)
-      if (!progressData) {
-        // Lógica para iniciar um novo jogo/ato
-        // Por exemplo, criar um CharacterProgressOnAct inicial
-        // Isso pode ser feito via um endpoint POST para /character_progresses
+      if (progressData?.game_message) {
+        setGameMessage(progressData.game_message);
+      } else if (!progressData) {
         setGameMessage("Nenhum progresso encontrado. Iniciando nova aventura...");
-        // Exemplo: criar um progresso inicial (você precisaria de um endpoint para isso)
-        // const initialProgress = await api.post('/character_progresses/', {
-        //   character: characterId,
-        //   act: ID_DO_PRIMEIRO_ATO,
-        //   current_scene: ID_DA_PRIMEIRA_CENA_DO_ATO,
-        // });
-        // setCharacterProgress(initialProgress.data);
       }
     } catch (requestError: any) {
       console.error("Erro ao carregar personagem ou progresso:", requestError);
@@ -123,7 +114,18 @@ function CharacterDetail() {
       );
       setCharacterProgress(updatedProgress);
       setSelectedSceneAction(null); // Limpa a seleção após a submissão
-      setGameMessage("Ação realizada! Avançando para a próxima cena...");
+
+      if (updatedProgress.game_message) {
+        setGameMessage(updatedProgress.game_message);
+      } else {
+        setGameMessage("Ação realizada! Avançando para a próxima cena...");
+      }
+
+      // Se o progresso foi finalizado, podemos exibir uma mensagem diferente
+      if (updatedProgress.finished) {
+        setGameMessage(updatedProgress.game_message || "O jogo chegou ao fim!");
+      }
+
     } catch (submitError: any) {
       console.error("Erro ao submeter ação:", submitError);
       const errorMessage =
@@ -255,7 +257,10 @@ function CharacterDetail() {
                     modifierVisualMap[entry.modifier.name]?.icon ?? CircleHelp;
 
                   return (
-                    <article className="detail-modifier" key={entry.id}>
+                    <article
+                      className="detail-modifier"
+                      key={entry.id}
+                    >
                       <Icon size={21} aria-hidden="true" />
 
                       <div>
@@ -345,42 +350,48 @@ function CharacterDetail() {
                 <div className="game-message">{gameMessage}</div>
               )}
 
-              {availableSceneActions.length > 0 ? (
-                <div className="game-actions">
-                  <h4>O que você faz?</h4>
-                  {availableSceneActions.map((sa) => (
-                    <button
-                      key={sa.id}
-                      className={`game-action-button ${
-                        selectedSceneAction?.id === sa.id ? "selected" : ""
-                      }`}
-                      onClick={() => handleSelectAction(sa)}
-                      disabled={isSubmittingAction}
-                    >
-                      {sa.description}
-                      {sa.action && (
-                        <span className="action-difficulty">
-                          (Dificuldade: {sa.action.difficulty})
-                        </span>
-                      )}
-                    </button>
-                  ))}
-                  <button
-                    className="game-submit-button"
-                    onClick={handleSubmitAction}
-                    disabled={!selectedSceneAction || isSubmittingAction}
-                  >
-                    <Dice5 size={18} aria-hidden="true" />
-                    {isSubmittingAction ? "Rolando..." : "Rolar o Dado"}
-                  </button>
-                </div>
-              ) : (
+              {characterProgress.finished ? (
                 <p className="game-empty">
-                  Nenhuma ação disponível nesta cena.
-                  {characterProgress.finished && (
-                    <span>O ato foi concluído!</span>
-                  )}
+                  O jogo para este personagem foi finalizado.
+                  <br />
+                  {gameMessage && <span>{gameMessage}</span>}
                 </p>
+              ) : (
+                availableSceneActions.length > 0 ? (
+                  <div className="game-actions">
+                    <h4>O que você faz?</h4>
+                    {availableSceneActions.map((sa) => (
+                      <button
+                        key={sa.id}
+                        className={`game-action-button ${
+                          selectedSceneAction?.id === sa.id ? "selected" : ""
+                        }`}
+                        onClick={() => handleSelectAction(sa)}
+                        disabled={isSubmittingAction}
+                      >
+                        {sa.description}
+                        {sa.action && (
+                          <span className="action-difficulty">
+                            (Dificuldade: {sa.action.difficulty})
+                          </span>
+                        )}
+                      </button>
+                    ))}
+                    <button
+                      className="game-submit-button"
+                      onClick={handleSubmitAction}
+                      disabled={!selectedSceneAction || isSubmittingAction}
+                    >
+                      <Dice5 size={18} aria-hidden="true" />
+                      {isSubmittingAction ? "Rolando..." : "Rolar o Dado"}
+                    </button>
+                  </div>
+                ) : (
+                  <p className="game-empty">
+                    Nenhuma ação disponível nesta cena.
+                    <span>Aguardando o próximo movimento da história...</span>
+                  </p>
+                )
               )}
             </div>
           ) : (
