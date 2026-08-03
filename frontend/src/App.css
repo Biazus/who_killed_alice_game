@@ -2271,3 +2271,825 @@
     padding: 20px;
   }
 }
+
+.character-game-panel {
+  padding: 28px;
+  border: 1px solid rgba(89, 56, 41, 0.24);
+  border-top: 3px solid var(--blood);
+  border-radius: 3px;
+  background: rgba(255, 250, 241, 0.84);
+  box-shadow: var(--shadow);
+}
+
+.game-content {
+  display: grid;
+  gap: 24px;
+}
+
+.game-header,
+.game-scene {
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(89, 56, 41, 0.12);
+}
+
+.game-header .eyebrow,
+.game-scene .eyebrow {
+  margin-bottom: 8px;
+  color: var(--blood-dark);
+}
+
+.game-header h2 {
+  color: var(--text-strong);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.game-header p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.game-scene h3 {
+  color: var(--text-strong);
+  font-size: 1.4rem;
+  margin-bottom: 8px;
+}
+
+.game-scene p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.game-message-container {
+  display: grid;
+  gap: 10px; /* Espaçamento entre a mensagem e os cards */
+  margin-bottom: 10px; /* Espaçamento abaixo do container */
+}
+
+.game-message {
+  padding: 12px 16px;
+  border: 1px solid rgba(185, 54, 56, 0.3);
+  background: var(--blood-soft);
+  color: var(--blood-dark);
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.game-roll-card,
+.game-chance-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.game-roll-card {
+  background: rgba(89, 56, 41, 0.15); /* Um tom mais neutro */
+  border: 1px solid rgba(89, 56, 41, 0.25);
+  color: var(--muted);
+}
+
+.game-roll-card strong {
+  color: var(--text-strong);
+  font-size: 1rem;
+}
+
+.game-chance-card {
+  background: rgba(185, 54, 56, 0.15); /* Um tom relacionado ao sangue */
+  border: 1px solid rgba(185, 54, 56, 0.25);
+  color: var(--blood-dark);
+}
+
+.game-chance-card strong {
+  color: var(--blood-deep);
+  font-size: 1rem;
+}
+
+.game-actions h4 {
+  color: var(--text-strong);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.game-action-button {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  border: 1px solid rgba(89, 56, 41, 0.2);
+  border-radius: 3px;
+  background: rgba(255, 253, 247, 0.62);
+  color: var(--text-strong);
+  text-align: left;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 180ms ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-action-button:hover:not(:disabled) {
+  border-color: var(--blood);
+  background: rgba(255, 253, 247, 0.8);
+}
+
+.game-action-button.selected {
+  border-color: var(--blood);
+  background: var(--blood-soft);
+  color: var(--blood-deep);
+  box-shadow: 0 0 0 2px var(--blood-soft);
+}
+
+.game-action-button.selected .action-difficulty {
+  color: var(--blood-deep);
+}
+
+.game-action-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.action-difficulty {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.game-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px 18px;
+  border: 1px solid var(--blood-bright);
+  border-radius: 3px;
+  color: #fffaf5;
+  background: linear-gradient(135deg, var(--blood) 0%, var(--blood-dark) 100%);
+  box-shadow: 0 9px 20px rgba(140, 41, 44, 0.22);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 180ms ease;
+}
+
+.game-submit-button:hover:not(:disabled) {
+  transform: translateY(-1px);
+  background: linear-gradient(
+    135deg,
+    var(--blood-bright) 0%,
+    var(--blood) 100%
+  );
+}
+
+.game-submit-button:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.game-empty {
+  padding: 24px;
+  border: 1px dashed rgba(89, 56, 41, 0.26);
+  color: var(--muted);
+  background: rgba(255, 253, 247, 0.42);
+  font-size: 0.85rem;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.game-empty span {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: var(--blood-dark);
+}
+
+.game-error {
+  color: var(--blood-dark);
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  .character-game-panel {
+    padding: 20px;
+  }
+}
+
+/* ========================================
+   DETALHE DO PERSONAGEM - NOVOS ESTILOS
+   ======================================== */
+
+/* Header do Ato */
+.detail-header-act {
+  width: min(1240px, calc(100% - 48px));
+  margin: 0 auto 48px; /* Espaçamento abaixo do header do ato */
+  padding: 28px;
+  border: 1px solid rgba(89, 56, 41, 0.24);
+  border-top: 3px solid var(--blood);
+  border-radius: 3px;
+  background: rgba(255, 250, 241, 0.84);
+  box-shadow: var(--shadow);
+}
+
+.detail-header-act .eyebrow {
+  margin-bottom: 12px;
+  color: var(--blood-dark);
+}
+
+.detail-header-act h2 {
+  color: var(--text-strong);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.detail-header-act p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+/* Layout principal com painéis lado a lado */
+.character-detail-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 560px) minmax(0, 1fr);
+  gap: clamp(48px, 9vw, 160px);
+  align-items: start;
+  width: min(1240px, calc(100% - 48px)); /* Garante que o layout ocupe a largura correta */
+  margin: 0 auto; /* Centraliza o layout */
+}
+
+/* Ajustes no header do personagem para compactar */
+.detail-header__title {
+  display: flex;
+  align-items: center; /* Alinha verticalmente nome e nível */
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.detail-header h1 {
+  margin-bottom: 0; /* Remove margem inferior para compactar */
+}
+
+.detail-level {
+  display: grid;
+  gap: 2px;
+  padding: 8px 10px;
+  border: 1px solid rgba(185, 54, 56, 0.35);
+  color: var(--blood-dark);
+  background: var(--blood-soft);
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  text-align: center;
+  text-transform: uppercase;
+  flex-shrink: 0; /* Evita que o nível encolha */
+}
+
+.detail-level strong {
+  color: var(--blood-deep);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+/* Grid para os cards de modificadores */
+.detail-modifier-grid,
+.detail-inventory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Cards menores e responsivos */
+  gap: 10px;
+}
+
+/* Estilo base para os cards de modificadores e inventário */
+.detail-modifier-card,
+.detail-inventory-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  border: 1px solid rgba(89, 56, 41, 0.18);
+  border-radius: 3px;
+  background: rgba(255, 253, 247, 0.62);
+  text-align: center;
+  cursor: help;
+  transition: all 180ms ease;
+}
+
+.detail-modifier-card:hover,
+.detail-inventory-card:hover {
+  border-color: var(--blood);
+  background: rgba(255, 253, 247, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.detail-modifier-card > svg,
+.detail-inventory-card > svg {
+  color: var(--blood-dark);
+  filter: drop-shadow(0 0 4px rgba(185, 54, 56, 0.15));
+}
+
+.detail-modifier-card h4,
+.detail-inventory-card h4 {
+  font-size: 0.85rem;
+  color: var(--text-strong);
+  margin: 0;
+  line-height: 1.2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%; /* Garante que o texto não transborde */
+}
+
+/* Tooltip para descrição dos modificadores */
+.detail-modifier-card .modifier-tooltip,
+.detail-inventory-card .inventory-tooltip {
+  position: absolute;
+  z-index: 10;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) translateY(8px);
+  opacity: 0;
+  visibility: hidden;
+  width: 200px; /* Largura fixa para o tooltip */
+  padding: 10px;
+  border: 1px solid var(--blood);
+  border-radius: 3px;
+  background: var(--surface-light);
+  box-shadow: var(--shadow-hard);
+  color: var(--text);
+  text-align: left;
+  transition: all 160ms ease;
+  pointer-events: none; /* Garante que o tooltip não bloqueie eventos */
+}
+
+.detail-modifier-card:hover .modifier-tooltip,
+.detail-inventory-card:hover .inventory-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.detail-modifier-card .modifier-tooltip::after,
+.detail-inventory-card .inventory-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid var(--blood);
+  border-bottom: 1px solid var(--blood);
+  background: var(--surface-light);
+  margin-top: -4px;
+}
+
+.modifier-tooltip__label,
+.inventory-tooltip__label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--blood-dark);
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.modifier-tooltip p,
+.inventory-tooltip p {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  color: var(--text);
+  margin-bottom: 5px;
+}
+
+.inventory-tooltip small {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--muted-dark);
+  text-align: right;
+}
+
+/* Remover estilos antigos de modificadores e inventário */
+.detail-modifier-list,
+.detail-modifier,
+.detail-modifier > svg,
+.detail-modifier span,
+.detail-modifier h3,
+.detail-modifier p,
+.inventory-list,
+.inventory-item,
+.inventory-item summary,
+.inventory-item summary::-webkit-details-marker,
+.inventory-item__icon,
+.inventory-item__title,
+.inventory-item__title strong,
+.inventory-item__title small,
+.inventory-item__reveal,
+.inventory-item[open] .inventory-item__reveal,
+.inventory-item__content,
+.inventory-item__content p,
+.inventory-item__content span {
+  /* Estas classes não serão mais usadas ou terão seus estilos sobrescritos */
+  /* Você pode remover as regras CSS originais para elas se quiser limpar o código */
+  /* Por enquanto, deixamos as novas regras acima para sobrescrever */
+}
+
+/* Responsividade para o novo layout */
+@media (max-width: 860px) {
+  .character-detail-layout {
+    grid-template-columns: 1fr; /* Em telas menores, os painéis ficam um abaixo do outro */
+    gap: 32px;
+  }
+
+  .detail-header-act {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 700px) {
+  .detail-header-act {
+    width: min(100% - 32px, 1240px);
+    padding: 20px;
+  }
+
+  .detail-header-act h2 {
+    font-size: clamp(1.6rem, 8vw, 2.5rem);
+  }
+
+  .detail-modifier-grid,
+  .detail-inventory-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); /* Cards ainda menores em mobile */
+    gap: 8px;
+  }
+
+  .detail-modifier-card h4,
+  .detail-inventory-card h4 {
+    font-size: 0.75rem;
+  }
+
+  .detail-modifier-card .modifier-tooltip,
+  .detail-inventory-card .inventory-tooltip {
+    width: 160px; /* Tooltip menor em mobile */
+    padding: 8px;
+    font-size: 0.7rem;
+  }
+
+  .modifier-tooltip__label,
+  .inventory-tooltip__label {
+    font-size: 0.6rem;
+  }
+
+  .modifier-tooltip p,
+  .inventory-tooltip p {
+    font-size: 0.7rem;
+  }
+
+  .inventory-tooltip small {
+    font-size: 0.6rem;
+  }
+}
+
+/* ========================================
+   DETALHE DO PERSONAGEM - NOVOS ESTILOS DE JOGO
+   ======================================== */
+
+/* Cards de Rolagem e Chance */
+.game-message-container {
+  display: grid;
+  gap: 10px; /* Espaçamento entre a mensagem e os cards */
+  margin-bottom: 10px; /* Espaçamento abaixo do container */
+}
+
+.game-result-card {
+  display: flex;
+  flex-direction: column; /* Ícone acima do valor */
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 12px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.game-result-card strong {
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1;
+}
+
+/* Card de Rolagem (Dado) */
+.game-roll-card {
+  background: rgba(255, 253, 247, 0.8);
+  border: 1px solid rgba(89, 56, 41, 0.2);
+  color: var(--text-strong);
+}
+
+.game-roll-card svg {
+  color: var(--muted-dark);
+}
+
+/* Sucesso na Rolagem */
+.game-roll-card.success {
+  background: var(--success-soft); /* Verde claro */
+  border-color: var(--success-dark); /* Verde escuro */
+  color: var(--success-deep); /* Verde mais profundo */
+}
+
+.game-roll-card.success svg {
+  color: var(--success-dark);
+}
+
+/* Falha na Rolagem */
+.game-roll-card.failure {
+  background: var(--blood-soft); /* Vermelho claro */
+  border-color: var(--blood-dark); /* Vermelho escuro */
+  color: var(--blood-deep); /* Vermelho mais profundo */
+}
+
+.game-roll-card.failure svg {
+  color: var(--blood-dark);
+}
+
+/* Card de Chance (Porcentagem) */
+.game-chance-card {
+  background: rgba(255, 253, 247, 0.6); /* Fundo mais neutro, quase branco */
+  border: 1px solid rgba(89, 56, 41, 0.15); /* Borda discreta */
+  color: var(--muted-dark); /* Texto cinza */
+}
+
+.game-chance-card svg {
+  color: var(--muted); /* Ícone cinza */
+}
+
+.game-chance-card strong {
+  color: var(--text-strong); /* Valor da chance mais escuro */
+}
+
+/* Cores da Dificuldade */
+.action-difficulty {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 2px;
+  transition: all 180ms ease;
+}
+
+.difficulty-easy {
+  color: var(--success-deep);
+  background: var(--success-soft);
+  border: 1px solid var(--success-dark);
+}
+
+.difficulty-medium {
+  color: var(--warning-deep);
+  background: var(--warning-soft);
+  border: 1px solid var(--warning-dark);
+}
+
+.difficulty-hard {
+  color: var(--blood-deep);
+  background: var(--blood-soft);
+  border: 1px solid var(--blood-dark);
+}
+
+.difficulty-very-hard {
+  color: var(--danger-deep); /* Um vermelho mais intenso */
+  background: var(--danger-soft);
+  border: 1px solid var(--danger-dark);
+}
+
+.difficulty-extreme {
+  color: var(--extreme-deep); /* Um vermelho quase preto */
+  background: var(--extreme-soft);
+  border: 1px solid var(--extreme-dark);
+}
+
+/* Variáveis de cores (adicione ou ajuste no início do seu App.css ou em um arquivo de variáveis) */
+:root {
+  --blood: #b93638; /* Vermelho principal */
+  --blood-dark: #8c292c; /* Vermelho mais escuro */
+  --blood-deep: #5e1c1e; /* Vermelho bem escuro */
+  --blood-soft: rgba(185, 54, 56, 0.15); /* Vermelho suave */
+  --blood-bright: #ef5a4d; /* Vermelho brilhante */
+  --blood-glow: rgba(185, 54, 56, 0.4); /* Brilho do vermelho */
+
+  --success-deep: #28a745; /* Verde para sucesso */
+  --success-dark: #218838;
+  --success-soft: rgba(40, 167, 69, 0.15);
+
+  --warning-deep: #ffc107; /* Amarelo para aviso/médio */
+  --warning-dark: #e0a800;
+  --warning-soft: rgba(255, 193, 7, 0.15);
+
+  --danger-deep: #dc3545; /* Vermelho mais forte para perigo */
+  --danger-dark: #c82333;
+  --danger-soft: rgba(220, 53, 69, 0.15);
+
+  --extreme-deep: #6c070f; /* Vermelho quase preto para extremo */
+  --extreme-dark: #4e050a;
+  --extreme-soft: rgba(108, 7, 15, 0.15);
+
+  --text-strong: #332d29; /* Cor de texto forte */
+  --muted: #766358; /* Cor de texto suave */
+  --muted-dark: #59382a; /* Cor de texto suave mais escura */
+  --sand-light: #fff5eb; /* Cor de areia clara */
+  --sand-dark: #c0aea2; /* Cor de areia escura */
+  --surface-light: #fffaf5; /* Superfície clara */
+  --shadow: 0 12px 30px rgba(79, 53, 38, 0.1); /* Sombra padrão */
+  --shadow-hard: 0 16px 35px rgba(0, 0, 0, 0.25); /* Sombra mais forte */
+}
+
+/* Ajustes para o hover do botão de ação, para que a dificuldade também mude de cor */
+.game-action-button:hover:not(:disabled) .action-difficulty {
+  color: var(--text-strong); /* Cor do texto da dificuldade no hover */
+  background: rgba(89, 56, 41, 0.1); /* Fundo suave no hover */
+  border-color: rgba(89, 56, 41, 0.2);
+}
+
+.game-action-button.selected .action-difficulty {
+  color: var(--blood-deep); /* Mantém a cor do sangue quando selecionado */
+  background: rgba(185, 54, 56, 0.1);
+  border-color: rgba(185, 54, 56, 0.2);
+}
+
+/* Responsividade para os cards de resultado */
+@media (max-width: 700px) {
+  .game-message-container {
+    grid-template-columns: 1fr; /* Empilha os cards em telas menores */
+  }
+}
+
+/* --- Estilos para os cards de Traços Revelados --- */
+.detail-modifier-card {
+  display: flex;
+  flex-direction: column; /* Para empilhar ícone e texto */
+  align-items: center;
+  justify-content: center; /* Centraliza o conteúdo */
+  padding: 1rem; /* Aumenta o padding para mais espaço */
+  min-height: 100px; /* Garante uma altura mínima para o card */
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--character-card-tint); /* Exemplo, ajuste conforme sua paleta */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: visible; /* Permite que o tooltip apareça */
+  transition: all 0.2s ease-in-out;
+}
+
+.detail-modifier-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.detail-modifier-card svg {
+  margin-bottom: 0.5rem; /* Espaço entre o ícone e o texto */
+  color: var(--character-accent); /* Cor do ícone */
+}
+
+.detail-modifier-card .modifier-name-full {
+  font-weight: 600;
+  white-space: normal; /* Permite que o texto quebre linha */
+  word-break: break-word; /* Quebra palavras longas */
+  line-height: 1.2;
+  margin: 0; /* Remove margens padrão */
+}
+
+/* --- Estilos para os cards de Roll e Chance --- */
+.game-results-row {
+  display: flex;
+  gap: 1rem; /* Espaçamento entre os cards */
+  margin-top: 1rem;
+  justify-content: center; /* Centraliza os cards na linha */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+}
+
+.game-result-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  min-width: 120px; /* Largura mínima para cada card */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  color: var(--text-color-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.game-result-card:hover {
+  transform: translateY(-2px);
+}
+
+.game-result-card svg {
+  margin-bottom: 0.5rem;
+  color: var(--text-color-secondary); /* Cor dos ícones */
+}
+
+.game-roll-card {
+  background-color: var(--bg-color-dark); /* Fundo escuro para o Roll */
+  border: 1px solid var(--character-accent-soft);
+}
+
+.game-roll-card.success {
+  background-color: rgba(76, 175, 80, 0.2); /* Verde claro para sucesso */
+  border-color: rgba(76, 175, 80, 0.5);
+}
+
+.game-roll-card.failure {
+  background-color: rgba(244, 67, 54, 0.2); /* Vermelho claro para falha */
+  border-color: rgba(244, 67, 54, 0.5);
+}
+
+.game-chance-card {
+  background-color: var(--bg-color-light); /* Fundo claro para o Chance */
+  border: 1px solid var(--character-accent-soft);
+  color: var(--text-color-dark); /* Texto mais escuro para contraste */
+}
+
+/* --- Estilos para os botões de Ação (Actions) --- */
+.game-action-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  margin-bottom: 0.8rem;
+  border-radius: 8px;
+  border: 1px solid transparent; /* Borda inicial transparente */
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: var(--text-color-dark); /* Cor do texto para contraste com o fundo avermelhado */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-action-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.game-action-button.selected {
+  border-color: var(--character-accent); /* Borda destacada quando selecionado */
+  box-shadow: 0 0 0 3px var(--character-accent-soft);
+  transform: translateY(-1px);
+}
+
+/* --- Ajustes gerais para o layout --- */
+.character-detail-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Proporção para painel de detalhes e painel de jogo */
+  gap: 2rem;
+  max-width: 1400px; /* Limita a largura para melhor leitura */
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1024px) {
+  .character-detail-layout {
+    grid-template-columns: 1fr; /* Coluna única em telas menores */
+    padding: 0 1rem;
+  }
+}
+
+/* Cores de fundo para o painel de jogo para contraste */
+.character-game-panel {
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Exemplo de variáveis CSS (se ainda não tiver) */
+:root {
+  --text-color-primary: #e0e0e0;
+  --text-color-secondary: #a0a0a0;
+  --text-color-dark: #333; /* Para contraste com fundos claros */
+  --bg-color-dark: #2a2a2a;
+  --bg-color-light: #f0f0f0;
+  --bg-color-panel: #3a3a3a; /* Cor de fundo para o painel de jogo */
+  --character-accent: #ef5a4d; /* Exemplo, será sobrescrito pelo JS */
+  --character-accent-soft: rgba(239, 90, 77, 0.32);
+  --character-card-tint: rgba(155, 42, 34, 0.20);
+}

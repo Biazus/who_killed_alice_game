@@ -87,16 +87,17 @@ export interface Act {
   description: string;
   reward_type: string;
   reward_id: number;
-  // scenes: Scene[]; // REMOVIDO - Agora buscado sob demanda
 }
 
 export interface CharacterProgressOnAct {
   id: number;
   character: number; // ID do personagem
-  act: Act; // Detalhes do Act (sem scenes aninhadas)
-  current_scene: Scene; // Detalhes da cena atual (sem scene_actions aninhadas)
+  act: Act; // Detalhes do Act
+  current_scene: Scene; // Detalhes da cena atual
   finished: boolean;
-  game_message?: string; // Adicionado para receber mensagens do backend
+  game_message?: string; // Mensagem do backend
+  roll_value?: number; // Novo campo para o valor da rolagem
+  chance_value?: number; // Novo campo para o valor da chance
 }
 
 interface PaginatedResponse<T> {

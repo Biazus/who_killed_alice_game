@@ -1,4 +1,5 @@
-import { useEffect, useMemo, useState, useCallback } from "react";
+// CharacterDetail.tsx
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   ArrowLeft,
   Backpack,
@@ -6,23 +7,22 @@ import {
   HeartPulse,
   Shield,
   UserRound,
-  Dice5, // Ícone de dado
+  Dice5,
+  Percent,
 } from "lucide-react";
 import { useNavigate, useParams } from "react-router-dom";
 
 import {
   fetchCharacter,
-  type Character,
-  type InventoryItem,
   fetchCharacterProgress,
   selectSceneAction,
+  fetchSceneActionsForScene,
+  type Character,
+  type InventoryItem,
   type CharacterProgressOnAct,
   type SceneAction,
   type Scene,
   type Act,
-  fetchSceneActionsForScene, // Importar nova função
-  fetchScene, // Importar nova função
-  fetchAct, // Importar nova função
 } from "./services/characters";
 import { modifierVisualMap } from "./modifierVisuals";
 
@@ -41,6 +41,18 @@ function formatWeight(weight?: number): string {
   return `${weight.toLocaleString("pt-BR")} kg`;
 }
 
+// Função para determinar a cor de fundo da dificuldade (mais claro a mais avermelhado)
+function getDifficultyBackgroundColor(difficulty: number): string {
+  // Escala de cores para dificuldade (exemplo: de um vermelho claro a um vermelho escuro)
+  // Você pode ajustar esses valores RGB para a paleta exata que deseja!
+  if (difficulty === 1) return "rgba(255, 220, 220, 0.8)"; // Vermelho muito claro
+  if (difficulty === 2) return "rgba(255, 180, 180, 0.8)"; // Vermelho claro
+  if (difficulty === 3) return "rgba(255, 140, 140, 0.8)"; // Vermelho médio
+  if (difficulty === 4) return "rgba(255, 100, 100, 0.8)"; // Vermelho mais escuro
+  if (difficulty >= 5) return "rgba(255, 60, 60, 0.8)";   // Vermelho intenso
+  return "rgba(200, 200, 200, 0.8)"; // Cor padrão para casos não mapeados
+}
+
 function CharacterDetail() {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -54,7 +66,7 @@ function CharacterDetail() {
     useState<SceneAction | null>(null);
   const [isSubmittingAction, setIsSubmittingAction] = useState(false);
   const [gameMessage, setGameMessage] = useState<string | null>(null);
-  const [currentSceneActions, setCurrentSceneActions] = useState<SceneAction[]>([]); // Estado para as ações da cena atual
+  const [currentSceneActions, setCurrentSceneActions] = useState<SceneAction[]>([]);
 
   const characterId = useMemo(() => Number(id), [id]);
 
@@ -73,6 +85,7 @@ function CharacterDetail() {
       setLoading(true);
       setError(null);
       setGameMessage(null);
+      setSelectedSceneAction(null);
 
       const charData = await fetchCharacter(characterId);
       setCharacter(charData);
@@ -80,10 +93,9 @@ function CharacterDetail() {
       const progressData = await fetchCharacterProgress(characterId);
       setCharacterProgress(progressData);
 
-      if (progressData) {
-        // Agora, buscamos as ações da cena atual separadamente
+      if (progressData && progressData.current_scene) {
         const actions = await fetchSceneActionsForScene(progressData.current_scene.id);
-        setCurrentSceneActions(actions.filter(sa => sa.action_type === "P")); // Apenas ações do jogador
+        setCurrentSceneActions(actions.filter(sa => sa.action_type === "P"));
 
         if (progressData.game_message) {
           setGameMessage(progressData.game_message);
@@ -107,7 +119,6 @@ function CharacterDetail() {
     loadCharacterAndProgress();
   }, [loadCharacterAndProgress]);
 
-  // Efeito para recarregar as ações da cena quando a cena atual muda
   useEffect(() => {
     async function loadSceneActions() {
       if (characterProgress && characterProgress.current_scene && !characterProgress.finished) {
@@ -124,7 +135,6 @@ function CharacterDetail() {
     }
     loadSceneActions();
   }, [characterProgress?.current_scene, characterProgress?.finished]);
-
 
   const handleSelectAction = (action: SceneAction) => {
     setSelectedSceneAction(action);
@@ -207,12 +217,19 @@ function CharacterDetail() {
 
   const currentAct = characterProgress?.act;
   const currentScene = characterProgress?.current_scene;
-  // availableSceneActions agora vem do estado currentSceneActions
   const availableSceneActions = currentSceneActions;
 
+  // Determina se a rolagem foi um sucesso ou falha para o card
+  const rollSuccess = characterProgress?.roll_success;
 
   return (
     <main className="character-detail-page">
+      <div className="detail-header-act">
+        <span className="eyebrow">ATO ATUAL</span>
+        <h2>{currentAct?.title}</h2>
+        <p>{currentAct?.description}</p>
+      </div>
+
       <div className="character-detail-layout">
         <section className="character-detail-panel">
           <button
@@ -240,9 +257,10 @@ function CharacterDetail() {
                 </span>
               </div>
 
-              <span className="detail-level">
-                Nível <strong>{character.level}</strong>
-              </span>
+              <div className="detail-level">
+                <span>Nível</span>
+                <strong>{character.level}</strong>
+              </div>
             </div>
           </header>
 
@@ -279,25 +297,21 @@ function CharacterDetail() {
             </div>
 
             {character.modifiers?.length ? (
-              <div className="detail-modifier-list">
+              <div className="detail-modifier-grid">
                 {character.modifiers.map((entry) => {
                   const Icon =
                     modifierVisualMap[entry.modifier.name]?.icon ?? CircleHelp;
 
                   return (
                     <article
-                      className="detail-modifier"
+                      className="detail-modifier-card"
                       key={entry.id}
                     >
                       <Icon size={21} aria-hidden="true" />
-
-                      <div>
-                        <span>
-                          {decodeHtmlEntities(entry.modifier.category)}
-                        </span>
-
-                        <h3>{entry.modifier.name}</h3>
-
+                      {/* Ajuste aqui para que o nome do traço caiba */}
+                      <h4 className="modifier-name-full">{entry.modifier.name}</h4>
+                      <div className="modifier-tooltip">
+                        <span className="modifier-tooltip__label">Descrição</span>
                         <p>{entry.modifier.description}</p>
                       </div>
                     </article>
@@ -324,31 +338,17 @@ function CharacterDetail() {
             </div>
 
             {inventoryItems.length > 0 ? (
-              <div className="inventory-list">
+              <div className="detail-inventory-grid">
                 {inventoryItems.map((item) => (
-                  <details className="inventory-item" key={item.id}>
-                    <summary>
-                      <span className="inventory-item__icon">
-                        <Backpack size={18} aria-hidden="true" />
-                      </span>
-
-                      <span className="inventory-item__title">
-                        <strong>{item.name}</strong>
-                        <small>{formatWeight(item.weight)}</small>
-                      </span>
-
-                      <span className="inventory-item__reveal">Detalhes</span>
-                    </summary>
-
-                    <div className="inventory-item__content">
+                  <article className="detail-inventory-card" key={item.id}>
+                    <Backpack size={21} aria-hidden="true" />
+                    <h4>{item.name}</h4>
+                    <div className="inventory-tooltip">
+                      <span className="inventory-tooltip__label">Detalhes</span>
                       <p>{item.description}</p>
-
-                      <span>
-                        <Shield size={14} aria-hidden="true" />
-                        Item #{String(item.id).padStart(3, "0")}
-                      </span>
+                      <small>{formatWeight(item.weight)}</small>
                     </div>
-                  </details>
+                  </article>
                 ))}
               </div>
             ) : (
@@ -362,12 +362,6 @@ function CharacterDetail() {
         <aside className="character-game-panel" aria-label="Área do Jogo">
           {characterProgress ? (
             <div className="game-content">
-              <div className="game-header">
-                <span className="eyebrow">ATO ATUAL</span>
-                <h2>{currentAct?.title}</h2>
-                <p>{currentAct?.description}</p>
-              </div>
-
               <div className="game-scene">
                 <span className="eyebrow">CENA ATUAL</span>
                 <h3>{currentScene?.title}</h3>
@@ -375,7 +369,24 @@ function CharacterDetail() {
               </div>
 
               {gameMessage && (
-                <div className="game-message">{gameMessage}</div>
+                <div className="game-message-container">
+                  <div className="game-message">{gameMessage}</div>
+                  {/* Cards de Roll e Chance lado a lado */}
+                  <div className="game-results-row">
+                    {(characterProgress.roll_value !== undefined && characterProgress.roll_value !== null) && (
+                      <div className={`game-result-card game-roll-card ${rollSuccess ? 'success' : 'failure'}`}>
+                        <Dice5 size={24} aria-hidden="true" />
+                        <strong>{characterProgress.roll_value}</strong>
+                      </div>
+                    )}
+                    {(characterProgress.chance_value !== undefined && characterProgress.chance_value !== null) && (
+                      <div className="game-result-card game-chance-card">
+                        <Percent size={24} aria-hidden="true" />
+                        <strong>{characterProgress.chance_value}%</strong>
+                      </div>
+                    )}
+                  </div>
+                </div>
               )}
 
               {characterProgress.finished ? (
@@ -396,13 +407,15 @@ function CharacterDetail() {
                         }`}
                         onClick={() => handleSelectAction(sa)}
                         disabled={isSubmittingAction}
+                        // Aplica a cor de fundo personalizada com base na dificuldade
+                        style={{
+                          backgroundColor: sa.action?.difficulty
+                            ? getDifficultyBackgroundColor(sa.action.difficulty)
+                            : undefined,
+                        }}
                       >
                         {sa.description}
-                        {sa.action && (
-                          <span className="action-difficulty">
-                            (Dificuldade: {sa.action.difficulty})
-                          </span>
-                        )}
+                        {/* Removido o span de dificuldade, pois a cor já indica */}
                       </button>
                     ))}
                     <button

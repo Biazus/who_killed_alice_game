@@ -47,9 +47,9 @@ class ActionService:
         # menor valor entre os atributos exigidos
         min_entry = min(attr_values, key=lambda x: x["value"])
         gate_value = min_entry["value"]
-        total_difficulty = action.difficulty + sum(
-            r["req"].difficulty_delta for r in attr_values
-        )
+        total_difficulty = 0 # action.difficulty + sum(
+        #    r["req"].difficulty_delta for r in attr_values
+        #)
 
         chance = max(0, min(ATTRIBUTE_CAP, gate_value - total_difficulty))
         roll = random.randint(1, 100)
