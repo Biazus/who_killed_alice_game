@@ -201,10 +201,6 @@ function CharacterCard({ character }: CharacterCardProps) {
                     />
                   </div>
 
-                  <span className="modifier-tile__category">
-                    {category}
-                  </span>
-
                   <h4>{item.modifier.name}</h4>
 
                   <div
@@ -230,7 +226,7 @@ function CharacterCard({ character }: CharacterCardProps) {
       </section>
 
       <footer className="character-card__footer">
-        <span>ARQUIVO CONFIDENCIAL · CASO Nº 001</span>
+        <span>ATO Nº 001</span>
         <button
           type="button"
           className="character-card__open"

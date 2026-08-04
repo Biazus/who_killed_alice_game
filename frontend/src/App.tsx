@@ -37,11 +37,6 @@ function App() {
   return (
     <div className="app-shell">
       <header className="topbar">
-        <div className="brand">
-          <span className="brand__symbol">✦</span>
-          <span>WHO KILLED ALICE</span>
-        </div>
-
         <button className="logout-button" onClick={handleLogout}>
           Encerrar sessão
         </button>
