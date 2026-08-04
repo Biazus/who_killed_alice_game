@@ -194,7 +194,7 @@ function CharacterCard({ character }: CharacterCardProps) {
                 >
                   <div className="modifier-tile__icon">
                     <Icon
-                      size={22} /* Ajustado para 22px */
+                      size={22}
                       strokeWidth={1.7}
                       className={visual?.iconClassName}
                       aria-hidden="true"
@@ -240,7 +240,7 @@ function CharacterCard({ character }: CharacterCardProps) {
           }}
         >
           Abrir dossiê
-          <ArrowUpRight size={14} aria-hidden="true" /> {/* Ajustado para 14px */}
+          <ArrowUpRight size={14} aria-hidden="true" />
         </button>
       </footer>
     </article>

@@ -47,7 +47,7 @@ class ActionService:
         # menor valor entre os atributos exigidos
         min_entry = min(attr_values, key=lambda x: x["value"])
         gate_value = min_entry["value"]
-        total_difficulty =  action.difficulty + sum(
+        total_difficulty = action.difficulty + sum(
             r["req"].difficulty_delta for r in attr_values
         )
 
@@ -59,7 +59,6 @@ class ActionService:
         else:
             message = f"Você conseguiu {action.name} com sucesso!"
 
-        # resposta com detalhes
         return {
             "action_code": action.code,
             "action_name": action.name,

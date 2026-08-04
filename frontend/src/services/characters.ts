@@ -45,7 +45,6 @@ export interface Character {
   updated?: string;
 }
 
-// Novas interfaces para o jogo
 export interface Action {
   id: number;
   code: string;
@@ -54,19 +53,19 @@ export interface Action {
   difficulty: number;
   type: string;
   active: boolean;
-  requirements: any[]; // Ajuste conforme ActionAttributeRequirementSerializer
+  requirements: any[];
 }
 
 export interface SceneAction {
   id: number;
   description: string;
-  action_type: "P" | "H"; // Player Action ou History Action
-  action: Action | null; // Detalhes da ação se for PLAYER_ACTION
+  action_type: "P" | "H";
+  action: Action | null;
   history_action: string | null;
-  on_fail: number | null; // ID da próxima cena em caso de falha
-  on_success: number | null; // ID da próxima cena em caso de sucesso
-  on_hard_fail: number | null; // ID da próxima cena em caso de falha crítica
-  scene: number; // ID da cena à qual esta ação pertence
+  on_fail: number | null;
+  on_success: number | null;
+  on_hard_fail: number | null;
+  scene: number;
 }
 
 export interface Scene {
@@ -75,9 +74,8 @@ export interface Scene {
   location: string;
   initial: boolean;
   description: string;
-  act: number; // ID do Act
+  act: number;
   order: number;
-  // scene_actions: SceneAction[]; // REMOVIDO - Agora buscado sob demanda
   url: string;
 }
 
@@ -91,13 +89,13 @@ export interface Act {
 
 export interface CharacterProgressOnAct {
   id: number;
-  character: number; // ID do personagem
-  act: Act; // Detalhes do Act
-  current_scene: Scene; // Detalhes da cena atual
+  character: number;
+  act: Act;
+  current_scene: Scene;
   finished: boolean;
-  game_message?: string; // Mensagem do backend
-  roll_value?: number; // Novo campo para o valor da rolagem
-  chance_value?: number; // Novo campo para o valor da chance
+  game_message?: string;
+  roll_value?: number;
+  chance_value?: number;
 }
 
 interface PaginatedResponse<T> {
@@ -151,7 +149,6 @@ export async function createCharacter(
   return response.data;
 }
 
-// Funções para o jogo
 export async function fetchCharacterProgress(
   characterId: number
 ): Promise<CharacterProgressOnAct | null> {
@@ -178,15 +175,12 @@ export async function selectSceneAction(
   return response.data;
 }
 
-// NOVAS FUNÇÕES para buscar cenas e ações sob demanda
 export async function fetchScene(sceneId: number): Promise<Scene> {
   const response = await api.get<Scene>(`/scenes/${sceneId}/`);
   return response.data;
 }
 
 export async function fetchSceneActionsForScene(sceneId: number): Promise<SceneAction[]> {
-  // Assumindo que você tem um endpoint para listar SceneActions filtradas por scene_id
-  // Ou você pode buscar todas e filtrar no frontend, mas um endpoint filtrado é melhor
   const response = await api.get<PaginatedResponse<SceneAction>>(`/scene_actions/?scene=${sceneId}`);
   return response.data.results;
 }

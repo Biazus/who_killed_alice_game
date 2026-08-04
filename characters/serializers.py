@@ -1,11 +1,9 @@
 from rest_framework import serializers
 
-from items.models import Item
 from items.serializers import ItemListSerializer, ItemSerializer
 from modifiers.serializers import ModifierSerializer
 
-from .models import (Character, CharacterModifier, CharacterModifierAttribute,
-                     Inventory)
+from .models import Character, CharacterModifier, CharacterModifierAttribute, Inventory
 
 
 class CharacterModifierSerializer(serializers.ModelSerializer):
@@ -28,8 +26,6 @@ class CharacterModifierAttributeListSerializer(serializers.ModelSerializer):
 
 
 class CharacterModifierAttributeSerializer(serializers.ModelSerializer):
-    # character_modifier = serializers.SlugRelatedField(slug_field="modifier.name", read_only=True)
-    # attribute = serializers.SlugRelatedField(slug_field="name", read_only=True)
     class Meta:
         model = CharacterModifierAttribute
         fields = "__all__"
@@ -72,7 +68,7 @@ class InventorySerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Inventory
-        fields = ["id", "items"]  # ou outros campos, se houver
+        fields = ["id", "items"]
 
 
 class InventoryListSerializer(serializers.ModelSerializer):
@@ -86,7 +82,6 @@ class InventoryListSerializer(serializers.ModelSerializer):
 
 
 class InventoryDetailSerializer(serializers.ModelSerializer):
-    # items = ItemSerializer(many=True, read_only=True)
 
     class Meta:
         model = Inventory
@@ -101,9 +96,7 @@ class CharacterListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Character
         fields = ["url", "id", "name", "level", "owner", "modifiers", "inventory"]
-        extra_kwargs = {
-            "url": {"view_name": "character-detail"}  # Matches default router naming
-        }
+        extra_kwargs = {"url": {"view_name": "character-detail"}}
 
 
 class CharacterDetailSerializer(serializers.ModelSerializer):

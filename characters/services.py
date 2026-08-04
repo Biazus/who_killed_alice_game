@@ -60,8 +60,6 @@ class CharacterService(object):
         atribui ao personagem e cria os CharacterModifierAttributeValue.
         """
 
-        # 1. Descobrir categorias disponíveis
-        # Exemplo: supor que Modifier tem um campo 'category' (CharField ou FK)
         modifiers = Modifier.objects.filter(active=True)
 
         # Agrupar modifiers por categoria
@@ -116,7 +114,7 @@ class CharacterService(object):
 
     def get_character_attribute_from_items(self) -> dict[str, int]:
         inventory = Inventory.objects.prefetch_related(
-            "items__attribute_effects",  # usa o related_name do ItemAttributeEffect
+            "items__attribute_effects",
             "items__attribute_effects__attribute",
         ).get(character=self.character)
 

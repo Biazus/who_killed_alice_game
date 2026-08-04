@@ -4,9 +4,12 @@ from rest_framework import filters, viewsets
 from rest_framework.permissions import IsAuthenticated
 
 from items.models import Item, ItemAttributeEffect, ItemType
-from items.serializers import (ItemAttributeEffectSerializer,
-                               ItemListSerializer, ItemSerializer,
-                               ItemTypeSerializer)
+from items.serializers import (
+    ItemAttributeEffectSerializer,
+    ItemListSerializer,
+    ItemSerializer,
+    ItemTypeSerializer,
+)
 
 
 class ItemTypeViewSet(viewsets.ModelViewSet):

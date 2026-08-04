@@ -15,7 +15,7 @@
     "fields": {
       "title": "BLOCO 1: O Limiar Esquecido",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Você está à beira do Hospital Aurora Eterna, escondido entre arbustos densos. A fachada é um esqueleto de concreto e vidro quebrado. A entrada principal está desmoronada, mas uma porta de serviço lateral parece mais acessível. Um arrepio percorre sua espinha; a sensação de estar sendo observado é quase palpável.",
+      "description": "Você está à beira do Hospital Aurora Eterna, escondido entre arbustos densos. A fachada é um esqueleto de concreto e vidro quebrado, com videiras e musgo cobrindo as paredes. A entrada principal está desmoronada, revelando um abismo escuro, mas uma porta de serviço lateral, parcialmente oculta pela vegetação, parece mais acessível. Um arrepio percorre sua espinha; a sensação de estar sendo observado é quase palpável, como se os próprios escombros tivessem olhos.",
       "act": 1
     }
   },
@@ -25,7 +25,7 @@
     "fields": {
       "title": "BLOCO 2: A Porta Rangente",
       "location": "Porta de Serviço Lateral",
-      "description": "Você está diante da porta de serviço, uma estrutura de metal enferrujado que parece prestes a ceder. Um som de gotejamento constante vem de dentro, e um cheiro metálico e úmido paira no ar. A porta está entreaberta, revelando um corredor escuro.",
+      "description": "Você está diante da porta de serviço, uma estrutura de metal enferrujado que parece prestes a ceder a qualquer toque. Um som de gotejamento constante vem de dentro, ecoando no silêncio opressor, e um cheiro metálico e úmido, misturado com odores de mofo e decomposição, paira no ar. A porta está entreaberta por uma fresta, revelando um corredor escuro e convidativo, mas também ameaçador.",
       "act": 1
     }
   },
@@ -35,7 +35,7 @@
     "fields": {
       "title": "BLOCO 3: Presságio nas Sombras",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Você se esconde rapidamente, o coração batendo forte. A sensação de estar sendo observado é intensa, e você ouve passos arrastados se aproximando da sua posição. Algo está caçando você.",
+      "description": "Você se esconde rapidamente, o coração batendo forte no peito, quase ensurdecedor. A sensação de estar sendo observado é intensa, uma pressão invisível que o envolve. De repente, você ouve passos arrastados e pesados se aproximando da sua posição, vindos da escuridão. Algo está caçando você, e parece estar muito perto.",
       "act": 1
     }
   },
@@ -45,7 +45,7 @@
     "fields": {
       "title": "BLOCO 4: Perseguição Inicial",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Uma criatura sombria, com olhos vermelhos brilhantes, persegue você implacavelmente. Seus passos são rápidos e silenciosos, e você sente seu hálito frio em sua nuca.",
+      "description": "Uma criatura sombria, com olhos vermelhos brilhantes que perfuram a escuridão, persegue você implacavelmente. Seus passos são rápidos e silenciosos, quase sobrenaturais, e você sente seu hálito frio e fétido em sua nuca. A cada segundo, a distância entre vocês diminui, e o pânico ameaça paralisá-lo.",
       "act": 1
     }
   },
@@ -55,7 +55,7 @@
     "fields": {
       "title": "BLOCO 5: Observação Atenta",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Você tem uma ideia melhor dos perigos e das rotas. A porta de serviço parece ser a rota mais usada, o que significa que pode estar mais vigiada, mas também é a mais provável de levar a algo.",
+      "description": "Você tem uma ideia melhor dos perigos e das rotas possíveis. A porta de serviço parece ser a rota mais usada, o que significa que pode estar mais vigiada por sentinelas ou armadilhas, mas também é a mais provável de levar a algo significativo dentro do hospital. A entrada principal, embora mais perigosa, pode oferecer uma rota menos esperada.",
       "act": 1
     }
   },
@@ -65,7 +65,7 @@
     "fields": {
       "title": "BLOCO 6: Incerto e Exposto",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Você está exposto, sem uma rota clara ou informações. A tensão aumenta, e a sensação de que o tempo está se esgotando é esmagadora.",
+      "description": "Você está exposto, sem uma rota clara ou informações sobre o que fazer a seguir. A tensão aumenta a cada batida do seu coração, e a sensação de que o tempo está se esgotando é esmagadora. Cada sombra parece esconder uma ameaça, e o silêncio é mais aterrorizante do que qualquer som.",
       "act": 1
     }
   },
@@ -75,7 +75,7 @@
     "fields": {
       "title": "BLOCO 7: Encontro Inesperado",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Uma figura sombria, alta e esguia, está parada atrás de você. Seus olhos brilham com uma luz fraca e antinatural. Ela não faz som, apenas observa.",
+      "description": "Uma figura sombria, alta e esguia, está parada atrás de você, materializando-se do nada. Seus olhos brilham com uma luz fraca e antinatural, fixos em você. Ela não faz som, apenas observa, e sua presença é tão opressora que o ar parece rarefeito. Não há hostilidade óbvia, mas a curiosidade em seu olhar é igualmente perturbadora.",
       "act": 1
     }
   },
@@ -85,7 +85,7 @@
     "fields": {
       "title": "BLOCO 8: Hall Ecoante",
       "location": "Hall de Entrada Principal",
-      "description": "Você está no hall de entrada principal, um espaço cavernoso com o teto desabado em alguns pontos. O ar é frio e parado. O silêncio é quebrado apenas pelo som de seus próprios passos ecoando. Há uma recepção em ruínas e um corredor principal à frente.",
+      "description": "Você está no hall de entrada principal, um espaço cavernoso com o teto desabado em alguns pontos, revelando o céu cinzento. O ar é frio e parado, carregado com o cheiro de poeira e decadência. O silêncio é quebrado apenas pelo som de seus próprios passos ecoando pelas paredes, amplificando a sensação de solidão. Há uma recepção em ruínas, coberta de entulho, e um corredor principal que se estende para a escuridão à frente.",
       "act": 1
     }
   },
@@ -95,7 +95,7 @@
     "fields": {
       "title": "BLOCO 9: Capturado!",
       "location": "Cativeiro",
-      "description": "Você é dominado pela criatura. Seus sentidos falham, e você sente garras afiadas perfurando sua pele. A escuridão o engole.",
+      "description": "Você é dominado pela criatura. Seus sentidos falham, e você sente garras afiadas perfurando sua pele, uma dor lancinante que o consome. A escuridão o engole, e a última coisa que você ouve é um rosnado gutural antes de perder a consciência.",
       "act": 1
     }
   },
@@ -105,7 +105,7 @@
     "fields": {
       "title": "BLOCO 10: Corredor dos Sussurros",
       "location": "Corredor de Serviço",
-      "description": "Você está em um corredor estreito e escuro. A luz fraca que entra pelas janelas quebradas mal ilumina as paredes descascadas. O ar é pesado com cheiro de mofo e algo mais, algo doce e pútrido. Você ouve sussurros indistintos que parecem vir das paredes.",
+      "description": "Você está em um corredor estreito e escuro, onde a luz fraca que entra pelas janelas quebradas mal ilumina as paredes descascadas e grafitadas. O ar é pesado com cheiro de mofo e algo mais, algo doce e pútrido que faz seu estômago revirar. Você ouve sussurros indistintos que parecem vir das próprias paredes, vozes fantasmagóricas que tentam invadir sua mente.",
       "act": 1
     }
   },
@@ -115,7 +115,7 @@
     "fields": {
       "title": "BLOCO 11: Sentinela Alerta",
       "location": "Porta de Serviço Lateral",
-      "description": "Uma sentinela, uma criatura humanóide com olhos vermelhos brilhantes, está patrulhando a área da porta de serviço. Ela parece estar procurando por algo, ou alguém. Você está escondido, mas sabe que ela está perto.",
+      "description": "Uma sentinela, uma criatura humanóide com olhos vermelhos brilhantes e movimentos robóticos, está patrulhando a área da porta de serviço. Ela parece estar procurando por algo, ou alguém, varrendo o ambiente com um olhar penetrante. Você está escondido, mas sabe que ela está perto, e qualquer movimento em falso pode ser fatal.",
       "act": 1
     }
   },
@@ -125,7 +125,7 @@
     "fields": {
       "title": "BLOCO 12: Emboscada na Entrada",
       "location": "Porta de Serviço Lateral",
-      "description": "Uma sentinela o ataca no momento em que você tenta entrar. Seus golpes são rápidos e brutais.",
+      "description": "Uma sentinela salta das sombras no momento em que você tenta entrar. Seus golpes são rápidos e brutais, uma fúria selvagem que o pega de surpresa. Você mal tem tempo de reagir antes de ser atingido.",
       "act": 1
     }
   },
@@ -135,7 +135,7 @@
     "fields": {
       "title": "BLOCO 13: Presença Adormecida",
       "location": "Corredor de Serviço",
-      "description": "Você sabe que há algo adormecido ou em repouso dentro do corredor. Isso o torna perigoso, mas também uma oportunidade para passar despercebido.",
+      "description": "Você sabe que há algo adormecido ou em repouso dentro do corredor, uma presença pesada e inerte que emana uma aura de perigo. Isso o torna perigoso, mas também uma oportunidade para passar despercebido, desde que você seja silencioso e cuidadoso o suficiente para não despertá-lo.",
       "act": 1
     }
   },
@@ -145,7 +145,7 @@
     "fields": {
       "title": "BLOCO 14: Ataque Psíquico",
       "location": "Vários",
-      "description": "Uma dor lancinante perfura sua mente. Imagens distorcidas e vozes sussurrantes tentam invadir seus pensamentos, desorientando-o.",
+      "description": "Uma dor lancinante perfura sua mente, como agulhas de gelo perfurando seu cérebro. Imagens distorcidas e vozes sussurrantes, cheias de desespero e loucura, tentam invadir seus pensamentos, desorientando-o e ameaçando quebrar sua sanidade. Você precisa lutar para manter o controle.",
       "act": 1
     }
   },
@@ -155,7 +155,7 @@
     "fields": {
       "title": "BLOCO 15: Lavanderia Sombria",
       "location": "Lavanderia",
-      "description": "Você entra por uma janela quebrada em uma lavanderia escura e úmida. Máquinas de lavar enferrujadas e cestos de roupa suja se amontoam. O cheiro de mofo e produtos químicos antigos é forte. Há uma porta de metal que parece levar a um corredor principal.",
+      "description": "Você entra por uma janela quebrada em uma lavanderia escura e úmida. Máquinas de lavar enferrujadas e cestos de roupa suja se amontoam em pilhas desordenadas, cobertas por uma camada espessa de poeira e teias de aranha. O cheiro de mofo e produtos químicos antigos é forte, quase sufocante. Há uma porta de metal no fundo da sala que parece levar a um corredor principal, mas está parcialmente bloqueada por escombros.",
       "act": 1
     }
   },
@@ -165,7 +165,7 @@
     "fields": {
       "title": "BLOCO 16: Armadilha Cruel",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "A armadilha de urso se fecha em sua perna com um estalo doloroso. A dor é excruciante, e você está preso.",
+      "description": "A armadilha de urso se fecha em sua perna com um estalo doloroso e ensurdecedor. A dor é excruciante, uma onda de agonia que o faz gritar. Você está preso, e o sangue começa a manchar o chão ao seu redor. A sensação de impotência é avassaladora, e você sabe que o barulho pode ter atraído atenção indesejada.",
       "act": 1
     }
   },
@@ -175,7 +175,7 @@
     "fields": {
       "title": "BLOCO 17: Ferido em Fuga",
       "location": "Vários",
-      "description": "Você está ferido, com um corte ou arranhão profundo. A dor é constante, mas você precisa continuar se movendo.",
+      "description": "Você está ferido, com um corte ou arranhão profundo que sangra profusamente. A dor é constante, uma lembrança aguda da sua vulnerabilidade, mas você precisa continuar se movendo. Cada passo é uma agonia, mas a adrenalina o impulsiona para frente, sabendo que parar significa ser alcançado.",
       "act": 1
     }
   },
@@ -185,7 +185,7 @@
     "fields": {
       "title": "BLOCO 18: Despiste Bem-Sucedido",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Você conseguiu despistar a criatura. Ela parece ter perdido seu rastro, e você tem um momento de alívio.",
+      "description": "Você conseguiu despistar a criatura, usando o terreno acidentado e sua astúcia para se esconder. Ela parece ter perdido seu rastro, e você tem um momento de alívio, um suspiro profundo de ar puro. No entanto, a sensação de que ela pode reaparecer a qualquer momento persiste, mantendo-o em alerta máximo.",
       "act": 1
     }
   },
@@ -195,7 +195,7 @@
     "fields": {
       "title": "BLOCO 19: Alarme Ativado",
       "location": "Vários",
-      "description": "Um alarme ensurdecedor ecoa pelo hospital. As luzes de emergência piscam em vermelho, e você ouve sons de criaturas se movendo rapidamente em sua direção.",
+      "description": "Um alarme ensurdecedor ecoa pelo hospital, um som estridente que perfura o silêncio e faz seus ouvidos zumbirem. As luzes de emergência piscam em vermelho, criando um ambiente caótico e aterrorizante. Você ouve sons de criaturas se movendo rapidamente em sua direção, seus rosnados e passos ecoando pelos corredores, cada vez mais próximos.",
       "act": 1
     }
   },
@@ -205,7 +205,7 @@
     "fields": {
       "title": "BLOCO 20: Pânico Crescente",
       "location": "Vários",
-      "description": "O pânico começa a tomar conta. Sua mente está turva, e você sente uma urgência desesperada para escapar.",
+      "description": "O pânico começa a tomar conta, uma onda avassaladora de medo que ameaça sufocá-lo. Sua mente está turva, e você sente uma urgência desesperada para escapar, para fugir de tudo. A racionalidade se esvai, e tudo o que resta é o instinto de sobrevivência, um desejo primal de correr e se esconder.",
       "act": 1
     }
   },
@@ -215,7 +215,7 @@
     "fields": {
       "title": "BLOCO 21: Mapa Encontrado",
       "location": "Hall de Entrada Principal",
-      "description": "Você encontrou um mapa rudimentar do hospital, desenhado à mão. Ele indica a localização de uma \"Sala de Arquivos\" no subsolo. Isso é uma pista valiosa!",
+      "description": "Você encontrou um mapa rudimentar do hospital, desenhado à mão em um pedaço de papel amarelado. Ele indica a localização de uma \"Sala de Arquivos\" no subsolo, marcada com um círculo. Isso é uma pista valiosa, um raio de esperança na escuridão, que pode levá-lo ao seu objetivo.",
       "act": 1
     }
   },
@@ -225,7 +225,7 @@
     "fields": {
       "title": "BLOCO 22: Corredor Principal",
       "location": "Corredor Principal",
-      "description": "Você está em um longo corredor principal, com portas em ambos os lados e o teto desabado em alguns pontos. A luz fraca do exterior mal alcança aqui. O ar é frio e parado.",
+      "description": "Você está em um longo corredor principal, com portas em ambos os lados, algumas abertas, outras fechadas e enferrujadas. O teto desabado em alguns pontos revela o céu cinzento, e a luz fraca do exterior mal alcança aqui, criando um jogo de sombras fantasmagóricas. O ar é frio e parado, e o silêncio é quebrado apenas pelo som distante de gotejamento.",
       "act": 1
     }
   },
@@ -235,7 +235,7 @@
     "fields": {
       "title": "BLOCO 23: Desabamento Parcial",
       "location": "Hall de Entrada Principal",
-      "description": "Um pedaço do teto desaba perigosamente perto de você, levantando uma nuvem de poeira e fazendo um barulho estrondoso.",
+      "description": "Um pedaço do teto desaba perigosamente perto de você, levantando uma nuvem de poeira e fazendo um barulho estrondoso que ecoa pelo hall. Escombros caem ao seu redor, e você sente o chão tremer. A estrutura do hospital é instável, e cada movimento pode ser o último.",
       "act": 1
     }
   },
@@ -245,7 +245,7 @@
     "fields": {
       "title": "BLOCO 24: Tonto e Vulnerável",
       "location": "Hall de Entrada Principal",
-      "description": "Você está tonto e desorientado após bater a cabeça. Sua visão está turva, e você se sente vulnerável.",
+      "description": "Você está tonto e desorientado após bater a cabeça em um dos escombros. Sua visão está turva, e você se sente vulnerável, com a cabeça latejando. A dor é constante, e a sensação de que algo pode atacá-lo a qualquer momento é avassaladora.",
       "act": 1
     }
   },
@@ -255,7 +255,7 @@
     "fields": {
       "title": "BLOCO 25: Sons no Corredor",
       "location": "Corredor Principal",
-      "description": "Você capta um som fraco e rítmico vindo do corredor principal, como um arrastar de correntes. Parece distante, mas se aproxima.",
+      "description": "Você capta um som fraco e rítmico vindo do corredor principal, como um arrastar de correntes ou passos pesados. Parece distante, mas se aproxima, e a cada segundo, o som se torna mais distinto, mais ameaçador. Algo está vindo em sua direção.",
       "act": 1
     }
   },
@@ -265,7 +265,7 @@
     "fields": {
       "title": "BLOCO 26: Cativeiro Sombrio",
       "location": "Celas do Subsolo",
-      "description": "Você está preso em uma cela escura e úmida, com correntes em seus pulsos. A dor é constante, mas você está consciente. Você ouve sons de outras criaturas nas celas próximas.",
+      "description": "Você está preso em uma cela escura e úmida, com correntes enferrujadas em seus pulsos e tornozelos. A dor é constante, mas você está consciente, e a escuridão é quase palpável. Você ouve sons de outras criaturas nas celas próximas, rosnados e gemidos que ecoam no silêncio, aumentando seu desespero.",
       "act": 1
     }
   },
@@ -275,7 +275,7 @@
     "fields": {
       "title": "BLOCO 27: Despertar no Escuro",
       "location": "Subsolo Desconhecido",
-      "description": "Você acorda em um lugar escuro e desconhecido. Não há luz, e você não sabe onde está ou como chegou ali.",
+      "description": "Você acorda em um lugar escuro e desconhecido, com a cabeça latejando e a memória confusa. Não há luz, e você não sabe onde está ou como chegou ali. O ar é pesado e úmido, e um cheiro pútrido e metálico preenche suas narinas. A sensação de estar preso é avassaladora.",
       "act": 1
     }
   },
@@ -285,7 +285,7 @@
     "fields": {
       "title": "BLOCO 28: Escadaria para o Subsolo",
       "location": "Escadaria para o Subsolo",
-      "description": "A escadaria de concreto desce em espiral para a escuridão. O ar fica mais frio e úmido a cada degrau. Você sente uma forte corrente de ar vindo de baixo, carregando um cheiro de terra molhada e algo metálico, quase elétrico.",
+      "description": "A escadaria de concreto desce em espiral para a escuridão, seus degraus quebrados e cobertos de entulho. O ar fica mais frio e úmido a cada degrau, e você sente uma forte corrente de ar vindo de baixo, carregando um cheiro de terra molhada e algo metálico, quase elétrico. A escuridão é total, e você não consegue ver o fim da escadaria.",
       "act": 1
     }
   },
@@ -295,7 +295,7 @@
     "fields": {
       "title": "BLOCO 29: Perseguido no Corredor",
       "location": "Corredor de Serviço",
-      "description": "Uma criatura sombria persegue você pelo corredor. Seus passos são rápidos e silenciosos, e você sente seu hálito frio em sua nuca.",
+      "description": "Uma criatura sombria persegue você pelo corredor, seus passos rápidos e silenciosos ecoando nas paredes. Você sente seu hálito frio e fétido em sua nuca, e a cada segundo, a distância entre vocês diminui. O pânico ameaça paralisá-lo, mas o instinto de sobrevivência o impulsiona para frente.",
       "act": 1
     }
   },
@@ -305,7 +305,7 @@
     "fields": {
       "title": "BLOCO 30: Emboscada no Corredor",
       "location": "Corredor de Serviço",
-      "description": "Uma criatura salta das sombras e o ataca. Seus golpes são rápidos e brutais.",
+      "description": "Uma criatura salta das sombras e o ataca, seus golpes rápidos e brutais. Você mal tem tempo de reagir antes de ser atingido, e a dor é lancinante. A escuridão do corredor se torna um campo de batalha, e você precisa lutar para sobreviver.",
       "act": 1
     }
   },
@@ -315,7 +315,7 @@
     "fields": {
       "title": "BLOCO 31: Zumbido Elétrico",
       "location": "Corredor de Serviço",
-      "description": "Você detectou um leve zumbido elétrico vindo de uma porta no final do corredor. Isso pode ser uma armadilha ou uma fonte de energia.",
+      "description": "Você detectou um leve zumbido elétrico vindo de uma porta no final do corredor, um som sutil que se destaca no silêncio opressor. Isso pode ser uma armadilha, uma fonte de energia ou algo ainda mais sinistro. A curiosidade o puxa para frente, mas a cautela o alerta para o perigo.",
       "act": 1
     }
   },
@@ -325,7 +325,7 @@
     "fields": {
       "title": "BLOCO 32: Criatura Inquieta",
       "location": "Corredor de Serviço",
-      "description": "A criatura adormecida está inquieta. Ela grunhe e se mexe, mas ainda não acordou completamente. Você precisa ser extremamente cuidadoso.",
+      "description": "A criatura adormecida está inquieta. Ela grunhe e se mexe, seus membros se contorcendo nas sombras, mas ainda não acordou completamente. Você precisa ser extremamente cuidadoso, pois qualquer barulho ou movimento em falso pode despertá-la e desencadear sua fúria.",
       "act": 1
     }
   },
@@ -335,7 +335,7 @@
     "fields": {
       "title": "BLOCO 33: Kit de Primeiros Socorros",
       "location": "Lavanderia Sombria",
-      "description": "Você encontrou um pequeno kit de primeiros socorros improvisado, com algumas bandagens e um analgésico.",
+      "description": "Você encontrou um pequeno kit de primeiros socorros improvisado, escondido sob uma pilha de roupas sujas. Ele contém algumas bandagens sujas, um analgésico vencido e um frasco de antisséptico. Não é muito, mas pode ser o suficiente para cuidar de ferimentos leves e aliviar a dor.",
       "act": 1
     }
   },
@@ -345,7 +345,7 @@
     "fields": {
       "title": "BLOCO 34: Ajuda Inesperada",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Seus gritos atraem a atenção de uma figura sombria, que se aproxima, mas parece curiosa, não imediatamente hostil. Ela é alta e esguia, com olhos que brilham na escuridão.",
+      "description": "Seus gritos atraem a atenção de uma figura sombria, que se aproxima lentamente, emergindo das sombras. Ela é alta e esguia, com olhos que brilham na escuridão, mas parece curiosa, não imediatamente hostil. Sua presença é enigmática, e você não sabe se ela é uma aliada ou uma nova ameaça.",
       "act": 1
     }
   },
@@ -355,7 +355,7 @@
     "fields": {
       "title": "BLOCO 35: Esconderijo Temporário",
       "location": "Vários",
-      "description": "Você encontrou um esconderijo temporário. Você está seguro por enquanto, mas não pode ficar aqui para sempre.",
+      "description": "Você encontrou um esconderijo temporário, um local escuro e apertado onde você pode se sentir seguro por um breve momento. Você está seguro por enquanto, mas não pode ficar aqui para sempre. A sensação de que algo pode encontrá-lo a qualquer momento persiste, mantendo-o em alerta máximo.",
       "act": 1
     }
   },
@@ -365,7 +365,7 @@
     "fields": {
       "title": "BLOCO 36: Arma Improvisada",
       "location": "Exterior do Hospital Aurora Eterna",
-      "description": "Você encontrou um pedaço de cano de metal enferrujado que pode servir como arma.",
+      "description": "Você encontrou um pedaço de cano de metal enferrujado, pesado e irregular, que pode servir como arma. Não é ideal, mas é melhor do que nada. A sensação de ter algo para se defender lhe dá um pouco de confiança, mas você sabe que ainda está em desvantagem.",
       "act": 1
     }
   },
@@ -375,7 +375,7 @@
     "fields": {
       "title": "BLOCO 37: Esconderijo no Hall",
       "location": "Hall de Entrada Principal",
-      "description": "Você se escondeu com sucesso no hall de entrada. As criaturas passaram correndo, sem notá-lo. O alarme ainda soa, mas parece mais distante.",
+      "description": "Você se escondeu com sucesso no hall de entrada, aproveitando as sombras e os escombros para se camuflar. As criaturas passaram correndo, seus passos pesados ecoando, sem notá-lo. O alarme ainda soa, mas parece mais distante, e você tem um momento de alívio, um suspiro profundo de ar puro.",
       "act": 1
     }
   },
@@ -385,7 +385,7 @@
     "fields": {
       "title": "BLOCO 38: Corredor Lateral Desconhecido",
       "location": "Corredor Lateral",
-      "description": "Você se encontra em um corredor lateral escuro e empoeirado, que não estava no mapa. Há portas em ambos os lados, e o ar é pesado.",
+      "description": "Você se encontra em um corredor lateral escuro e empoeirado, que não estava no mapa. Há portas em ambos os lados, algumas abertas, outras fechadas e enferrujadas. O ar é pesado e parado, e um cheiro estranho, quase metálico, preenche suas narinas. A sensação de estar perdido é avassaladora.",
       "act": 1
     }
   },
@@ -395,7 +395,7 @@
     "fields": {
       "title": "BLOCO 39: Sala de Armazenamento",
       "location": "Sala de Armazenamento",
-      "description": "Você encontrou uma sala de armazenamento com um símbolo arcano gravado na porta. A sala está cheia de caixas empoeiradas e equipamentos antigos.",
+      "description": "Você encontrou uma sala de armazenamento com um símbolo arcano gravado na porta, um desenho complexo que parece brilhar fracamente na escuridão. A sala está cheia de caixas empoeiradas, equipamentos antigos e prateleiras desmoronadas. O ar é pesado com o cheiro de mofo e algo mais, algo que você não consegue identificar.",
       "act": 1
     }
   },
@@ -405,7 +405,7 @@
     "fields": {
       "title": "BLOCO 40: Correntes Fracas",
       "location": "Celas do Subsolo",
-      "description": "Você percebe que as correntes estão enferrujadas e fracas em um ponto.",
+      "description": "Você percebe que as correntes que o prendem estão enferrujadas e fracas em um ponto, quase se desfazendo. Uma pequena esperança surge em seu coração, uma chance de escapar. Você precisa ser cuidadoso, pois qualquer movimento em falso pode alertar seus captores.",
       "act": 1
     }
   },
@@ -415,7 +415,7 @@
     "fields": {
       "title": "BLOCO 41: Desespero na Cela",
       "location": "Celas do Subsolo",
-      "description": "Você está preso na cela, e o desespero começa a tomar conta. A sensação de impotência é esmagadora.",
+      "description": "Você está preso na cela, e o desespero começa a tomar conta, uma onda avassaladora de medo e impotência. A sensação de que não há saída é esmagadora, e a escuridão da cela parece sufocá-lo. Você precisa lutar contra o desespero para manter sua sanidade.",
       "act": 1
     }
   },
@@ -425,7 +425,7 @@
     "fields": {
       "title": "BLOCO 42: Tortura Psíquica",
       "location": "Celas do Subsolo",
-      "description": "Um guarda entra na sua cela e começa a torturá-lo, não fisicamente, mas com uma invasão psíquica que causa uma dor excruciante em sua mente.",
+      "description": "Um guarda entra na sua cela e começa a torturá-lo, não fisicamente, mas com uma invasão psíquica que causa uma dor excruciante em sua mente. Imagens distorcidas e vozes sussurrantes invadem seus pensamentos, ameaçando quebrar sua sanidade. Você precisa lutar para manter o controle.",
       "act": 1
     }
   },
@@ -435,7 +435,7 @@
     "fields": {
       "title": "BLOCO 43: Fuga da Cela",
       "location": "Corredor das Celas",
-      "description": "Você está livre da cela. O corredor das celas é escuro e silencioso, mas você sabe que não pode ficar aqui por muito tempo.",
+      "description": "Você está livre da cela, suas correntes caídas no chão com um baque surdo. O corredor das celas é escuro e silencioso, mas você sabe que não pode ficar aqui por muito tempo. A sensação de liberdade é inebriante, mas o perigo ainda espreita em cada sombra.",
       "act": 1
     }
   },
@@ -445,7 +445,7 @@
     "fields": {
       "title": "BLOCO 44: Guarda Desinteressado",
       "location": "Celas do Subsolo",
-      "description": "Um guarda se aproxima da sua cela, mas parece desinteressado, apenas passando para verificar. Ele não parece estar prestando muita atenção.",
+      "description": "Um guarda se aproxima da sua cela, mas parece desinteressado, apenas passando para verificar. Ele não parece estar prestando muita atenção, seus olhos vagando pelo corredor. Esta pode ser sua chance de escapar, mas você precisa ser rápido e silencioso.",
       "act": 1
     }
   },
@@ -455,7 +455,7 @@
     "fields": {
       "title": "BLOCO 45: Subsolo Escuro",
       "location": "Subsolo Desconhecido",
-      "description": "Você está em um subsolo escuro e úmido. O gotejamento de água ecoa, e você ouve um som distante de arrastar de correntes.",
+      "description": "Você está em um subsolo escuro e úmido, onde o gotejamento de água ecoa nas paredes, amplificando o silêncio opressor. Você ouve um som distante de arrastar de correntes, e o ar é pesado com o cheiro de mofo e decomposição. A escuridão é total, e você não consegue ver nada.",
       "act": 1
     }
   },
@@ -465,7 +465,7 @@
     "fields": {
       "title": "BLOCO 46: Desorientado no Escuro",
       "location": "Subsolo Desconhecido",
-      "description": "Você está completamente desorientado no escuro. Não há luz, e você não sabe para onde ir.",
+      "description": "Você está completamente desorientado no escuro, sem nenhuma referência visual ou sonora. Não há luz, e você não sabe para onde ir. O pânico começa a tomar conta, e a sensação de estar perdido é avassaladora. Você precisa encontrar uma forma de se orientar antes que seja tarde demais.",
       "act": 1
     }
   },
@@ -475,7 +475,7 @@
     "fields": {
       "title": "BLOCO 47: Náusea e Fraqueza",
       "location": "Subsolo Desconhecido",
-      "description": "O cheiro pútrido é tão forte que você sente náuseas e vomita. Você se sente fraco e desorientado.",
+      "description": "O cheiro pútrido é tão forte que você sente náuseas e vomita, seu estômago se revirando. Você se sente fraco e desorientado, e a sensação de que algo está errado é avassaladora. O ambiente é tóxico, e você precisa sair daqui antes que seja tarde demais.",
       "act": 1
     }
   },
@@ -485,7 +485,7 @@
     "fields": {
       "title": "BLOCO 48: Luz na Escuridão",
       "location": "Subsolo Desconhecido",
-      "description": "Você encontrou uma fonte de luz improvisada. A luz revela um corredor escuro e úmido.",
+      "description": "Você encontrou uma fonte de luz improvisada, um isqueiro ou uma lanterna fraca, que revela um corredor escuro e úmido. A luz é fraca, mas é o suficiente para guiá-lo. O corredor se estende para a escuridão, e você não sabe o que o espera.",
       "act": 1
     }
   },
@@ -495,7 +495,7 @@
     "fields": {
       "title": "BLOCO 49: Corredor Inundado",
       "location": "Corredor do Subsolo",
-      "description": "Você está em um corredor do subsolo, com água escura e estagnada cobrindo o chão até os tornozelos. O cheiro de esgoto e metal enferrujado é avassalador. A água reflete fracamente a luz que entra, criando sombras dançantes. No final do corredor, há uma porta de metal pesado, com um painel de controle ao lado.",
+      "description": "Você está em um corredor do subsolo, com água escura e estagnada cobrindo o chão até os tornozelos. O cheiro de esgoto e metal enferrujado é avassalador, e a água reflete fracamente a luz que entra, criando sombras dançantes. No final do corredor, há uma porta de metal pesado, com um painel de controle ao lado, que parece estar desativado.",
       "act": 1
     }
   },
@@ -505,7 +505,7 @@
     "fields": {
       "title": "BLOCO 50: Queda na Escadaria",
       "location": "Escadaria para o Subsolo",
-      "description": "Você escorregou na escadaria, batendo o joelho e fazendo um barulho considerável. Você sente uma dor aguda e a sensação de que algo foi alertado.",
+      "description": "Você escorregou na escadaria, batendo o joelho em um dos degraus quebrados e fazendo um barulho considerável. Você sente uma dor aguda, e a sensação de que algo foi alertado é avassaladora. O som ecoa pelas paredes, e você sabe que o perigo está se aproximando.",
       "act": 1
     }
   },
@@ -515,7 +515,7 @@
     "fields": {
       "title": "BLOCO 51: Armadilha Elétrica",
       "location": "Corredor Inundado",
-      "description": "Você percebe que o corredor inundado tem uma armadilha elétrica ativada pela água. Há fios expostos e um painel de controle desativado.",
+      "description": "Você percebe que o corredor inundado tem uma armadilha elétrica ativada pela água. Há fios expostos e um painel de controle desativado, que parece ser a chave para desativar a armadilha. Você precisa ser cuidadoso, pois qualquer movimento em falso pode ser fatal.",
       "act": 1
     }
   },
@@ -525,7 +525,7 @@
     "fields": {
       "title": "BLOCO 52: Símbolo de Proteção",
       "location": "Escadaria para o Subsolo",
-      "description": "A luz revela um símbolo arcano gravado na parede, que você reconhece como um sinal de proteção contra espíritos. Você se sente um pouco mais seguro.",
+      "description": "A luz revela um símbolo arcano gravado na parede, que você reconhece como um sinal de proteção contra espíritos. Você se sente um pouco mais seguro, uma sensação de alívio que o acalma. O símbolo é antigo e poderoso, e você sabe que pode ser útil em sua jornada.",
       "act": 1
     }
   },
@@ -535,7 +535,7 @@
     "fields": {
       "title": "BLOCO 53: Confronto Etéreo!",
       "location": "Escadaria para o Subsolo",
-      "description": "A luz atrai a atenção. Você ouve um chiado vindo das sombras, e a chama do seu isqueiro pisca violentamente, quase se apagando. Você sente uma presença etérea se aproximando.",
+      "description": "A luz atrai a atenção. Você ouve um chiado vindo das sombras, e a chama do seu isqueiro pisca violentamente, quase se apagando. Você sente uma presença etérea se aproximando, uma aura fria e ameaçadora que o envolve. O ar fica pesado, e você sabe que está em perigo.",
       "act": 1
     }
   },
@@ -545,7 +545,7 @@
     "fields": {
       "title": "BLOCO 54: Barreira de Energia",
       "location": "Corredor de Serviço",
-      "description": "Você percebe que o zumbido vem de um painel de controle eletrônico que alimenta uma barreira de energia invisível na porta.",
+      "description": "Você percebe que o zumbido vem de um painel de controle eletrônico que alimenta uma barreira de energia invisível na porta. A barreira é poderosa, e você sabe que não pode passar por ela sem desativá-la. Você precisa encontrar uma forma de desativar o painel de controle antes de continuar.",
       "act": 1
     }
   },
@@ -555,7 +555,7 @@
     "fields": {
       "title": "BLOCO 55: Sala de Equipamentos",
       "location": "Sala de Equipamentos",
-      "description": "Você entra em uma sala cheia de equipamentos eletrônicos antigos e máquinas enferrujadas. O zumbido elétrico é mais forte aqui.",
+      "description": "Você entra em uma sala cheia de equipamentos eletrônicos antigos e máquinas enferrujadas, seus fios expostos e suas luzes piscando fracamente. O zumbido elétrico é mais forte aqui, e o ar é pesado com o cheiro de ozônio e metal. A sala é um labirinto de máquinas, e você não sabe o que fazer.",
       "act": 1
     }
   },
@@ -565,7 +565,7 @@
     "fields": {
       "title": "BLOCO 56: Poção de Cura",
       "location": "Sala de Armazenamento",
-      "description": "Você encontrou um pequeno frasco de líquido brilhante, que parece ser uma poção de cura.",
+      "description": "Você encontrou um pequeno frasco de líquido brilhante, que parece ser uma poção de cura. O líquido brilha com uma luz suave, e você sente uma energia reconfortante emanando dele. Não é muito, mas pode ser o suficiente para curar seus ferimentos e dar-lhe uma nova chance.",
       "act": 1
     }
   },
@@ -575,7 +575,7 @@
     "fields": {
       "title": "BLOCO 57: Água Escura",
       "location": "Corredor Inundado",
-      "description": "Você está no corredor inundado, e a água escura e estagnada cobre o chão até os tornozelos. A sensação de perigo persiste.",
+      "description": "Você está no corredor inundado, e a água escura e estagnada cobre o chão até os tornozelos. A sensação de perigo persiste, e você sente que algo pode estar espreitando nas profundezas. A água é fria e suja, e você não sabe o que pode estar escondido nela.",
       "act": 1
     }
   },
@@ -585,7 +585,7 @@
     "fields": {
       "title": "BLOCO 58: Sala de Arquivos Submersa",
       "location": "Sala de Arquivos Submersa",
-      "description": "Você entra em uma sala ampla, mas quase completamente submersa em água escura. Armários de arquivo enferrujados se inclinam precariamente, alguns flutuando. O ar é pesado e frio. No centro da sala, sobre uma mesa de metal que mal emerge da água, há um pequeno volume encadernado em couro, parcialmente molhado: o Diário Fragmentado de Alice.",
+      "description": "Você entra em uma sala ampla, mas quase completamente submersa em água escura. Armários de arquivo enferrujados se inclinam precariamente, alguns flutuando na superfície, seus conteúdos espalhados pela água. O ar é pesado e frio, e um cheiro pútrido e metálico preenche suas narinas. No centro da sala, sobre uma mesa de metal que mal emerge da água, há um pequeno volume encadernado em couro, parcialmente molhado: o Diário Fragmentado de Alice.",
       "act": 1
     }
   },
@@ -595,7 +595,7 @@
     "fields": {
       "title": "BLOCO 59: Criatura Aquática",
       "location": "Sala de Arquivos Submersa",
-      "description": "Algo na água o ataca. Você sente garras afiadas e uma dor excruciante.",
+      "description": "Algo na água o ataca, emergindo das profundezas com uma velocidade surpreendente. Você sente garras afiadas e uma dor excruciante, e a criatura tenta arrastá-lo para baixo. Você precisa lutar para sobreviver, pois a água escura esconde perigos ainda maiores.",
       "act": 1
     }
   },
@@ -605,7 +605,7 @@
     "fields": {
       "title": "BLOCO 60: Diário de Alice Encontrado",
       "location": "Sala de Arquivos Submersa",
-      "description": "Você segura o diário em suas mãos. A capa de couro está úmida, mas as páginas internas parecem ter sido protegidas. Você sente uma conexão imediata com o objeto, como se ele contivesse a chave para sua própria existência.",
+      "description": "Você segura o diário em suas mãos, a capa de couro úmida e fria. As páginas internas parecem ter sido protegidas, e você sente uma conexão imediata com o objeto, como se ele contivesse a chave para sua própria existência. O diário é a primeira peça do quebra-cabeça, e você sabe que ele pode revelar a verdade sobre Alice e seu passado.",
       "act": 1
     }
   },
@@ -615,7 +615,7 @@
     "fields": {
       "title": "BLOCO 61: Olhos na Água",
       "location": "Sala de Arquivos Submersa",
-      "description": "Você notou que a água não é apenas escura, mas tem um brilho esverdeado fraco em alguns pontos, e pequenos olhos vermelhos parecem piscar nas profundezas. Há criaturas aquáticas, mas elas parecem evitar a área diretamente ao redor da mesa.",
+      "description": "Você notou que a água não é apenas escura, mas tem um brilho esverdeado fraco em alguns pontos, e pequenos olhos vermelhos parecem piscar nas profundezas. Há criaturas aquáticas, mas elas parecem evitar a área diretamente ao redor da mesa, como se algo as estivesse mantendo afastadas. Você precisa ser cuidadoso, pois a água escura esconde perigos ainda maiores.",
       "act": 1
     }
   },
@@ -625,7 +625,7 @@
     "fields": {
       "title": "SUCESSO DO ATO: Diário Desvendado!",
       "location": "Fim do Ato",
-      "description": "As palavras de Alice são claras, mesmo que fragmentadas. Ela descreve experimentos estranhos, uma \"voz\" que a guiava e a sensação de estar sendo observada. Você lê sobre um \"ritual de ascensão\" e um \"amuleto de sangue\" que ela escondeu.",
+      "description": "As palavras de Alice são claras, mesmo que fragmentadas, revelando segredos sombrios e verdades perturbadoras. Ela descreve experimentos estranhos, uma \"voz\" que a guiava e a sensação de estar sendo observada. Você lê sobre um \"ritual de ascensão\" e um \"amuleto de sangue\" que ela escondeu, e a cada palavra, a verdade se torna mais clara.",
       "act": 1
     }
   },
@@ -635,7 +635,7 @@
     "fields": {
       "title": "SUCESSO DO ATO: Diário Recuperado",
       "location": "Fim do Ato",
-      "description": "Você recuperou o Diário Fragmentado de Alice. Embora ainda não tenha decifrado todos os seus segredos, você tem a primeira peça do quebra-cabeça. A sensação de ter a primeira peça do quebra-cabeça é eletrizante.",
+      "description": "Você recuperou o Diário Fragmentado de Alice. Embora ainda não tenha decifrado todos os seus segredos, você tem a primeira peça do quebra-cabeça, um objeto que pode revelar a verdade sobre Alice e seu passado. A sensação de ter a primeira peça do quebra-cabeça é eletrizante, e você sabe que sua jornada está apenas começando.",
       "act": 1
     }
   },
@@ -645,7 +645,7 @@
     "fields": {
       "title": "FALHA DO ATO: Devorado pelas Sombras!",
       "location": "Fim do Ato",
-      "description": "Você foi dominado pelas criaturas e devorado pelas sombras. Seu fim chegou antes mesmo de começar.",
+      "description": "Você foi dominado pelas criaturas e devorado pelas sombras, seus gritos abafados pela escuridão. Seu fim chegou antes mesmo de começar, e a busca por Alice está perdida para sempre. A escuridão o engoliu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -655,7 +655,7 @@
     "fields": {
       "title": "FALHA DO ATO: Capturado!",
       "location": "Fim do Ato",
-      "description": "Você foi capturado e levado para um destino incerto. Sua busca por Alice termina aqui, ou talvez apenas comece de uma forma muito mais sombria.",
+      "description": "Você foi capturado e levado para um destino incerto, suas mãos amarradas e seus olhos vendados. Sua busca por Alice termina aqui, ou talvez apenas comece de uma forma muito mais sombria. Você não sabe o que o espera, mas a sensação de que algo terrível está por vir é avassaladora.",
       "act": 1
     }
   },
@@ -665,7 +665,7 @@
     "fields": {
       "title": "FALHA DO ATO: Retirada Forçada!",
       "location": "Fim do Ato",
-      "description": "Você foi forçado a recuar do hospital. A missão falhou, e a sensação de fracasso é amarga. Você terá que encontrar outra forma de descobrir a verdade sobre Alice.",
+      "description": "Você foi forçado a recuar do hospital, seus ferimentos sangrando e sua mente exausta. A missão falhou, e a sensação de fracasso é amarga. Você terá que encontrar outra forma de descobrir a verdade sobre Alice, mas por enquanto, a derrota é tudo o que resta.",
       "act": 1
     }
   },
@@ -675,7 +675,7 @@
     "fields": {
       "title": "FALHA DO ATO: Cercado e Perdido!",
       "location": "Fim do Ato",
-      "description": "Você foi cercado por criaturas e não teve chance de escapar. Seu fim é incerto, mas certamente não é o que você esperava.",
+      "description": "Você foi cercado por criaturas e não teve chance de escapar, seus gritos abafados pela escuridão. Seu fim é incerto, mas certamente não é o que você esperava. A escuridão o engoliu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -685,7 +685,7 @@
     "fields": {
       "title": "FALHA DO ATO: Mente Escravizada!",
       "location": "Fim do Ato",
-      "description": "Sua mente foi quebrada e escravizada por uma força psíquica. Você não é mais você mesmo, e a busca por Alice está perdida para sempre.",
+      "description": "Sua mente foi quebrada e escravizada por uma força psíquica, e você não é mais você mesmo. A busca por Alice está perdida para sempre, e sua mente é agora um playground para as criaturas das sombras. Você está preso em um pesadelo sem fim, e não há como escapar.",
       "act": 1
     }
   },
@@ -695,7 +695,7 @@
     "fields": {
       "title": "FALHA DO ATO: Armadilha Fatal!",
       "location": "Fim do Ato",
-      "description": "Você caiu em uma armadilha fatal e não conseguiu escapar. Seu fim é rápido e doloroso.",
+      "description": "Você caiu em uma armadilha fatal e não conseguiu escapar, seus gritos abafados pela escuridão. Seu fim é rápido e doloroso, e a busca por Alice está perdida para sempre. A armadilha o consumiu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -705,7 +705,7 @@
     "fields": {
       "title": "FALHA DO ATO: Morte Prematura!",
       "location": "Fim do Ato",
-      "description": "Você sofreu um ferimento fatal e sua vida se esvaiu. A busca por Alice termina aqui.",
+      "description": "Você sofreu um ferimento fatal e sua vida se esvaiu, seus últimos suspiros ecoando no silêncio. A busca por Alice termina aqui, e você não é mais nada além de uma lembrança distante. A morte o consumiu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -715,7 +715,7 @@
     "fields": {
       "title": "FALHA DO ATO: Sacrifício Iminente!",
       "location": "Fim do Ato",
-      "description": "Você foi levado para um lugar sombrio, onde um sacrifício está prestes a acontecer. Seu destino é selado.",
+      "description": "Você foi levado para um lugar sombrio, onde um sacrifício está prestes a acontecer. Seu destino é selado, e você não pode fazer nada para mudar isso. A escuridão o engoliu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -725,7 +725,7 @@
     "fields": {
       "title": "FALHA DO ATO: Mente Quebrada!",
       "location": "Fim do Ato",
-      "description": "Sua mente foi inundada por vozes e imagens perturbadoras, levando-o à loucura. Você não é mais capaz de continuar sua busca.",
+      "description": "Sua mente foi inundada por vozes e imagens perturbadoras, levando-o à loucura. Você não é mais capaz de continuar sua busca, e sua mente é agora um playground para as criaturas das sombras. Você está preso em um pesadelo sem fim, e não há como escapar.",
       "act": 1
     }
   },
@@ -735,7 +735,7 @@
     "fields": {
       "title": "FALHA DO ATO: Devorado na Cela!",
       "location": "Fim do Ato",
-      "description": "Você foi devorado pelas criaturas nas celas próximas. Um fim terrível e solitário.",
+      "description": "Você foi devorado pelas criaturas nas celas próximas, seus gritos abafados pela escuridão. Um fim terrível e solitário, e a busca por Alice está perdida para sempre. A escuridão o engoliu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -745,7 +745,7 @@
     "fields": {
       "title": "FALHA DO ATO: Eletrocutado!",
       "location": "Fim do Ato",
-      "description": "Você foi eletrocutado pela armadilha elétrica. Seu corpo jaz inerte na água.",
+      "description": "Você foi eletrocutado pela armadilha elétrica, seu corpo convulsionando na água. Seu corpo jaz inerte na água, e a busca por Alice está perdida para sempre. A eletricidade o consumiu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -755,7 +755,7 @@
     "fields": {
       "title": "FALHA DO ATO: Afogado nas Sombras!",
       "location": "Fim do Ato",
-      "description": "Você foi arrastado para as profundezas da água e se afogou nas sombras. A escuridão o engoliu por completo.",
+      "description": "Você foi arrastado para as profundezas da água e se afogou nas sombras, seus pulmões cheios de água escura. A escuridão o engoliu por completo, e você não é mais nada além de uma lembrança distante. A água o consumiu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -765,7 +765,7 @@
     "fields": {
       "title": "FALHA DO ATO: Envenenado!",
       "location": "Fim do Ato",
-      "description": "Você bebeu uma poção venenosa e sucumbiu aos seus efeitos. Seu corpo agora é apenas mais um resíduo neste hospital amaldiçoado.",
+      "description": "Você bebeu uma poção venenosa e sucumbiu aos seus efeitos, seu corpo se contorcendo em agonia. Seu corpo agora é apenas mais um resíduo neste hospital amaldiçoado, e a busca por Alice está perdida para sempre. O veneno o consumiu por completo, e você não é mais nada além de uma lembrança distante.",
       "act": 1
     }
   },
@@ -947,7 +947,7 @@
       "action": 6,
       "history_action": null,
       "on_fail": 11,
-      "on_success": 13,
+      "on_success": 2,
       "on_hard_fail": 12
     }
   },

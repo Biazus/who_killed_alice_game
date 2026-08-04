@@ -4,16 +4,22 @@ from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
 
-from characters.models import (Character, CharacterModifier,
-                               CharacterModifierAttribute, Inventory)
-from characters.serializers import (CharacterDetailSerializer,
-                                    CharacterListSerializer,
-                                    CharacterModifierAttributeListSerializer,
-                                    CharacterModifierAttributeSerializer,
-                                    CharacterModifierSerializer,
-                                    CharacterSerializer,
-                                    InventoryListSerializer,
-                                    InventorySerializer)
+from characters.models import (
+    Character,
+    CharacterModifier,
+    CharacterModifierAttribute,
+    Inventory,
+)
+from characters.serializers import (
+    CharacterDetailSerializer,
+    CharacterListSerializer,
+    CharacterModifierAttributeListSerializer,
+    CharacterModifierAttributeSerializer,
+    CharacterModifierSerializer,
+    CharacterSerializer,
+    InventoryListSerializer,
+    InventorySerializer,
+)
 from characters.services import CharacterService
 from core.permissions import IsOwnerOrReadOnly
 

@@ -44,20 +44,17 @@ function formatWeight(weight?: number): string {
 // Função para determinar a cor de fundo da dificuldade (mais claro a mais avermelhado)
 function getDifficultyBackgroundColor(difficulty: number): string {
   // Escala de cores para dificuldade (exemplo: de um vermelho claro a um vermelho escuro)
-  // Você pode ajustar esses valores RGB para a paleta exata que deseja!
   if (difficulty === 1) return "rgba(255, 220, 220, 0.8)"; // Vermelho muito claro
   if (difficulty === 2) return "rgba(255, 180, 180, 0.8)"; // Vermelho claro
   if (difficulty === 3) return "rgba(255, 140, 140, 0.8)"; // Vermelho médio
   if (difficulty === 4) return "rgba(255, 100, 100, 0.8)"; // Vermelho mais escuro
   if (difficulty >= 5) return "rgba(255, 60, 60, 0.8)";   // Vermelho intenso
-  return "rgba(200, 200, 200, 0.8)"; // Cor padrão para casos não mapeados
+  return "rgba(200, 200, 200, 0.8)";
 }
 
 // NOVA FUNÇÃO: Limpa o prefixo "BLOCO X: " do título da cena
 function cleanSceneTitle(title: string | undefined): string {
-  if (!title) return ""; // Retorna string vazia se o título for undefined ou null
-  // A expressão regular busca "BLOCO " seguido de um ou mais dígitos, e depois ": "
-  // O 'i' no final torna a busca case-insensitive (ignora maiúsculas/minúsculas)
+  if (!title) return "";
   return title.replace(/BLOCO \d+: /i, "");
 }
 
@@ -227,7 +224,6 @@ function CharacterDetail() {
   const currentScene = characterProgress?.current_scene;
   const availableSceneActions = currentSceneActions;
 
-  // Determina se a rolagem foi um sucesso ou falha para o card
   const rollSuccess = characterProgress?.roll_success;
 
   return (
@@ -296,7 +292,6 @@ function CharacterDetail() {
                       key={entry.id}
                     >
                       <Icon size={21} aria-hidden="true" />
-                      {/* Ajuste aqui para que o nome do traço caiba */}
                       <h4 className="modifier-name-full">{entry.modifier.name}</h4>
                       <div className="modifier-tooltip">
                         <span className="modifier-tooltip__label">Descrição</span>
@@ -352,7 +347,6 @@ function CharacterDetail() {
             <div className="game-content">
               <div className="game-scene">
                 <span className="eyebrow">CENA ATUAL</span>
-                {/* AQUI ESTÁ A MUDANÇA: Aplicando cleanSceneTitle */}
                 <h3>{cleanSceneTitle(currentScene?.title)}</h3>
                 <p>{currentScene?.description}</p>
               </div>
@@ -396,7 +390,6 @@ function CharacterDetail() {
                         }`}
                         onClick={() => handleSelectAction(sa)}
                         disabled={isSubmittingAction}
-                        // Aplica a cor de fundo personalizada com base na dificuldade
                         style={{
                           backgroundColor: sa.action?.difficulty
                             ? getDifficultyBackgroundColor(sa.action.difficulty)
@@ -404,7 +397,6 @@ function CharacterDetail() {
                         }}
                       >
                         {sa.description}
-                        {/* Removido o span de dificuldade, pois a cor já indica */}
                       </button>
                     ))}
                     <button

@@ -1,7 +1,11 @@
 from rest_framework import serializers
 
-from modifiers.models import (Attribute, Modifier, ModifierAttributeEffect,
-                              ModifierCategory)
+from modifiers.models import (
+    Attribute,
+    Modifier,
+    ModifierAttributeEffect,
+    ModifierCategory,
+)
 
 
 class ModifierCategorySerializer(serializers.ModelSerializer):
