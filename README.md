@@ -22,11 +22,6 @@ For complex actions, multiple `ActionAttributeRequirement` entries define:
 - which attributes matter,
 - weights,
 - per‑attribute difficulty adjustments.
-  
-**Resolution:**
-compute a combined attribute value (e.g. weighted average),
-subtract action difficulty to get a chance (0–100),
-`roll 1–100` → `success if roll <= chance`.
 
 ### API Endpoints
 
@@ -63,11 +58,15 @@ Endpoints to:
 ## TODOs (next few days)
 ### Tech:
 - [ ] Test suite
+- [ ] Document functions
 
 ### Narrative
 - [ ] Block actions if player doesn't hold certain items
 - [ ] Design on how to earn modifiers per game actions / luck
-- [ ] Few adjustments on weights
 - [ ] Add more attributes / modifier
   
 This repository is the mechanical backbone of the story engine. Alice’s murderer may be hidden in the narrative, but this code decides whether you sneak past the warehouse guards, decode the ritual marks, or break under post‑apocalyptic horrors.
+
+<img width="652" height="907" alt="1" src="https://github.com/user-attachments/assets/7be0e194-3469-4cf2-9c67-588a0da9aac7" />
+<img width="767" height="845" alt="2" src="https://github.com/user-attachments/assets/5b363352-3d76-44b4-976c-657b1f86e757" />
+
