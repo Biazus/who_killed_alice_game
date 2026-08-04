@@ -59,6 +59,7 @@ Endpoints to:
 ### Tech:
 - [ ] Test suite
 - [ ] Document functions
+- [ ] Hide actions until player is ready to take action. Once player is ready, show actions with a timer (20 sec?)
 
 ### Narrative
 - [ ] Block actions if player doesn't hold certain items
